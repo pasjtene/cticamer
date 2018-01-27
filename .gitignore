@@ -25,7 +25,6 @@
 /web/data/css/
 web/data/js
 web/data/
-bin/*
 /src/Web/AppBundle/Inc/
 /src/Web/AppBundle/Resources/public/js/Inc/parameters.js
 src/Web/AppBundle/Resources/public/js/Inc/parameter\.js
