@@ -3,7 +3,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="container">
-    <a class="navbar-brand" href="javascript:;">SupInfo</a>
+    <a class="navbar-brand" href="/">Churchill Training Institute</a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -22,11 +22,15 @@
             </div>
 
             {% if login is defined %}
+
                 <a href="{{ path('main_register') }}" class="btn btn-primary my-2 my-sm-0">
                     {% trans from 'register' %} nav.register {% endtrans %}
                 </a>
+
             {% else %}
+                <!--
                 <span id="nav_member_question">{% trans from 'login' %} nav.member_question {% endtrans %}</span>
+                -->
                 <a href="{{ path('main_login') }}" class="btn btn-primary my-2 my-sm-0">
                     {% trans from 'login' %} nav.login {% endtrans %}
                  </a>
