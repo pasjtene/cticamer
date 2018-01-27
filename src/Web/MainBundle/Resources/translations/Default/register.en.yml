@@ -1,0 +1,102 @@
+refer:
+  title: register on funglobe
+  description:  Registration on funglode is totally free. Meet a lot of friends. Deal with your colleagues and experienced
+title: Create new account
+nav:
+  register: SignUp
+block:
+  title: The social network for having fun and metting
+  important:  new friends :)
+  content: Over 51 Million people are having fun  and making new friends on Funglobe every day. Jump in !
+  google: Login with  google
+  facebook: Login with  facebook
+  or: Or
+  signup: Signup  with  your email today
+form:
+  title : Create your account
+  content: It's 100% free.
+  notification:
+    title: Notification
+    content: Wait a few moment
+    success: Registration successfull
+  body:
+    name: Name
+    birthday: Birthday
+    gender: Gender
+    reason: I am  here to
+    email: Email adresse
+    password: Password
+    confirmpassword: Confirm password
+    profession: Profession
+    btnsignup: SignUp
+    country: Country
+    lastname: first name
+    reasonList:
+      1: Make new friend
+      2: Chat
+      3: Date
+    genderList:
+      1: Male
+      2: Female
+    birthdayOption:
+      day: Day
+      month: Month
+      year: Year
+  placeholder:
+    name: Your name
+    birthday: Your birthday
+    gender: Your gender
+    reason: choose your reason
+    email: Your email  adress
+    password: Your password
+    confirmpassword: Confirm your password
+    profession: Give your profession
+    country:  Choose your County
+    lastname: Your first  name
+    birthdayOption:
+      day: Choose the day
+      month: Choose the month
+      year: Choose the year
+  required:
+    name: the name is required (min  2 charaters)
+    name_tooltip: the name is required
+    lastname_tooltip: the first name is required
+    lastname: the first name is required (min  2 charaters)
+    birthdayOption:
+      day: the day is required
+      month: the month is required
+      year:  the year is required
+    gender: the gender is required
+    reason: the reason is required
+    email: please check your email address.
+    password: the password is required (min  5 charaters)
+    confirmpassword: pleace retape the same password
+    profession: the professsion is required (min  3 charaters)
+    country: Please select your country
+    lastname: The last name ist required
+    notification: Is required
+    error: Oh error !
+  help:
+    lastname: The poeples like your first name
+    emailConfirm:
+      title:  <strong> Funglobe </strong>( réseau social pour s'amuser et rencontrer de nouveaux amis)
+      objet: Confirme ton adresse email
+      reason: Se faire  des bon amis   n'a jamais été aussi  facile
+      to: A
+      content: |
+       Avec funglobe revivez c'est  l'objectif. <br>
+       Découvrez des nouveaux amis et  profiter pour entrer en contact avec plus de 51 millions professionnels repondant  a vos besoins. <br>
+      message: |
+       <h3> name, </h3>
+        vous êtes le bienvenue parmis plus de 350 millions d'utilisateurs de <strong>funglobe </strong>. <br/> <br/>
+       pour plusieurs raisons,  nous voulons se rassurer que l'adresse email  <a href=''> emails </a> vous appartient  vraiment.  <br/>
+       Veillez  cliquer sur le bouton  vert pour valider votre adresse email.
+      button: Confirmer votre adresse email
+      contact: Contact
+      phone: Téléphone
+      website: Site internet
+      adress: Adresse
+      curentpassword: |
+       voici  vore mot de passe actuel <strong>passwords</strong>, si  vous souhaitez reinitialiser  votre  mot  de passe,  veillez cliquer <a href="urlPassword"> ici </a>
+      app: |
+       Vous pouvez consulter le même email  directement depuis <strong>www.funglobe.com</strong> en cliquant sur ce lien <a href="url">url</a>

@@ -1,0 +1,10 @@
+friend:
+  all: Show all
+  invitation: Invitation
+  request: Accept all requests
+  my: My friends
+message:
+  recent: Recent
+  read: All marked as read
+  all: Show all
+  new: New message

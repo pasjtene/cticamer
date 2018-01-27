@@ -1,0 +1,30 @@
+{% extends 'AdminBundle::layout.html.twig' %}
+
+{% block title %}
+    {% trans from 'home' %} title {% endtrans %}
+{% endblock  %}
+
+{% block mycss %}
+    {{ parent() }}
+    {# mettre le css si la page t'oublige #}
+{% endblock %}
+
+{% block header %}
+    {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
+{% endblock %}
+
+{% block main %}
+    {% include 'AdminBundle:Inc:pascalnavbar.html.twig' %}
+    <div class="row" id="adminHome" data-page="adminHome">
+        {% include 'AdminBundle:Inc:adminTabs.html.twig' %}
+    </div>
+
+    {% include 'AdminBundle:Inc:eric-modal-email.html.twig' %}
+    {% include 'AdminBundle:Inc:eric-picture-carousel.html.twig' %}
+{% endblock %}
+
+{% block myjs %}
+    {# mettre des liens vers des pages externe js si c'est  necessaire #}
+    <script src="{{ asset('plugin/ckeditor/ckeditor.js') }}"></script>
+{% endblock %}
+

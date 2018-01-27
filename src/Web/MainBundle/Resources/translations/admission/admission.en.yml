@@ -1,0 +1,196 @@
+admission:
+  title: Admission
+  Navbar: Home
+  admiss: Admissions
+  preinscription: Preregistration
+  cours: Courses
+  program: Programs
+  campus: Campus
+  etudiant: Students
+  diplom: Diplomas
+  documentation:  Documentation
+  entreprise:  Business
+  contact:  Contacts
+  second_bartitle: INTEGRATE SUPINFO CAMEROON
+  content_title: ALL PATHS LEAD TO SUP INFO CAMEROON
+  content_title11: ACQUISITION OF COMPETENCIES; THE HEART OF OUR ADMISSION SYSTEM
+  content_block1:  The modular program, based on the acquisition of the skills of the course Computer Engineering,
+           allows all admissions post-Bac, Bac + 2, Bac + 3 and under conditions, parallel admissions
+  content_block2: Our competency assessment tool allows you to integrate Sup Info throughout the year
+  content_block3: Employees, job seekers, you can also integrate Sup Info and benefit from
+          the VAE (Validation of Acquisitions and Experience).
+  content_block4:  Sup Info training is eligible for the CPF (Personnel Training Account).
+  content_block5: I candidate in 1 click! - or Admission steps; an efficient, fast process, a personalized response
+  hexagon_text: PROGRAMS SUP INFO CAMEROON
+  panorama: PANORAMA OF STUDIES
+  bachelor: BACHELOR COMPUTER SCIENCES BAC + 3
+  bac5: COMPUTER ENGINEERING BAC + 5
+  diplome: TITLES AND DIPLOMAS
+  numerique: DIGITAL TOOLS
+  specialisation: SPECIALIZATIONS
+  etape1: Step 1
+  content1: |
+            Article 1:    Admission Criteria
+  content2: |
+            Pupils in the final grades of all grades or any student with the said diploma.
+  content3: |
+             Holders of any other diploma recognized as equivalence or exempted by the Minister of
+               Higher Education
+  content4: |
+            Candidates registered for one of the above-mentioned diplomas
+            to Sup Info Cameroun, in case of success in the competition, only on presentation of the original of the
+            diploma obtained at the 2018 exam session or, if applicable, the certificate of achievement at the
+            of the enrollment fixed by the School
+  content5: |
+            Registration for the competition is made online on the Sup info website at
+  content6: |
+            https://www.supinfocameroun.com/concours
+  content7: |
+            Applications include the following documents :
+  content8: |
+            An individual application form duly filled in by the candidate on the website of the competition of the School
+  content9: |
+            https://www.supinfocameroun.com/concours.
+  content10: |
+            A photocopy of the national identity card or a receipt;
+  content102: |
+            First and Terminal or Lower and Upper Sixth grades;
+  content103: |
+            A certified copy of the birth certificate, dated less than three months
+  content104: |
+            A certified copy of the Baccalaureate or GCE / AL or any other recognized diploma
+  content105: |
+            equivalent by the Ministry of Higher Education, or a Certificate of Success to one
+            of these diplomas where appropriate;
+  content106: |
+            Four passport photos(4x4);
+  content107: |
+            A medical certificate issued by a doctor of the administration;
+  content108: |
+            A stamped envelope at 500 francs CFA to the candidate's address (format A4)
+  content11: |
+           Article 2:  Registration fees
+  content12: |
+           The entry fee for the competition is twenty thousand (20,000) CFA francs payable
+           only by EXPRESS UNION transfer, against receipt to be attached to the file
+           application. These non-refundable fees are intended to cover expenses
+           the organization of the competition. Any other method of payment is excluded.
+  content13: |
+           Article 4: Complete applications must be sent to Sup Center Cameroon's Sup
+  content14: |
+          Article 5: Only candidates who have filed a regulatory dossier within the deadlines
+          summoned to compete. They will have to bring their National Identity Card and the card
+          student or student.
+  content15: |
+          Article 6: Physical records and online registration must be completed by April 27, 2018.
+  etape1_content: I apply directly online.
+  etape2: Step 2
+  etape2_content1: |
+           Article 7:  Sup Info Cameroon launches a direct competition for the recruitment of students in first year, second year, third year, and fourth
+           (BAC + 3) and design engineer (BAC + 5) at Sup Info Cameroun for the academic year 2018/2019,
+           is launched in the centers of Douala and Yaoundé
+           It consists of two (2) events
+           written psychological tests and a maintenance phase.
+  etape2_content2:
+        Upon receipt of your application, we will offer you to participate in a half day of
+        selection process, which will then be tested, and then
+        will be received for a motivational interview (for candidates who want to follow a continuing education,
+        online or parallel).
+  etape3: Step 3
+  etape3_content: Receive a response within two weeks of the contest.
+  candidature1: Access with one click to
+  candidature2: application space
+  sup_info: SUP INFO Cameroon
+  program: PROGRAMS
+  formatio_cont: CONTINUING EDUCATION
+  text_on_second_bar: PARTNER OF
+  text_on_second_bar2: Bolton Academy
+programme:
+  bachelor_content1: DEVOPS BASE COURSE
+  bachelor_content2: Competency n° 1 - Development of Computer Applications
+  bachelor_content3: |
+          Learning to develop (algorithmic)
+  bachelor_content4: |
+           Development Languages
+  bachelor_content5: |
+           Web Development Languages
+  bachelor_content6: |
+           Skills n° 2 - Administration System & Network Infrastructure Data Management
+  bachelor_content7: |
+           System Environments
+  bachelor_content8: |
+           Networks and Topologies
+  bachelor_content9: |
+           IP V4 and V6
+  bachelor_content10: |
+           Skills n° 3 - Data Management
+  bachelor_content11: |
+           Economic and legal environment
+  bachelor_content12: |
+           Mathématics
+  bachelor_content13: |
+           English
+  bachelor_content14: |
+           Techniques of Expression and Communication
+  bachelor_content15: |
+           Modeling of databases (Merise - Uml)
+  bachelor_content16: |
+           Design and adaptation of a database (SQL Server)
+  bachelor_content17: |
+           Skills n° 4 - Methods and Projects
+  bachelor_content18: |
+           Economic and legal environment
+  bachelor_content19: |
+           Mathématics for l’informatic
+  bachelor_content20: |
+           Skills n°  5 - Communication
+  bachelor_content21: |
+           English
+  bachelor_content22: |
+           Techniques of Expression and Communication
+  bachelor_content23: |
+           SIO BTS COURSE (OPTIONAL WITH PACK SUBSCRIPTION)
+  bachelor_content24: |
+           Algorithms and Mathematics
+  bachelor_content25: |
+           Economic, managerial and legal analysis
+  bachelor_content26: |
+           Custom framed projects (PPE)
+  bachelor_content27: |
+           COMPANY STAGE
+  bachelor_content28: |
+           Internship from 4 to 5 weeks
+  bachelor_content29: |
+           SKILLS TO BE DEVELOPED
+  bachelor_content30: |
+           Manage Incidents and Problems (User Support)
+  bachelor_content31: |
+           Developing an Infrastructure Solution
+  bachelor_content32: |
+           Developing and testing an object application
+  bachelor_content33: |
+           Develop a web application or nomad
+  bachelor_content34: |
+           Administer and supervise an infrastructure solution
+  bachelor_content35: |
+           Produce technical documentation
+  bachelor_content36: |
+           Validation of the 1st year
+  bachelor_content37: |
+            SUP INFO CAMEROON PROGRAMS
+  bachelor_content38: |
+          BECOME EXPERT IN 5 YEARS
+  bachelor_content39: |
+          Base course DEVOPS
+  bachelor_content40: |
+          The first three years of the Sup Info Cameroon are
+          (Bachelor's degree in Information Technology).
+  bachelor_content41: |
+          From the third year onwards, students can choose to
+          continue their initial or alternate training.
+  bachelor_content42: |
+          You are interested in the Bachelor Informatique: Download the free
+          documentation or complete the Sup Info Cameroon application form online
+  bachelor_content43: BACHELOR INFORMATIC – BAC +3
+  bachelor_content44: HOME
+  bachelor_content45: PROGRAMS

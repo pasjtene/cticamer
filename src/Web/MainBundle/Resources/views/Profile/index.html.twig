@@ -1,0 +1,80 @@
+{% extends 'MainBundle::layout.html.twig' %}
+
+{% block meta %}
+    <meta name = "{% trans from 'user-profile' %} refer.title {% endtrans %}" >
+    <meta name = "keywords" content = "{% trans from 'user-profile' %} refer.description {% endtrans %}" >
+{% endblock %}
+
+{% block title %}
+    {% trans from 'user-profile' %} title {% endtrans %}
+{% endblock  %}
+
+{% block mycss %}
+    {{ parent() }}
+    {# mettre le css si la page t'oublige #}
+{% endblock %}
+
+{% block header %}
+    <div id="profile-nav">
+        {% include "MainBundle:Inc:main-nav.html.twig" %}
+        {% include "MainBundle:Inc:matches.html.twig" %}
+        {% if app.request.get("next")=="yes" %}
+            {% if  app.user.isEmailVerified==0 %}
+                {% include "MainBundle:Modal:confirm-email.html.twig" %}
+            {% endif %}
+        {% endif %}
+    </div>
+{% endblock %}
+{% block mainLg %}
+
+    <div class="row bg-faded profile pageGeolocation" id="mainUserProfile" data-page="mainUserProfile" data-geolocation="geolocation">
+        <div class="col col-md-2" id="important">
+            {% include "MainBundle:Inc:important.html.twig" %}
+        </div>
+        <div class="col-md-8 col-sm-12 card" id="main-body">
+            {% include "MainBundle:Inc:emoticon.html.twig" %}
+            <button id="notifie" style="display: none;">clique pour me notifier</button>
+            {% if subPage is defined %}
+                {% if subPage=="matches" %}
+                    {% include "MainBundle:Sub:matches.html.twig" %}
+                {% elseif  subPage=="photos" %}
+                    {% include "MainBundle:Sub:photos.html.twig" %}
+                {% elseif  subPage=="messages" %}
+                    {% include "MainBundle:Sub:messages.html.twig" %}
+                {% elseif  subPage=="vips" %}
+                    {% include "MainBundle:Sub:vips.html.twig" %}
+                {% elseif  subPage=="compte" %}
+                    {% include "MainBundle:Sub:compte.html.twig" %}
+                {% elseif  subPage=="parameter" %}
+                    {% include "MainBundle:Sub:parameter.html.twig" %}
+                {% elseif  subPage=="friends" %}
+                    {% include "MainBundle:Sub:friends.html.twig" %}
+                {% elseif  subPage=="detail-profile" %}
+                    {% include "MainBundle:Sub:detail-profile.html.twig" %}
+                {% endif %}
+            {% endif %}
+            {% include "MainBundle:Inc:chatBox.html.twig" %}
+        </div>
+        <div class="col" id="publicity">
+            {% include "MainBundle:Inc:publicity.html.twig" %}
+        </div>
+      {#
+        {% include "MainBundle:Inc:message.html.twig" %}
+      #}
+    </div>
+{% endblock %}
+
+
+{% block footer %}
+
+{% endblock %}
+{% block myjs %}
+    {# mettre des liens vers des pages externe js si c'est  necessaire #}
+    <script src="{{ url('bazinga_jstranslation_js', { 'domain': 'photo' }) }}"></script>
+    <script src="{{ url('bazinga_jstranslation_js', { 'domain': 'matches' }) }}"></script>
+    <script src="{{ url('bazinga_jstranslation_js', { 'domain': 'default' }) }}"></script>
+    <script src="{{ url('bazinga_jstranslation_js', { 'domain': 'friends' }) }}"></script>
+    <script src="{{ url('bazinga_jstranslation_js', { 'domain': 'matches' }) }}"></script>
+    <script src="{{ url('bazinga_jstranslation_js', { 'domain': 'messages' }) }}"></script>
+{% endblock %}
+

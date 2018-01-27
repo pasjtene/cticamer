@@ -1,0 +1,100 @@
+$secondary-color : rgba(0,0,0,.125);
+$highligt: yellowgreen;
+
+body{
+  overflow-x:hidden ;
+}
+#bg{
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99;
+  #loading{
+    position: relative;
+    top: 150px;
+  }
+  #bloc_message{
+    margin-top: 2em;
+    position: relative;
+  }
+  #bg-notification{
+    img{
+      height: 100px;
+    }
+    #bg-success{
+        display: none;
+    }
+    #bg-error{
+       display: none;
+    }
+  }
+
+}
+
+#bg-action{
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99;
+  #loading-action{
+    position: relative;
+    top: 150px;
+  }
+}
+
+#bg-photos-globale{
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,0.94);
+  z-index: 99;
+  top: 0;
+  left: 0;
+  .row{
+    //height: calc(100% - 200px);
+    height: 700px;
+    #photo-carouserie{
+      .carousel-inner{
+
+      }
+
+      .carousel-item.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $secondary-color;
+        .img-fluid{
+          //min-height: 575px;
+          max-height: 590px;
+        }
+      }
+      .carousel-caption{
+        background-color: black;
+        width: 10%;
+        border-radius: 6px;
+      }
+
+    }
+  }
+
+}
+
+
+button{
+  cursor: pointer;
+}
+.isconnecd{
+   background-color: $highligt !important;
+}
+.isnotconnect{
+  background-color: $secondary-color !important;
+}

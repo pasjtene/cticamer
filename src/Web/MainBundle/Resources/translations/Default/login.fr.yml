@@ -1,0 +1,35 @@
+refer:
+  title: titre pour le referencement de la page
+  description:  description pour le referencement de la page
+title: FunGlobe - Connexion
+nav:
+  login: Connecte toi
+  member_question: Déjà membre ?
+body:
+  msgone: Connectes toi à FunGlobe
+  msgtwo: Rencontres des gens qui ont des affinités avec toi ! si tu n'es pas encore inscrit,
+  msgthree: clique ici
+form:
+  lblemail: Adresse email :
+  hintemail: jt.pascal@yahoo.com
+  ntcemail: Votre adresse email ne sera jamais partager
+  lblpswd: Mot de passe :
+  remember: Se souvenir de moi
+  forgotpswd: Mot de passe oublié
+  btnlogin: Connexion
+forgot:
+  title: J'ai oublié mon mot de passe
+  msg: Entrez votre adresse email ci-dessous, un lien de reinitialisation de votre mot de passe sera envoyé dans votre boîte mail
+  btnsend: Envoyer le lien
+reset:
+  title: Réinitialiser mon mot de passe
+  msg: Entrez un nouveau mot de passe pour réinitialiser
+  lblconfpswd: Confirmation du mot de passe:
+  btnreset: Reinitialiser
+  msgerror: Cliquez ici pour réinitialiser
+  msgsuccess: Cliquez ici pour vous connecter
+locked:
+  title: Compte bloqué
+  msg: Impossible de vous connecter à votre compte
+  msgone: Votre compte a été bloqué par l'administrateur du système !
+  msgtwo:  Pour en savoir en plus, veuillez le contacter à l'addresse :

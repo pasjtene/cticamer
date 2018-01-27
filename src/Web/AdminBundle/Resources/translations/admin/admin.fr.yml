@@ -1,0 +1,52 @@
+admin:
+  blocmessage:
+   title: Méssages bloqués
+
+  members:
+   title: Membres
+   number: Nombre d'utilisateurs
+   fltjdate: Date d'inscription
+   fltfname: Prénom
+   fltcountry: Pays
+   ordasc: Croissant
+   orddesc: Décroissant
+   filter: Trier
+   firstname: 	Prénom
+   country: Pays
+   gender: Genre
+   status: Statut
+   vip: VIP
+   select: 	Selectionner
+   delete: Supprimer les utilisateurs
+   block: Bloquer les utilisateurs
+   block: Débloquer les utilisateurs
+   email: Ecrire aux utilisateurs
+   setvip: Marqué comme VIP
+   unvip: retiré comme VIP
+   search_hint: Rechercher un nom, prénom ou adresse email...
+   search: Rechercher
+
+  messages:
+   title: Messages
+
+  photos:
+   title: Photos
+
+  picturedenounced:
+   title: Photos dénoncées
+
+  spam:
+   title: Utilisateurs Spam
+
+  statistics:
+   title: Statistiques
+
+  userdenounced:
+   title: Utilisateurs dénoncés
+  users:
+   title: Liste des utilisateurs
+  settings:
+   title: Paramètres
+  nav:
+    profile: Profil
+    logout: Déconnexion

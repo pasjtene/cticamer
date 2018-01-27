@@ -1,0 +1,201 @@
+admission:
+  title: Admission
+  Navbar: Accueil
+  admiss: Admissions
+  preinscription: Préinscription
+  cours: Cours
+  program: Programmes
+  campus: Campus
+  etudiant: Etudiants
+  diplom: Diplôme
+  documentation:  Documentation
+  entreprise:  Entreprise
+  contact:  Contacts
+  second_bartitle:  INTÉGRER SUPINFO CAMEROUN
+  content_title: TOUS LES CHEMINS MÈNENT À SUP INFO CAMEROUN
+  content_title11:  L’ACQUISITION DE COMPÉTENCES; LE COEUR DE NOTRE SYSTÈME D’ADMISSION
+  cxontent_block1:  Le programme modulaire, basé sur l’acquisition des compétences du parcours Ingénierie Informatique,
+           permet toutes les admissions post-Bac, Bac+2, Bac+3 et sous conditions, les admissions parallèles.
+  content_block2: Notre outil d’évaluation des compétences vous permet d’intégrer Sup Info tout au long de l’année.
+  content_block3: Salariés, demandeurs d’emplois, vous pouvez également intégrer Sup Info et bénéficier de
+          la VAE (Validation des Acquis et de l’Expérience).
+  content_block4: Les formations de Sup Info sont éligibles au CPF (Compte Personnel de Formation).
+  content_block5: Je candidate en 1 clic ! – ou Les étapes d’admission;  un processus efficace, rapide, une réponse personnalisée
+  hexagon_text: PROGRAMMES SUP INFO CAMEROUN
+  panorama: PANORAMA DES ÉTUDES
+  bachelor: BACHELOR INFORMATIQUE BAC+3
+  bac5: INGÉNIERIE INFORMATIQUE BAC+5
+  diplome: LES TITRES ET DIPLOMES
+  numerique: LES OUTILS NUMÉRIQUES
+  specialisation: LES SPÉCIALISATIONS
+  etape1: Étape 1
+  content1: |
+            Article 1:    Critères d'Admission:
+  content2: |
+           Les élèves des classes terminales toutes séries confondues ou tout étudiants disposant du dit diplome.
+  content3: |
+           Les titulaires de tout autre diplôme admis en équivalence ou en dispense par le Ministre de
+             l’Enseignement Supérieur.
+  content4: |
+          Les candidats inscrits en vue de l’obtention de l’un des diplômes ci - dessus indiqués ne seront
+          définitivement admis à Sup Info Cameroun, en cas de réussite au concours, que sur présentation de l’original du
+          diplôme obtenu à la session d’examens de 2018 ou le cas échéant, de l’attestation de réussite au moment
+          de l’inscription fixé par l’Ecole…
+  content5: |
+          L’inscription au concours se fait en ligne sur le site web de Sup Info à l‘adresse
+  content6: |
+          https://www.supinfocameroun.com/concours
+  content7: |
+          Les dossiers de candidature comprennent les pièces suivantes :
+  content8: |
+          Une fiche individuelle dûment remplie par le candidat sur le site web du concours de l’Ecole
+  content9: |
+          https://www.supinfocameroun.com/concours.
+  content10: |
+          Une photocopie de la carte nationale d’identité ou un récépissé;
+  content102: |
+          Les relevés de notes des classes de Première et Terminale ou de Lower et Upper Sixth;
+  content103: |
+          Une copie certifiée conforme de l’acte de naissance, datant de moins de trois mois;
+  content104: |
+          Une copie certifiée conforme du Baccalauréat ou du GCE/AL ou de tout autre diplôme reconnu
+  content105: |
+          équivalent par le Ministère de l’Enseignement Supérieur, ou une Attestation de Réussite à l’un
+          de ces diplômes le cas échéant;
+  content106: |
+          Quatre photos d’identité (4x4);
+  content107: |
+          Un certificat médical délivré par un médecin de l’administration;
+  content108: |
+          Une enveloppe timbrée à 500 francs CFA à l’adresse du candidat (format A4).
+  content11: |
+         Article 2:  Droits d'inscription
+  content12: |
+         Les droits d’inscription au concours s’élèvent à vingt  mille (20 000) francs CFA payables
+         uniquement par transfert EXPRESS UNION, contre récépissé à joindre obligatoirement au dossier de
+         candidature. Ces droits, non remboursables, sont destinés à couvrir les charges générées par
+         l’organisation du concours. Tout autre mode de paiement est exclu.
+  content13: |
+         Article 4: Les dossiers complets doivent parvenir au Service de la Scolarité de Sup Info Cameroun.
+  content14: |
+         Article 5: Seuls les candidats ayant déposé un dossier réglementaire dans les délais fixés seront
+         convoqués pour concourir. Ils devront se munir de leur Carte Nationale d’Identité et de la carte
+         d’élève ou d’étudiant.
+  content15: |
+         Article 6 : Les dossiers physiques et les innscriptions en ligne doivent etre effectués
+          au  plus tard le 27 Avril 2018.
+  etape1_content: je postule directement en ligne.
+  etape2: Étape 2
+  etape2_content1: |
+          Article 7:  Sup Info Cameroun lance un concours direct pour le recrutement des étudiants en première année, deuxième année, troisième année, et quatrième
+          année des  cycles  Bachelor(BAC+3) et ingénieur de conception(BAC+5) à Sup Info Cameroun au titre de l’année académique 2018/2019, et est
+          est lancé dans les centres de Douala et Yaoundé
+          Il se compose de deux (02) épreuves
+          écrites de tests psychotechniques et d'une phase d'entretien.
+  etape2_content2: Dès réception de votre candidature, nous vous proposerons de participer à une demi-journée de
+          sélection au cours de laquelle vos connaissances et compétences seront testées, puis vous
+          serez reçu pour un entretien de motivation(reservé au candidats voulant suivre une formation continue,
+          en ligne ou parallèle).
+  etape3: Étape 3
+  etape3_content: Recevez une réponse dans les deux semaines suivants le concour.
+  candidature1: Accédez en un clic à l'
+  candidature2: espace candidature
+  footer_content:
+  sup_info: SUP INFO Cameroun
+  program: PROGRAMMES
+  formatio_cont: FORMATION CONTINUE
+  text_on_second_bar: PARTENAIRE DE
+  text_on_second_bar2: Bolton Academy
+programme:
+  bachelor_content1: PARCOURS SOCLE DEVOPS
+  bachelor_content2: Bloc de Compétences n 1 � Développement d'applications informatiques
+  bachelor_content3: |
+         Apprendre à développer (algorithmique)
+  bachelor_content4: |
+         Langages de développement
+  bachelor_content5: |
+         Langages de deloppement web
+  bachelor_content6: |
+         Bloc de Compétences n2  Administration Infrastructure système & réseau gestion des données
+  bachelor_content7: |
+         Environnements système
+  bachelor_content8: |
+         Réseaux et topologies
+  bachelor_content9: |
+         IP V4 et V6
+  bachelor_content10: |
+         Bloc de Compétences n3  Gestion des données
+  bachelor_content11: |
+         Environnement économique et juridique
+  bachelor_content12: |
+         Mathématiques
+  bachelor_content13: |
+         Anglais
+  bachelor_content14: |
+         Techniques d'Expression et Communication
+  bachelor_content15: |
+         Modélisation de bases de données (Merise & Uml
+  bachelor_content16: |
+         Conception et adaptation d'une base de donn�es (SQL Server
+  bachelor_content17: |
+         Bloc de Compétences n4 &  Méthodes et projets
+  bachelor_content18: |
+         Environnement économique et juridique
+  bachelor_content19: |
+         Mathématiques pour l'informatique
+  bachelor_content20: |
+         Bloc de Compétences n5  Communication
+  bachelor_content21: |
+         Anglais
+  bachelor_content22: |
+         Techniques d'Expression et Communication
+  bachelor_content23: |
+         PARCOURS BTS SIO (EN OPTION AVEC SOUSCRIPTION DU PACK)
+  bachelor_content24: |
+         Algorithmique et mathématiques
+  bachelor_content25: |
+         Analyse économique, managériale et juridique
+  bachelor_content26: |
+         Projets personnalisés encadrés (PPE)
+  bachelor_content27: |
+         STAGE EN ENTREPRISE
+  bachelor_content28: |
+         Stage de 4 & 5 semaines
+  bachelor_content29: |
+         COMPETENCES & DEVELOPPER
+  bachelor_content30: |
+         Gérer des incidents et problèmes (assistance utilisateur)
+  bachelor_content31: |
+         Développer une solution d'infrastructure
+  bachelor_content32: |
+         Développer et tester une application Objet
+  bachelor_content33: |
+         Développer une application web ou nomade
+  bachelor_content34: |
+         Administrer et superviser une solution d'infrastructure
+  bachelor_content35: |
+         Produire une documentation technique
+  bachelor_content36: |
+         Validation de la 1ère année
+  bachelor_content37: |
+         PROGRAMMES SUP INFO CAMEROUN
+  bachelor_content38: |
+         DEVENEZ EXPERT EN 5 ANS
+  bachelor_content39: |
+         Parcours socle DEVOPS
+  bachelor_content40: |
+         Les trois premières années de l’Sup Info Cameroun sont
+         sanctionnées par un Bachelor informatique (niveau Licence Informatique).
+  bachelor_content41: |
+         A partir de la troisième année, les étudiants peuvent choisir de
+         poursuivre leur formation en initial ou en alternance.
+  bachelor_content42: |
+         Vous êtes intéressé par le Bachelor Informatique : Téléchargez gratuitement la
+         documentation ou complétez le dossier de candidature Sup Info Cameroun en ligne.
+  bachelor_content43: BACHELOR INFORMATIQUE – BAC +3
+  bachelor_content44: ACCUEIL
+  bachelor_content45: PROGRAMMES
+
+
+
+

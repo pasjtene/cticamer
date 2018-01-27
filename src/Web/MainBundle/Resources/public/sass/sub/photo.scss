@@ -1,0 +1,138 @@
+#Main-Subphotos
+{
+  #modal-content{
+    background-color: transparent;
+  }
+  .tab-content{
+    #Main-Subphotos-list{
+
+      #chargement-photo{
+        padding-top: 2em;
+      }
+      #body-photo{
+        padding:0 2em 2em 2em;
+      }
+      .img{
+        padding-top: 2em;
+        img{
+          height: 193px;
+          cursor: zoom-in;
+        }
+      }
+      #zoomImg{
+          .zoomImgSource{
+              max-width: 90%;
+              max-height: 500px;
+          }
+      }
+    }
+
+    #Main-Subphotos-add{
+
+        padding: 4em 2em 2em 2em;
+      #photoZone{
+        #form{
+
+          #uploadfile{
+            margin: 2%;
+            margin-top: 4%;
+            padding: 2%;
+            text-wrap: normal;
+            border: dashed 3px $highligt;
+            height: auto;
+            min-height: 200px;
+            border-radius: 6px;
+            h1{
+              text-blink: blue($highligt);
+            }
+            #context{
+
+            }
+            /* Thumbnail */
+            .thumbnail{
+              margin-top: 2em;
+              padding: 1%;
+              img{
+                height: 150px;
+                max-width: 200px;
+              }
+              .col{
+                margin-bottom: 2em;
+              }
+              .size{
+                position: relative;
+                top: 156px;
+                right: 198px;
+                font-size: 12px;
+              }
+            }
+          }
+          #file{
+            display: none;
+          }
+        }
+      }
+
+      #modal-photo{
+        .modal-header{
+          .close{
+            display: none;
+          }
+        }
+      }
+
+    }
+
+    #Main-Subphotos-profiles{
+
+      #chargement-profile{
+        padding-top: 2em;
+      }
+      #body-profile{
+        padding:0 2em 2em 2em;
+      }
+      .img{
+        padding-top: 2em;
+        img{
+          height: 193px;
+          cursor: zoom-in;
+        }
+      }
+
+      #zoomImg-profile{
+        .zoomImgSource-profile{
+          max-width: 90%;
+          max-height: 500px;
+        }
+      }
+    }
+    #Main-Subphotos-friends{
+        .zoomImgSourceFriends{
+            max-width: 90%;
+            max-height: 500px;
+        }
+
+        #chargement-photo-friends{
+            padding-top: 4%;
+            display: none;
+        }
+        .body{
+          .card{
+            margin-top: 4%;
+            .card-title:hover{
+              color: $default-color;
+              font-weight: bold;
+              cursor: pointer;
+              text-decoration: underline;
+            }
+            .img{
+              img{
+                height: 150px;
+                max-width: 100%;
+              }
+            }
+          }
+        }
+    }
+  }
+}
