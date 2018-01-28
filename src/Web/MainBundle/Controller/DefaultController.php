@@ -48,6 +48,15 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
     }
 
     /**
+     * @Route("/anglais", name="main_anglais"))
+     */
+    public function anglaisAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:Default:anglais.html.twig', $array);
+    }
+
+    /**
      * @Route("/admission", name="main_admission"))
      */
     public function admissionAction()

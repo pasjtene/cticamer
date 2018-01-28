@@ -1,6 +1,343 @@
 
 #main_home{
 
+  .flex-contain {
+    display: flex;
+    margin-left: 5%;
+    margin-top: 10px;
+  }
+
+  .left-nav {
+    margin-right: 1%;
+    background-color: white;
+    padding: 5px;
+    width: 15%;
+  }
+
+  .main-contain-middle {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+    padding: 25px;
+  }
+
+
+
+  .left-nav-contain {
+    background-color: white;
+
+  }
+
+  .titre_lef-nav {
+
+    font-weight: bolder;
+  }
+
+  .sous-titre-lef-nav {
+    background-color: #c3c3c3;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    color: #474d50;
+    text-transform: uppercase;
+    padding-left: 10px;
+    border-left: 5px solid #f16e00;
+  }
+
+  .sous-titre-lef-nav:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+  }
+
+  .sous-titre-contenu {
+    display: none;
+    margin-top: 10px;
+
+  }
+  .sous-titre-contenu a {
+    display: block;
+    text-decoration: none !important;
+    color: #4B4B4B;
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .left-nav-links {
+    border-top: 1px solid lightgrey;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .arrow-right {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+
+    border-left: 10px solid green;
+    margin-right: 5px;
+  }
+
+  .sous-titre-contenu a:hover {
+    color: #474d50;
+    font-weight: bold;
+    border-left: 3px solid #f16e00;
+  }
+
+  .cat-container {
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .categorie {
+    border-top: 2px solid white;
+    width: 50%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: #c3c3c3;
+
+  }
+
+  .category-title {
+    display: block;
+    /*line-height: 105.56%;*/
+    color: #474d50;
+    font-size: 60px;
+
+  }
+
+  .category-title a {
+    color: #474d50;
+    text-decoration: none;
+  }
+
+  .category-title a {
+    color: #474d50;
+    text-decoration: none;
+  }
+
+  .category-title a:hover {
+    color: #474d50;
+    text-decoration: underline;
+  }
+
+
+  .info-title a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .info-title a:hover {
+    text-decoration: underline;
+  }
+
+  .datecours {
+    font-weight: bolder;
+    font-size: large;
+    padding-bottom: 15px;
+  }
+
+  .titre {
+    font-weight: bolder;
+    font-size: large;
+  }
+
+  .sous-titre {
+    font-weight: bold;
+    padding-top: 15px;
+  }
+
+  .annonce-inscription {
+    font-weight: bolder;
+    font-size: large;
+    padding-bottom: 20px;
+  }
+
+  .categorie:nth-of-type(even) {
+    border-left: 2px solid white!important;
+
+  }
+
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+  }
+
+  .info-title {
+    display: block;
+    color: white;
+  }
+
+  .information {
+    /* background-color: #ffbe00;*/
+    background-color: #f16e00 ;
+    /*background-color: #a0c814;*/
+    display: table-cell;
+    color: black;
+
+    width: 33.3%;
+    /*height: 250px;*/
+    border: 1px solid white;
+    padding-left: 15px;
+  }
+
+  /*iPhone 6 in portrait*/
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px)
+  and (orientation : portrait)
+  {
+    body {
+      font-size: 16px;
+    }
+
+    .categorie {
+      border: 2px solid white;
+      display: inline-block;
+      width: 100%;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      background-color: #c3c3c3;
+    }
+
+    .category-title {
+      display: block;
+      /*line-height: 105.56%;*/
+      color: #474d50;
+      font-size: 60px;
+
+    }
+
+    .category-desktop-contain {
+      display: none;
+
+    }
+
+    .datecours {
+      font-size: 35px;
+    }
+
+    .info-container {
+      flex-direction: column;
+    }
+
+    .information {
+      /* background-color: #ffbe00;*/
+      background-color: #f16e00 ;
+      color: black!important;
+      display: table-cell;
+      max-width: 100%;
+      width: 100%!important;
+      /*height: 250px;*/
+      border: 1px solid white;
+      padding-left: 15px;
+    }
+
+    .contact {
+      background-color: #251549 !important;
+      color: white!important;
+      font-size: 40px!important;
+    }
+
+    .info-title {
+      display: block;
+      color: white;
+      font-size: 60px;
+    }
+
+    .titre {
+      font-size: 45px;
+    }
+
+  }
+
+  /*iPhone 5 & 5S in portrait*/
+
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 568px)
+  and (orientation : portrait) {
+
+    body {
+      font-size: 16px;
+    }
+
+
+    .categorie {
+      border: 2px solid white;
+      display: inline-block;
+      width: 100%;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      background-color: #c3c3c3;
+    }
+
+    .category-title {
+      display: block;
+      /*line-height: 105.56%;
+      color: #474d50;*/
+      color: #f16e00;
+      font-size: 60px;
+
+    }
+
+    .category-title a {
+      /*color: #474d50;*/
+      color: #f16e00;
+      text-decoration: none;
+    }
+
+    .datecours {
+      font-size: 35px;
+    }
+
+    .category-desktop-contain {
+      display: none;
+
+    }
+
+    .info-container {
+      flex-direction: column;
+    }
+
+    .information {
+      /* background-color: #ffbe00;*/
+      background-color: #f16e00 ;
+      color: black!important;
+      /*background-color: #a0c814;*/
+      display: table-cell;
+      max-width: 100%;
+      width: 100%!important;
+      /*height: 250px;*/
+      border: 1px solid white;
+      padding-left: 15px;
+    }
+
+    .info-title {
+      display: block;
+      color: white;
+      font-size: 60px;
+    }
+
+    .contact {
+      background-color: #251549 !important;
+      color: white!important;
+      font-size: 40px!important;
+    }
+
+    .titre {
+      font-size: 45px;
+    }
+
+  }
+
+
+
   .message_and_image {
     height: 450px;
     border: 2px solid white;

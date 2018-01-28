@@ -9,9 +9,16 @@
                 <div class="slogan">qualité et succès garanti</div>
                 <div class="nav-items">
                     <ul>
-                        <li><a href="/ile/index.php">CTI-CM</a></li>
+                        <li>
+                            <a href="{{ path('main_homepage') }}" class="dropbtn">
+                                {% trans from 'ctinav' %} CTI-CM {% endtrans %}
+                            </a>
+
+                        </li>
                         <li class="ctidropdown">
-                            <a href="/ile/Views/anglais_groupes.php" class="dropbtn">ANGLAIS</a>
+                            <a href="{{ path('main_anglais') }}" class="dropbtn">
+                                {% trans from 'ctinav' %} m_anglais {% endtrans %}
+                            </a>
 
                             <div class="dropdown-content">
                                 <a href="/ile/Views/anglais_groupes.php">Cours intensifs</a>
@@ -23,7 +30,10 @@
                         </li>
 
                         <li class="ctidropdown">
-                            <a href="/ile/Views/allemand_prepa_exam.php" class="dropbtn">ALLEMAND</a>
+                            <a href="{{ path('main_login') }}" class="dropbtn">
+                                {% trans from 'ctinav' %} m2 {% endtrans %}
+                            </a>
+
                             <div class="dropdown-content">
                                 <a href="/ile/Views/allemand_adultes.php">Pour etudier en allemagne</a>
                                 <a href="/ile/Views/allemand_jeunes.php">Pour regroupement familial</a>
@@ -34,7 +44,10 @@
 
 
                         <li class="ctidropdown">
-                            <a href="/ile/Views/informatique.php" class="dropbtn">INFORMATIQUE</a>
+                            <a href="{{ path('main_login') }}" class="dropbtn">
+                                {% trans from 'ctinav' %} m3 {% endtrans %}
+                            </a>
+
                             <div class="dropdown-content">
                                 <a href="/ile/Views/informatique.php">Logiciels Bureautique</a>
                                 <a href="/ile/Views/informatique.php">Infographie, Design Artistique et Média </a>
@@ -64,11 +77,16 @@
                         -->
 
                         <li class="ctidropdown">
-                            <a href="#" class="dropbtn">CONNEXION</a>
+                            <a href="{{ path('main_login') }}" class="dropbtn">
+                                {% trans from 'ctinav' %} m4 {% endtrans %}
+                            </a>
+                            <!--
                             <div class="dropdown-content">
                                 <a href="#">Etudiant</a>
                                 <a href="#">Enseignant</a>
                             </div>
+                            -->
+
                         </li>
 
                     </ul>
