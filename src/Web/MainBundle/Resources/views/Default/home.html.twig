@@ -89,7 +89,7 @@
 
                         </div>
                     </div>
-                    <div class="sous-titre-lef-nav" id="sous-titre-lef-nav-it"><h3>Cours d'Italien</h3></div>
+                    <div class="sous-titre-lef-nav" id="sous-titre-lef-nav-it"><h3>Cours d'Informatique</h3></div>
                     <div class="sous-titre-contenu" id="left-nav-it-cont">
                         <div class="left-nav-text">
                             Il s’agit ici de cours de langue généraux des niveaux A1-A2 pour adultes. Les objets et contenus d’apprentissages sont conçus d’après le Cadre européen commun de référence pour les langues (CECR)<br>
@@ -104,38 +104,7 @@
 
                         </div>
                     </div>
-                    <div class="sous-titre-lef-nav" id="sous-titre-lef-nav-es"><h3>Cours d'Espagnole</h3></div>
-                    <div class="sous-titre-contenu" id="left-nav-es-cont">
-                        <div class="left-nav-text">
-                            Il s’agit ici de cours de langue généraux des niveaux A1-A2 pour adultes. Les objets et contenus d’apprentissages sont conçus d’après le Cadre européen commun de référence pour les langues (CECR)<br>
-                        </div>
-                        <div class="left-nav-links">
-                            <a href="">Pour adultes</a>
 
-                            <a href="">Pour enfants et jeunes</a>
-
-                            <a href="">Préparation aux examens</a>
-                            <a href="">Cours aux particuliers</a>
-
-                        </div>
-                    </div>
-                    <div class="sous-titre-lef-nav" id="sous-titre-lef-nav-fr"><h3>Cours de Francais</h3></div>
-                    <div class="sous-titre-contenu" id="left-nav-fr-cont">
-                        <div class="left-nav-text">
-                            Il s’agit ici de cours de langue généraux des niveaux A1-A2 pour adultes. Les objets et contenus d’apprentissages sont conçus d’après le Cadre européen commun de référence pour les langues (CECR)<br>
-                        </div>
-                        <div class="left-nav-links">
-                            <a href="">Pour adultes</a>
-
-                            <a href="">Pour enfants et jeunes</a>
-
-                            <a href="">Préparation aux examens</a>
-                            <a href="">Cours aux particuliers</a>
-
-                        </div>
-                    </div>
-
-                    <hr>
                 </div>
             </div>
 
@@ -263,9 +232,10 @@
                         <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
                     </div>
                     <div id="slider-images" data-u="slides" >
+
                         <div data-p="170.00">
-                            <img id="imge" data-u="image" src="{{ asset('data/img/etudiants.jpg') }}" style="width: 100%"/>
-                            <div data-u="caption" data-t="0" style="position:absolute;top:320px;left:30px;width:700px;height:40px;background-color:rgba(255,188,5,0.8);font-family:Oswald,sans-serif;font-size:32px;font-weight:200;line-height:1.2;text-align:center;">Bonamoussadi: idéal pour étudier en toute sérénité</div>
+                            <img data-u="image" src="{{ asset('data/img/etudiants.jpg') }}" style="width: 100%"/>
+                            <div data-u="caption" data-t="2" style="position:absolute;top:30px;left:-505px;width:700px;height:40px;background-color:rgba(255,188,5,0.8);font-family:Oswald,sans-serif;font-size:32px;font-weight:200;line-height:1.2;text-align:center;">Anglais: Convivialité et harmonie pour mieux se concentrer</div>
                         </div>
 
                         <div data-p="170.00">
@@ -442,12 +412,12 @@
         </div>
 
         <div class="row line">
-            <div> SupInfo: {% trans from 'about' %} about.block16 {% endtrans %} </div>
+            <div> {% trans from 'about' %} about.title1 {% endtrans %} : {% trans from 'about' %} about.block14 {% endtrans %} </div>
 
         </div>
 
-
-        <div class="row section admission">
+<!--
+<div class="row section admission">
             <h2 class="bloc-title">ADMISSIONS</h2>
             <div class="inner padding">
                 <div class="flex">
@@ -456,7 +426,7 @@
                         <div class="titre">ADMISSION AU</div>
                         <h3>
                             <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">Niveau 1</span>
+                            <span class="adm-niv">ANGLAIS</span>
                             <i class="icon-fleche-gauche grand"></i></h3>
                         <div class="content">
                             {% trans from 'about' %} about.bac1 {% endtrans %}
@@ -470,7 +440,7 @@
                         <div class="titre">ADMISSION AU</div>
                         <h3>
                             <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">Niveau 2</span>
+                            <span class="adm-niv">ALLEMAND</span>
                             <i class="icon-fleche-gauche grand"></i></h3>
                         <div class="content">
                             {% trans from 'about' %} about.bac1 {% endtrans %}
@@ -484,7 +454,7 @@
                         <div class="titre">ADMISSION AU</div>
                         <h3>
                             <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">Niveau 3</span>
+                            <span class="adm-niv">INFORMATIQUE</span>
                             <i class="icon-fleche-gauche grand"></i></h3>
                         <div class="content">
                             {% trans from 'about' %} about.bac1 {% endtrans %}
@@ -492,42 +462,12 @@
                         <a class="myButton" href="javascript:;">PLUS D'INFO</a>
                         <div class="triangle-bottom"></div>
                     </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">ADMISSION AU</div>
-                        <h3>
-                            <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">Niveau 4</span>
-                            <i class="icon-fleche-gauche grand"></i></h3>
-                        <div class="content">
-                            {% trans from 'about' %} about.bac1 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;">PLUS D'INFO</a>
-                        <div class="triangle-bottom"></div>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">ADMISSION AU</div>
-                        <h3>
-                            <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">Niveau 5</span>
-                            <i class="icon-fleche-gauche grand"></i></h3>
-                        <div class="content">
-                            {% trans from 'about' %} about.bac1 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;">PLUS D'INFO</a>
-                        <div class="triangle-bottom"></div>
-                    </div>
-
                 </div>
             </div>
 
         </div>
 
-
-        <div class="section programmes-main-div">
+         <div class="section programmes-main-div">
             <h2 class="bloc-title">PROGRAMMES</h2>
 
             <div class="inner-prog padding">
@@ -599,6 +539,7 @@
 
         </div>
 
+-->
 
 
 
@@ -611,7 +552,7 @@
             <div class="edito supinfo-slogan">
                 <div class="triangle-left"></div>
                 <div class="contenu">
-                    <div class="supinfo-slogan-titre">{% trans from 'about' %} about.contenu1 {% endtrans %}</div>
+                    <div class="supinfo-slogan-titre">CTI: {% trans from 'about' %} about.contenu1 {% endtrans %}</div>
                     <p class="home-slogan">{% trans from 'about' %} about.contenu2 {% endtrans %}</p>
                     <p><a href="">{% trans from 'about' %} about.contenu3 {% endtrans %}</a></p>
 
@@ -628,15 +569,7 @@
             <div class="inner padding">
                 <div class="flex">
                     <div class="hexagon degrade admission-hexagon">
-                        {% trans from 'about' %} about.bac1 {% endtrans %}
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        {% trans from 'about' %} about.bac1 {% endtrans %}
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        {% trans from 'about' %} about.bac1 {% endtrans %}
+                        {% trans from 'about' %} about.block16 {% endtrans %}
                     </div>
 
                     <div class="hexagon degrade admission-hexagon">
@@ -652,6 +585,8 @@
 
         </div>
 
+
+<!--
         <div class="section admission">
             <h2 class="bloc-title">CAMPUS</h2>
             <div class="inner padding">
@@ -680,19 +615,13 @@
             </div>
 
         </div>
+        -->
 
-
-        <div class="footer-top">
-            this is the footer top
-        </div>
-        <div class="footer-bottom">
-            this is the footer bottom
-        </div>
     </div>
 {% endblock %}
 
 {% block footer %}
-
+    {% include 'MainBundle:Default:cti-footer.html.twig' %}
 {% endblock %}
 {% block myjs %}
     {# mettre des liens vers des pages externe js si c'est  necessaire #}

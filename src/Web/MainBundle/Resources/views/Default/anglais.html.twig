@@ -300,18 +300,11 @@
 
         </div>
 
-
-        <div class="footer-top">
-            this is the footer top
-        </div>
-        <div class="footer-bottom">
-            this is the footer bottom
-        </div>
     </div>
 {% endblock %}
 
 {% block footer %}
-
+    {% include 'MainBundle:Default:cti-footer.html.twig' %}
 {% endblock %}
 {% block myjs %}
     {# mettre des liens vers des pages externe js si c'est  necessaire #}

@@ -238,7 +238,7 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
             $request->getSession()->remove(Security::LAST_USERNAME);
         }
 
-        return $this->render('MainBundle:Default:login.html.twig', $datas);
+        return $this->render('MainBundle:Default:cti-login.html.twig', $datas);
     }
 
     /**

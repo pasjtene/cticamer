@@ -1,17 +1,17 @@
 refer:
   title: titre pour le referencement de la page
   description:  description pour le referencement de la page
-title: FunGlobe - Login
+title: CTI - Login
 nav:
   login: Sign In
   member_question: Already a member ?
 body:
-  msgone: Connect to FunGlobe
-  msgtwo: Meet people who have affinities with you! If you are not registered yet,
+  msgone: Connect to your CTI account
+  msgtwo: You need to login for your online courses.
   msgthree: click here
 form:
   lblemail: Email address :
-  hintemail: jt.pascal@yahoo.com
+  hintemail: yourname@example.com
   ntcemail: We'll never share your email with anyone else
   lblpswd: Password :
   remember: Remember me

@@ -1,0 +1,109 @@
+{% extends 'MainBundle::layout.html.twig' %}
+
+{% block meta %}
+    <meta name = "{% trans from 'login' %} refer.title {% endtrans %}" >
+    <meta name = "keywords" content = "{% trans from 'login' %} refer.description {% endtrans %}" >
+{% endblock %}
+
+{% block title %}
+    {% trans from 'login' %} title {% endtrans %}
+{% endblock  %}
+
+{% block mycss %}
+    {{ parent() }}
+    {# mettre le css si la page t'oublige #}
+{% endblock %}
+
+{% block header %}
+    {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
+    {% include 'MainBundle:Inc:horizontal-nav.html.twig' %}
+{% endblock %}
+
+{% block mainLg %}
+    <div class="row" id="mainContentLg">
+        <div class="container">
+            <div class="row" id="mainLogin" data-page="mainLogin">
+
+                <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-confirm="{% trans from 'register' %} form.notification.success {% endtrans %}">
+                    <div class="modal-dialog " role="document">
+                        <div class="modal-content bg-success">
+                            <div class="modal-body text-white">
+                                <center>
+                                    <h4 class="card-title">{% trans from 'register' %} form.notification.content {% endtrans %}</h4>
+                                    <p class="card-text">
+                                        <img src="{{ asset('bundles/main/img/loading.gif') }}" alt="">
+                                    </p>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 offset-lg-3 col-lg-6" id="content-login">
+                    {% if error|length > 0 %}
+                        <div class="alert alert-danger alert-dismissable">{{ error }}</div>
+                    {% endif %}
+
+                    <h2>{% trans from 'login' %} body.msgone {% endtrans %}</h2>
+
+                    <p>
+                        {% trans from 'login' %} body.msgtwo {% endtrans %} <a href="{{ path('main_register') }}">{% trans from 'login' %} body.msgthree {% endtrans %}</a>
+                    </p>
+
+                    <form method="post" id="form-login" action="">
+                        <div class="form-group">
+                            <label for="email">{% trans from 'login' %} form.lblemail {% endtrans %}</label>
+                            <input type="text" class="form-control" name="username" id="username" aria-describedby="emailHelp" placeholder="{% trans from 'login' %} form.hintemail {% endtrans %}" value="{{ username }}">
+                            <small id="emailHelp" class="form-text text-muted">{% trans from 'login' %} form.ntcemail {% endtrans %}</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">{% trans from 'login' %} form.lblpswd {% endtrans %}</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="hidden" name="basetoken" id="btoken" value=""/>
+                        </div>
+
+                        <div class="row" id="login-options">
+                            <div class="col-sm-6 col-lg-6">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" name="_remember_me">
+                                        {% trans from 'login' %} form.remember {% endtrans %}
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-6">
+                                <a href="{{ path('main_forgot_password') }}" class="pull-right">{% trans from 'login' %} form.forgotpswd {% endtrans %}</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button class="btn btn-primary" type="submit" id="btn-login">{% trans from 'login' %} form.btnlogin {% endtrans %}</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12" id="social-login">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {% include 'MainBundle:Default:cti-footer.html.twig' %}
+{% endblock %}
+
+{% block myjs %}
+    {# mettre des liens vers des pages externe js si c'est  necessaire #}
+{% endblock %}

@@ -1,36 +1,4 @@
-#jssor_1 {
-  position:relative;
-  margin:0 auto;
-  top:0px;
-  left:0px;
-  overflow:hidden;
-  visibility:hidden;
-  width:1080px;
-  max-width: 100% !important;
-  /*height:480px;*/
-
-}
-
-#slider-images{
-  cursor:default;position:relative;top:0px;left:0px;
-  width:1080px;
-  height:530px;
-  max-height: 530px;
-  overflow:hidden;
-
-}
-
-#imge {
-  height: 480px !important;
-}
-
-
-/*iPhone 6 in portrait*/
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px)
-and (orientation : portrait) {
-
+#main_home {
   #jssor_1 {
     position:relative;
     margin:0 auto;
@@ -38,18 +6,66 @@ and (orientation : portrait) {
     left:0px;
     overflow:hidden;
     visibility:hidden;
-    width:100%;
+    width:1080px;
+    max-width: 100% !important;
     /*height:480px;*/
 
   }
 
   #slider-images{
     cursor:default;position:relative;top:0px;left:0px;
-    width:100%;
-    height:480px;
+    width:1080px;
+    height:530px;
+    max-height: 530px;
     overflow:hidden;
 
   }
+
+  #imge {
+    height: 480px !important;
+  }
+
+}
+
+
+
+
+/*iPhone 6 in portrait*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+
+
+{
+  #main_home {
+
+    #jssor_1 {
+      position:relative;
+      margin:0 auto;
+      top:0px;
+      left:0px;
+      overflow:hidden;
+      visibility:hidden;
+      width:100%;
+      /*height:480px;*/
+
+    }
+
+    #slider-images{
+      cursor:default;position:relative;top:0px;left:0px;
+      width:100%;
+      height:200px;
+      overflow:hidden;
+
+    }
+
+    #img-gothe {
+      border: 1px solid red;
+      max-height: 280px!important;
+    }
+  }
+
 
 }
 
@@ -58,11 +74,35 @@ and (orientation : portrait) {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 568px)
-and (orientation : portrait) {
-  #jssor_1 {
-    width:100%;
-    /*height:480px;*/
+and (orientation : portrait)
 
+{
+  #main_home {
+
+    #jssor_1 {
+      position:relative;
+      margin:0 auto;
+      top:0px;
+      left:0px;
+      overflow:hidden;
+      visibility:hidden;
+      width:100%;
+      /*height:480px;*/
+
+    }
+
+    #slider-images{
+      cursor:default;position:relative;top:0px;left:0px;
+      width:100%;
+      height:200px;
+      overflow:hidden;
+
+    }
+
+    #img-gothe {
+      border: 1px solid red;
+      max-height: 280px!important;
+    }
   }
 
 

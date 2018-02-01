@@ -186,160 +186,14 @@
     padding-left: 15px;
   }
 
-  /*iPhone 6 in portrait*/
-  @media only screen
-  and (min-device-width : 375px)
-  and (max-device-width : 667px)
-  and (orientation : portrait)
-  {
-    body {
-      font-size: 16px;
-    }
-
-    .categorie {
-      border: 2px solid white;
-      display: inline-block;
-      width: 100%;
-      padding-left: 20px;
-      padding-bottom: 10px;
-      background-color: #c3c3c3;
-    }
-
-    .category-title {
-      display: block;
-      /*line-height: 105.56%;*/
-      color: #474d50;
-      font-size: 60px;
-
-    }
-
-    .category-desktop-contain {
-      display: none;
-
-    }
-
-    .datecours {
-      font-size: 35px;
-    }
-
-    .info-container {
-      flex-direction: column;
-    }
-
-    .information {
-      /* background-color: #ffbe00;*/
-      background-color: #f16e00 ;
-      color: black!important;
-      display: table-cell;
-      max-width: 100%;
-      width: 100%!important;
-      /*height: 250px;*/
-      border: 1px solid white;
-      padding-left: 15px;
-    }
-
-    .contact {
-      background-color: #251549 !important;
-      color: white!important;
-      font-size: 40px!important;
-    }
-
-    .info-title {
-      display: block;
-      color: white;
-      font-size: 60px;
-    }
-
-    .titre {
-      font-size: 45px;
-    }
-
-  }
-
-  /*iPhone 5 & 5S in portrait*/
-
-  @media only screen
-  and (min-device-width : 320px)
-  and (max-device-width : 568px)
-  and (orientation : portrait) {
-
-    body {
-      font-size: 16px;
-    }
 
 
-    .categorie {
-      border: 2px solid white;
-      display: inline-block;
-      width: 100%;
-      padding-left: 20px;
-      padding-bottom: 10px;
-      background-color: #c3c3c3;
-    }
 
-    .category-title {
-      display: block;
-      /*line-height: 105.56%;
-      color: #474d50;*/
-      color: #f16e00;
-      font-size: 60px;
-
-    }
-
-    .category-title a {
-      /*color: #474d50;*/
-      color: #f16e00;
-      text-decoration: none;
-    }
-
-    .datecours {
-      font-size: 35px;
-    }
-
-    .category-desktop-contain {
-      display: none;
-
-    }
-
-    .info-container {
-      flex-direction: column;
-    }
-
-    .information {
-      /* background-color: #ffbe00;*/
-      background-color: #f16e00 ;
-      color: black!important;
-      /*background-color: #a0c814;*/
-      display: table-cell;
-      max-width: 100%;
-      width: 100%!important;
-      /*height: 250px;*/
-      border: 1px solid white;
-      padding-left: 15px;
-    }
-
-    .info-title {
-      display: block;
-      color: white;
-      font-size: 60px;
-    }
-
-    .contact {
-      background-color: #251549 !important;
-      color: white!important;
-      font-size: 40px!important;
-    }
-
-    .titre {
-      font-size: 45px;
-    }
-
-  }
 
 
 
   .message_and_image {
-    height: 450px;
+    /*height: 450px;*/
     border: 2px solid white;
     display: block;
     overflow: hidden;
@@ -373,8 +227,8 @@
     padding-bottom: 1cm;
     padding-left: 20%;
     margin: 0px !important;
-
   }
+
   .section {
     display: block;
     width: 100%;
@@ -1037,4 +891,201 @@
     border: 2px solid orange;
     background-color: red !important;
   }
+
 }
+
+
+
+
+
+
+
+/*iPhone 6 in portrait*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+  /*and (orientation : portrait) */
+
+
+{
+  #main_home {
+    .message_on_image{
+      position: absolute;
+      z-index: 2;
+      padding-top: 5%;
+      width: 100%;
+      padding-left: 2%;
+      color: white;
+      background: rgba(black, 0.3);
+      height: 100%;
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+
+    .left-nav {
+    display:none;
+  }
+
+  .main-contain-middle {
+    width: 100%;
+    background-color: white;
+    padding: 2px;
+  }
+
+  .flex-contain {
+    display: flex;
+    margin-left: 1px;
+    margin-top: 2px;
+
+  }
+
+  .categorie {
+    border: 2px solid white;
+    display: inline-block;
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: #c3c3c3;
+    border: 1px solid green;
+  }
+
+    .info-container {
+      flex-direction: column;
+    }
+
+    .information {
+      /* background-color: #ffbe00;*/
+      background-color: #f16e00 ;
+      color: black!important;
+      display: table-cell;
+      max-width: 100%;
+      width: 100%!important;
+      /*height: 250px;*/
+      border: 1px solid white;
+      padding-left: 15px;
+    }
+
+    .contact {
+      background-color: #251549 !important;
+      color: white!important;
+      font-size: 20px!important;
+    }
+
+    .parallax-window {
+      display: none;
+      border: 1px solid blue;
+      background-repeat: no-repeat;
+
+    }
+
+    .supinfo-slogan {
+      display: none;
+    }
+
+}
+
+}
+
+
+/*iPhone 5 & 5S in portrait*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+  /*and (orientation : portrait) */
+
+
+{
+  #main_home {
+    .message_on_image{
+      position: absolute;
+      z-index: 2;
+      padding-top: 5%;
+      width: 100%;
+      padding-left: 2%;
+      color: white;
+      background: rgba(black, 0.3);
+      height: 100%;
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+  .left-nav {
+    display:none;
+  }
+
+  .main-contain-middle {
+    width: 100%;
+    background-color: white;
+    padding: 2px;
+  }
+
+  .flex-contain {
+    display: flex;
+    margin-left: 1px;
+    margin-top: 2px;
+  }
+
+  .categorie {
+    border: 2px solid white;
+    display: inline-block;
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: #c3c3c3;
+  }
+
+    .info-container {
+      flex-direction: column;
+    }
+
+    .information {
+      /* background-color: #ffbe00;*/
+      background-color: #f16e00 ;
+      color: black!important;
+      display: table-cell;
+      max-width: 100%;
+      width: 100%!important;
+      /*height: 250px;*/
+      border: 1px solid white;
+      padding-left: 15px;
+    }
+
+    .contact {
+      background-color: #251549 !important;
+      color: white!important;
+      font-size: 20px!important;
+    }
+
+    .line{
+      height: 4.3cm;
+      border-bottom: 5px solid orange;
+      width: 100%;
+      background-color: darkgrey !important;
+      color: white;
+      text-align:left;
+      font-size: 1.2em;
+      font-weight: bold;
+      font-family: "Times New Roman";
+      padding-bottom: 1cm;
+      padding-left: 2%;
+      margin: 0px !important;
+    }
+
+    .parallax-window {
+      display: none;
+      border: 1px solid blue;
+      background-repeat: no-repeat;
+
+    }
+
+    .supinfo-slogan {
+      display: none;
+    }
+
+}
+
+}
+
+

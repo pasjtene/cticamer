@@ -1,6 +1,5 @@
 
 #cti-nav {
-    border: 1px solid red;
   margin-top: 50px;
   .slogan {
     align-self: flex-end;
@@ -18,7 +17,6 @@
   }
 
   .nav_bar{
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     padding-top: 2px;
@@ -128,5 +126,45 @@
     float: left;
   }
 
+
+}
+
+
+/*iPhone 6 in portrait*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+  /*and (orientation : portrait) */
+
+
+{
+  #cti-nav {
+
+    .nav-items {
+      display: none;
+    }
+
+
+  }
+
+}
+
+
+/*iPhone 5 & 5S in portrait*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+  /*and (orientation : portrait) */
+
+
+{
+  #cti-nav {
+    .nav-items {
+      display: none;
+    }
+
+
+  }
 
 }
