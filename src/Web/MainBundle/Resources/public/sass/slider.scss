@@ -25,6 +25,11 @@
     height: 480px !important;
   }
 
+  .slide-img {
+    border: 1px solid red;
+    width: 100%!important;
+  }
+
 }
 
 
@@ -34,7 +39,7 @@
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px)
-and (orientation : portrait)
+/*and (orientation : portrait)*/
 
 
 {
@@ -59,8 +64,10 @@ and (orientation : portrait)
       overflow:hidden;
 
     }
-
-
+    .slide-img {
+      border: 1px solid red;
+      width: 100%!important;
+    }
   }
 
 
@@ -71,7 +78,7 @@ and (orientation : portrait)
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 568px)
-and (orientation : portrait)
+/*and (orientation : portrait)*/
 
 {
   #main_home {
