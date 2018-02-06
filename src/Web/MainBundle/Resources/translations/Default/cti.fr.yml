@@ -1,0 +1,16 @@
+allemand:
+  title: titre pour le referencement de la page
+  description:  description pour le referencement de la page
+  title1: COURS DE PRÉPARATION AUX EXAMENS D'ALLEMAND.
+  text1: Le Churchill Training Institute offres des cours de langue allemande aux jeunes souhaitant étudier en Allemagne.
+  text2: Nous préparons les candidats aux examens de langue allemande Nécessaires pour obtenir un visa étudiant
+  text3: ( Goethe-Zertifikat A1, Start Deutsch1, Goethe-Zertifikat B1, Goethe-Zertifikat B2, Test-DaF) offerts par l’Institut-Goethe à Yaoundé.
+  text3: Vous abordez les différents modules écrits et oraux de l’examen grâce à des exercices et vous êtes familiarisé(e) aux techniques spécifiques d’examens.
+  gza1: Le Goethe-Zertifikat A1, Start Deutsch 1 est un examen d’allemand pour adultes. Il  présuppose des connaissances linguistiques simples  correspondant au premier niveau (A1) des six que comporte l’échelle des compétences du Cadre européen commun de référence pour les langues (CECRL).
+  gza2: Le Goethe-Zertifikat A2 est un examen destiné aux adultes. Il présuppose des connaissances linguistiques élémentaires correspondant au deuxième niveau (A2) des six que comporte l’échelle des compétences du Cadre européen commun de référence pour les langues (CECRL).
+  gzb1: Le Goethe-Zertifikat B1 Le Goethe-Zertifikat B1 est un examen destiné aux jeunes et aux adultes. Il atteste d’une maîtrise autonome de la langue allemande correspondant au troisième niveau (B1) des six que comporte l’échelle des compétences du Cadre européen commun de référence pour les langues (CECRL).
+
+title: page title here
+navbar:
+  allemand: ALLEMAND
+  anglais: ANGLAIS
