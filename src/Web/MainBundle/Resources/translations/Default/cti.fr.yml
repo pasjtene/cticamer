@@ -1,5 +1,5 @@
 allemand:
-  title: titre pour le referencement de la page
+  title: Cours d'allemand a Douala au CTI - Churchill Training Institute - Douala
   description:  description pour le referencement de la page
   title1: COURS DE PRÉPARATION AUX EXAMENS D'ALLEMAND.
   text1: Le Churchill Training Institute offres des cours de langue allemande aux jeunes souhaitant étudier en Allemagne.
@@ -10,7 +10,12 @@ allemand:
   gza2: Le Goethe-Zertifikat A2 est un examen destiné aux adultes. Il présuppose des connaissances linguistiques élémentaires correspondant au deuxième niveau (A2) des six que comporte l’échelle des compétences du Cadre européen commun de référence pour les langues (CECRL).
   gzb1: Le Goethe-Zertifikat B1 Le Goethe-Zertifikat B1 est un examen destiné aux jeunes et aux adultes. Il atteste d’une maîtrise autonome de la langue allemande correspondant au troisième niveau (B1) des six que comporte l’échelle des compétences du Cadre européen commun de référence pour les langues (CECRL).
 
-title: page title here
+title: CTI - Churchill Training Institute - Douala. Cours d'allemand, cours d'anglais, cours d'informatique
 navbar:
   allemand: ALLEMAND
   anglais: ANGLAIS
+  informatique: INFORMATIQUE
+
+informatique:
+  title: Cours d'informatique a Douala au CTI - Churchill Training Institute - Douala
+  text1: Le CTI offre des formations de haute qualité dans plusieurs domaines de l’informatique
