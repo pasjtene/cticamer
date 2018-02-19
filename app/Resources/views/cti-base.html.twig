@@ -1,0 +1,245 @@
+{# add navigation current nav mark #}
+{% set route = app.request.get('_route') %}
+{% set baseRoute = app.request.baseUrl %}
+
+<!DOCTYPE html>
+<html lang="{{ app.request.locale }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        {% block title %} Churchill Training Institute - CTI  {% endblock %}
+    </title>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <meta name = "author" content = "info@cticamer.com (assistance de churchill Training Institute - CTI en ligne)" />
+    <meta name="copyright" content="@ cticamer.com (tous  droits reservés)" />
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- block pour la traduction -->
+    {% block meta %}
+
+    {% endblock %}
+
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- traduction  -->
+    <link rel="alternate" href="http://www.cticamer.com/fr/" hreflang="fr"/>
+    <link rel="alternate" href="http://www.cticamer.com/en/" hreflang="en"/>
+
+
+
+    {% block stylesheets %}
+        <!-- Bootstrap 4 -->
+        <link rel="stylesheet" href="{{ asset('plugin/bootstrap/css/bootstrap.min.css') }}">
+
+        <link rel="stylesheet" href="{{ asset('plugin/jquery-ui-1.12.1/jquery-ui.min.css') }}">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="{{ asset('plugin/font-awesome/font-awesome.min.css') }}">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="{{ asset('plugin/ionicons/ionicons.min.css') }}">
+
+        <link rel="stylesheet" href="{{ asset('plugin/datepicker/datepicker.css') }}">
+
+        <!-- funglobe CSS -->
+        <link rel="stylesheet" href="{{ asset('data/css/master.css') }}">
+        <!-- logo -->
+        <link rel="icon" type="image/x-icon" href="{{ asset('logo.ico') }}" />
+
+        <!-- Stylesheets for user -->
+        {% block mycss %}
+
+        {% endblock %}
+    {% endblock %}
+
+</head>
+<body>
+
+<!-- block  reserv?  pour l'entete -->
+{% block header %}{% endblock %}
+<!-- reserv? pour les notifications -->
+{% block flash %}
+
+    {% for flashMessage in app.session.flashbag.get('notice') %}
+        <div>
+            {{ flashMessage }}
+        </div>
+    {% endfor %}
+
+    {% for flashMessage in app.session.flashbag.get('error') %}
+        <div>
+            {{ flashMessage }}
+        </div>
+    {% endfor %}
+
+{% endblock %}
+<div id="body">
+    <!-- reserv? pour le contenu  de la page -->
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- reserv? pour le footer de la page-->
+    {% block footer %}
+
+    {% endblock footer %}
+</div>
+
+{% set currentPath = path(app.request.attributes.get('_route'),app.request.attributes.get('_route_params')) %}
+<script>
+    // get locale
+    locale = "{{ app.request.locale }}";
+    pathBase = location.host; //"{{ app.request.baseUrl }}";
+    // get route
+    route = "{{ route }}";
+    // url  courant
+    url = "{{ currentPath }}";
+</script>
+
+
+
+{% block javascripts %}
+    <!-- faciliter la manipulation du  controlleur dans le js  -->
+
+    <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+
+    <!-- js-translation -->
+    <script src="{{ asset('bundles/bazingajstranslation/js/translator.min.js') }}"></script>
+    <script src="{{ url('bazinga_jstranslation_js') }}"></script>
+
+    <!-- jQuery 3.1 -->
+    <script src="{{ asset('plugin/jQuery/jquery.js') }}"></script>
+    <script src="{{ asset('plugin/parallax/parallax.js') }}"></script>
+
+
+
+    <!-- Jssor slider -->
+    <script src="{{ asset('plugin/jssor/jssor.js') }}"></script>
+    <script src="{{ asset('plugin/jssor/jssorconfig.js') }}"></script>
+
+
+
+    <!-- Tether -->
+    <script src="{{ asset('plugin/tether/tether.js') }}"></script>
+
+    <!-- Bootstrap 4 -->
+    <script src="{{ asset('plugin/bootstrap/js/bootstrap.js') }}"></script>
+
+    <!-- Font Awesome -->
+
+    <script src="{{ asset('plugin/datepicker/bootstrap-datepicker.js') }}"></script>
+    <script src="{{ asset('plugin/bootbox/bootbox.min.js') }}"></script>
+    <script src="{{ asset('plugin/jquery-ui-1.12.1/jquery-ui.min.js') }}"></script>
+
+
+    <!-- Javascript for user -->
+
+    <script>
+
+        // Quelques informations sur l'utilisateur connecté
+        {% if app.user!=null %}
+        var currentUser = {
+            id : '{{ app.user.id }}',
+            token : '{{ app.user.token }}',
+            ip: '{{ app.user.ip }}',
+            name : '{{ app.user.lastname }}' + ' ' + '{{ app.user.firstname }}',
+            country: '{{ app.user.country }}'
+        }
+
+        {% endif %}
+
+        $('#bg-photos-globale .carousel').carousel({
+            interval: false
+        });
+
+
+        //recuperer la liste des pays et  leurs codes
+        var  countryList = [];
+        var pathCountry = {% if app.request.locale=="fr" %} '{{ asset("dist/country.json") }}' {% else %} '{{ asset("dist/country-en.json") }}' {% endif %};
+        $.getJSON(pathCountry, function(data){
+            $.each(data,function(index,vaue){
+                countryList.push({"code": index, "value":vaue});
+            });
+        });
+
+        // le chemin par defaut pour le projet
+        baseRoute = Routing.generate('main_homepage',{_locale:locale},true);
+    </script>
+
+    <!-- Funglobe js -->
+
+    <script src="{{ asset('data/js/supinfo.min.js') }}"></script>
+
+
+
+    <!-- solution  pour le modale (bootbox) -->
+
+    <script>
+
+        function initNotification()
+        {
+            if (window.Notification && Notification.permission !== "granted") {
+                Notification.requestPermission(function (status) {
+                    if (Notification.permission !== status) {
+                        Notification.permission = status;
+                    }
+                });
+            }
+        }
+
+        var button = $('#notifie');
+
+        button.click(function () {
+            notifyMe("je suis un simple test de notification");
+        });
+
+        function notifyMe(message) {
+            // Voyons si le navigateur supporte les notifications
+            if (!("Notification" in window)) {
+                console.log("Ce navigateur ne supporte pas les notifications desktop");
+            }
+
+            // Voyons si l'utilisateur est OK pour recevoir des notifications
+            else if (Notification.permission === "granted") {
+                // Si c'est ok, créons une notification
+                var notification = new Notification(message);
+            }
+
+            // Sinon, nous avons besoin de la permission de l'utilisateur
+            // Note : Chrome n'implémente pas la propriété statique permission
+            // Donc, nous devons vérifier s'il n'y a pas 'denied' à la place de 'default'
+            else if (Notification.permission !== 'denied') {
+                Notification.requestPermission(function (permission) {
+
+                    // Quelque soit la réponse de l'utilisateur, nous nous assurons de stocker cette information
+                    if(!('permission' in Notification)) {
+                        Notification.permission = permission;
+                    }
+
+                    // Si l'utilisateur est OK, on crée une notification
+                    if (permission === "granted") {
+                        var notification = new Notification(message);
+                    }
+                });
+            }
+            // Comme ça, si l'utlisateur a refusé toute notification, et que vous respectez ce choix,
+            // il n'y a pas besoin de l'ennuyer à nouveau.
+        }
+    </script>
+
+    {% block myjs %}
+
+    {% endblock %}
+    {% if app.environment == 'dev' %}
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    {% endif %}
+
+{% endblock %}
+
+</body>
+</html>

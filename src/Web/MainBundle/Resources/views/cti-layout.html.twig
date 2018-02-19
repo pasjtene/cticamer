@@ -1,0 +1,26 @@
+{% extends '::cti-base.html.twig' %}
+
+{% block header %}
+    {# include header here #}
+{% endblock %}
+
+{% block content %}
+    <div id="content">
+        {% block mainLg %}
+            {# it's conatiner large page #}
+        {% endblock %}
+        <div class="container">
+            {% block main %}
+
+                {# it's conatiner page #}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}
+
+
+
+{% block footer %}
+    {# include the block  footer here#}
+    {% include "MainBundle:Footer:index.html.twig" %}
+{% endblock %}

@@ -1,4 +1,4 @@
-{% extends 'MainBundle::layout.html.twig' %}
+{% extends 'MainBundle::cti-layout.html.twig' %}
 
 {% block meta %}
     <meta name = "{% trans from 'about' %} about.block14 {% endtrans %}" >
@@ -7,7 +7,7 @@
 
 {% endblock %}
 {% block title %}
-    {% trans from 'about' %} about.title {% endtrans %}
+    {% trans from 'cti' %} title {% endtrans %}
 {% endblock  %}
 
 {% block mycss %}
@@ -57,7 +57,7 @@
 
             <div class="left-nav">
                 <div class="left-nav-contain">
-                    <div class="titre_lef-nav">FORMATIONS ILE Cameroon</div>
+                    <div class="titre_lef-nav">FORMATIONS CTI Cameroon</div>
 
                     <div class="sous-titre-lef-nav" id="sous-titre-lef-nav-an"><h3>Anglais</h3></div>
                     <div class="sous-titre-contenu" id="sous-titre-anglais">
@@ -325,13 +325,6 @@
 
 
 
-
-
-
-
-
-
-
         <div class="message_and_image">
             <div class="message_on_image">{% trans from 'about' %} about.block1 {% endtrans %}</div>
 
@@ -345,132 +338,6 @@
             <div> {% trans from 'about' %} about.title1 {% endtrans %} : {% trans from 'about' %} about.block14 {% endtrans %} </div>
 
         </div>
-
-        <!--
-<div class="row section admission">
-            <h2 class="bloc-title">ADMISSIONS</h2>
-            <div class="inner padding">
-                <div class="flex">
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">ADMISSION AU</div>
-                        <h3>
-                            <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">ANGLAIS</span>
-                            <i class="icon-fleche-gauche grand"></i></h3>
-                        <div class="content">
-                            {% trans from 'about' %} about.bac1 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;">PLUS D'INFO</a>
-                        <div class="triangle-bottom"></div>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">ADMISSION AU</div>
-                        <h3>
-                            <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">ALLEMAND</span>
-                            <i class="icon-fleche-gauche grand"></i></h3>
-                        <div class="content">
-                            {% trans from 'about' %} about.bac1 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;">PLUS D'INFO</a>
-                        <div class="triangle-bottom"></div>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">ADMISSION AU</div>
-                        <h3>
-                            <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">INFORMATIQUE</span>
-                            <i class="icon-fleche-gauche grand"></i></h3>
-                        <div class="content">
-                            {% trans from 'about' %} about.bac1 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;">PLUS D'INFO</a>
-                        <div class="triangle-bottom"></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-         <div class="section programmes-main-div">
-            <h2 class="bloc-title">PROGRAMMES</h2>
-
-            <div class="inner-prog padding">
-                <div class="flex">
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> &beta; </div>
-                        </div>
-                        <h4>{% trans from 'about' %}about.year1{% endtrans %}</h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.discover1 {% endtrans %}</h3>
-                        {% trans from 'about' %} about.discover {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> &kappa; </div>
-                        </div>
-                        <h4> {% trans from 'about' %}about.year2{% endtrans %}  </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.learn1 {% endtrans %}  </h3>
-                        {% trans from 'about' %} about.learn {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> &phi; </div>
-                        </div>
-                        <h4> {% trans from 'about' %}about.year3{% endtrans %} </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.improve1 {% endtrans %}</h3>
-                        {% trans from 'about' %} about.improve {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> &omega; </div>
-                        </div>
-                        <h4>  {% trans from 'about' %}about.year4{% endtrans %} </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.master1 {% endtrans %}</h3>
-                        {% trans from 'about' %} about.master {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> &epsilon; </div>
-                        </div>
-                        <h4>  {% trans from 'about' %}about.year5{% endtrans %} </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.expert1 {% endtrans %}</h3>
-                        {% trans from 'about' %} about.expert {% endtrans %}
-                    </div>
-
-
-                </div>
-            </div>
-
-        </div>
-
--->
-
 
 
         <div class="section admission parallax-container ">
@@ -515,37 +382,6 @@
 
         </div>
 
-
-        <!--
-        <div class="section admission">
-            <h2 class="bloc-title">CAMPUS</h2>
-            <div class="inner padding">
-                <div class="flex">
-                    <div class="hexagon degrade admission-hexagon">
-                        {% trans from 'about' %} about.bac1 {% endtrans %}
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        {% trans from 'about' %} about.bac1 {% endtrans %}
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        {% trans from 'about' %} about.bac1 {% endtrans %}
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        {% trans from 'about' %} about.bac1 {% endtrans %}
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        {% trans from 'about' %} about.bac1 {% endtrans %}
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        -->
 
     </div>
 {% endblock %}
