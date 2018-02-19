@@ -1,0 +1,558 @@
+{% extends 'MainBundle::layout.html.twig' %}
+
+{% block meta %}
+    <meta name = "{% trans from 'about' %} about.block14 {% endtrans %}" >
+    <meta name = "keywords" content = "{% trans from 'about' %} about.block15 {% endtrans %}" >
+    <meta charset="utf-8">
+
+{% endblock %}
+{% block title %}
+    {% trans from 'about' %} about.title {% endtrans %}
+{% endblock  %}
+
+{% block mycss %}
+    {{ parent() }}
+
+    <style>
+        .students-img {
+            border: 3px solid red;
+            background-color: #0000cc;
+            display:block;
+            width: 45%;
+            height: 100%;
+        }
+
+        .parallax {
+            /* The image used
+            background-image: url("img_parallax.jpg");*/
+            border: 2px solid red;
+            /* Set a specific height */
+            min-height: 500px;
+            width: 50%;
+            display:block;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: left;
+            background-repeat: no-repeat;
+            /*background-size: cover;*/
+            background-size: 50%  auto;
+        }
+    </style>
+    {# mettre le css si la page t'oublige #}
+{% endblock %}
+{% block header %}
+    {% include 'MainBundle:Inc:horizontal-nav.html.twig' %}
+    {% include 'MainBundle:Default:cti-navbar.html.twig' %}
+
+
+{% endblock %}
+
+{% block  mainLg %}
+
+    <div id="main_home">
+
+
+        <div class="flex-contain">
+
+            <div class="left-nav">
+                <div class="left-nav-contain">
+                    <div class="titre_lef-nav">FORMATIONS ILE Cameroon</div>
+
+                    <div class="sous-titre-lef-nav" id="sous-titre-lef-nav-an"><h3>Anglais</h3></div>
+                    <div class="sous-titre-contenu" id="sous-titre-anglais">
+                        <div class="left-nav-text">
+                            Il s’agit ici de cours de langue généraux des niveaux A1-A2 pour adultes. Les objets et contenus d’apprentissages sont conçus d’après le Cadre européen commun de référence pour les langues (CECR)<br>
+                        </div>
+                        <div class="left-nav-links">
+                            <a href="">Pour adultes</a>
+
+                            <a href="">Pour enfants et jeunes</a>
+
+                            <a href="">Préparation aux examens</a>
+                            <a href="">Cours aux particuliers</a>
+
+                        </div>
+                    </div>
+                    <div class="sous-titre-lef-nav" id="sous-titre-lef-nav-al"><h3>Cours d'Allemand</h3></div>
+                    <div class="sous-titre-contenu" id="left-nav-al-cont">
+                        <div class="left-nav-text">
+                            Il s’agit ici de cours de langue généraux des niveaux A1-A2 pour adultes. Les objets et contenus d’apprentissages sont conçus d’après le Cadre européen commun de référence pour les langues (CECR)<br>
+                        </div>
+                        <div class="left-nav-links">
+                            <a href="">Pour adultes</a>
+
+                            <a href="">Pour enfants et jeunes</a>
+
+                            <a href="">Préparation aux examens</a>
+                            <a href="">Cours aux particuliers</a>
+
+                        </div>
+                    </div>
+                    <div class="sous-titre-lef-nav" id="sous-titre-lef-nav-it"><h3>Cours d'Informatique</h3></div>
+                    <div class="sous-titre-contenu" id="left-nav-it-cont">
+                        <div class="left-nav-text">
+                            Il s’agit ici de cours de langue généraux des niveaux A1-A2 pour adultes. Les objets et contenus d’apprentissages sont conçus d’après le Cadre européen commun de référence pour les langues (CECR)<br>
+                        </div>
+                        <div class="left-nav-links">
+                            <a href="">Pour adultes</a>
+
+                            <a href="">Pour enfants et jeunes</a>
+
+                            <a href="">Préparation aux examens</a>
+                            <a href="">Cours aux particuliers</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="main-contain-middle">
+
+
+                <!-- #region Jssor Slider Begin -->
+                <!-- Generator: Jssor Slider Maker -->
+                <!-- Source: https://www.jssor.com -->
+
+
+
+
+                <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&subset=latin-ext,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
+                <style>
+                    /* jssor slider loading skin spin css */
+                    .jssorl-009-spin img {
+                        animation-name: jssorl-009-spin;
+                        animation-duration: 3.6s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                    }
+
+                    @keyframes jssorl-009-spin {
+                        from {
+                            transform: rotate(0deg);
+                        }
+
+                        to {
+                            transform: rotate(360deg);
+                        }
+                    }
+
+
+                    .jssorb052 .i {position:absolute;cursor:pointer;}
+                    .jssorb052 .i .b {fill:#000;fill-opacity:0.3;}
+                    .jssorb052 .i:hover .b {fill-opacity:.7;}
+                    .jssorb052 .iav .b {fill-opacity: 1;}
+                    .jssorb052 .i.idn {opacity:.3;}
+
+                    .jssora053 {display:block;position:absolute;cursor:pointer;}
+                    .jssora053 .a {fill:none;stroke:#fff;stroke-width:640;stroke-miterlimit:10;}
+                    .jssora053:hover {opacity:.8;}
+                    .jssora053.jssora053dn {opacity:.5;}
+                    .jssora053.jssora053ds {opacity:.3;pointer-events:none;}
+                </style>
+                <!--
+                <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;"> -->
+                <div id="jssor_1">
+                    <!-- Loading Screen -->
+                    <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+                    </div>
+                    <div id="slider-images" data-u="slides" >
+
+                        <div class="slide-img" data-p="170.00">
+                            <img class="img-class" data-u="image" src="{{ asset('data/img/etudiants.jpg') }}" />
+                            <div class="slide-banner" data-u="caption" data-t="2" style="position:absolute;top:30px;left:-505px;width:700px;height:40px;background-color:rgba(255,188,5,0.8);font-family:Oswald,sans-serif;font-size:32px;font-weight:200;line-height:1.2;text-align:center;">Francais: Convivialité et harmonie pour mieux se concentrer</div>
+                        </div>
+
+                        <div class="slide-img" data-p="170.00">
+                            <img class="img-class" data-u="image" src="{{ asset('data/img/assis.jpg') }}" />
+                            <div class="slide-banner" data-u="caption" data-t="2" style="position:absolute;top:30px;left:-505px;width:700px;height:40px;background-color:rgba(255,188,5,0.8);font-family:Oswald,sans-serif;font-size:32px;font-weight:200;line-height:1.2;text-align:center;">Anglais: Convivialité et harmonie pour mieux se concentrer</div>
+                        </div>
+                        <div class="slide-img" data-p="170.00">
+                            <img data-u="image" src="{{ asset('data/img/assise.jpg') }}" />
+                            <div class="slide-banner" data-u="caption" data-t="3" style="position:absolute;top:30px;left:30px;width:500px;height:40px;background-color:rgba(255,188,5,0.8);font-family:Oswald,sans-serif;font-size:32px;font-weight:200;line-height:1.2;text-align:center;">Allemand: Une bibliothèque fournie et disponible</div>
+                        </div>
+                        <div data-p="170.00">
+                            <img data-u="image" src="{{ asset('data/img/groupe.jpg') }}" />
+                            <div class="slide-banner" data-u="caption" data-t="4" style="position:absolute;top:30px;left:30px;width:500px;height:40px;background-color:rgba(255,188,5,0.8);font-family:Oswald,sans-serif;font-size:32px;font-weight:200;line-height:1.2;text-align:center;">Bonamoussadi : Collaboration harmonieuse</div>
+                        </div>
+                        <div data-p="170.00">
+                            <img data-u="image" src="{{ asset('data/img/assisel.jpg') }}" />
+                            <div class="slide-banner" data-u="caption" data-t="5" style="position:absolute;top:30px;left:600px;width:700px;height:40px;background-color:rgba(255,188,5,0.8);font-family:Oswald,sans-serif;font-size:32px;font-weight:200;line-height:1.2;text-align:center;">Informatique : Des espaces de détente pour mieux se concentrer</div>
+                        </div>
+
+                        <div data-b="0" data-p="170.00">
+                            <img data-u="image" src="{{ asset('data/img/regard.jpg') }}" />
+                            <div class="slide-banner" data-u="caption" data-t="7" style="position:absolute;top:-50px;left:30px;width:500px;height:40px;background-color:rgba(255,188,5,0.8);font-family:Oswald,sans-serif;font-size:32px;font-weight:200;line-height:1.2;text-align:center;">Infographie: A vous de jouer !!!</div>
+                        </div>
+                        <div data-p="170.00">
+                            <img data-u="image" src="{{ asset('data/img/computerstudents.jpg') }}" />
+                            <div class="slide-banner" data-u="caption" data-t="7" style="position:absolute;top:-50px;left:30px;width:700px;height:40px;background-color:rgba(255,188,5,0.8);font-family:Oswald,sans-serif;font-size:32px;font-weight:200;line-height:1.2;text-align:center;">Bureautique : Des équipements adaptes pour une formation de qualité</div>
+                        </div>
+
+                    </div>
+                    <!-- Bullet Navigator -->
+                    <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Arrow Navigator -->
+                    <div data-u="arrowleft" class="jssora053" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                        </svg>
+                    </div>
+                    <div data-u="arrowright" class="jssora053" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+
+
+
+                <!-- #endregion Jssor Slider End -->
+
+
+                <!-- Arrow Navigator
+                <img  src="Resources/img/etudiants.jpg" style="width: 100%">
+                -->
+                <div class="cat-container">
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href="/ile/Views/allemand_prepa_exam.php">COURS D'ALLEMAND POUR ETUDE OU SEJOUR EN ALLEMAGNE</a></h3>
+                        </div>
+                        <div class="datecours">
+                            Prochaine rentrée : {% trans from 'ctihome' %} debutDesCours {% endtrans %}
+                        </div>
+
+                        <div class="annonce-inscription">
+                            Les Inscriptions sont en cour. Il y a encore quelques places disponibles.
+                        </div>
+
+                        <div class="category-desktop-contain">
+                            Le Churchill Training Institute offres des cours de langue allemande aux jeunes souhaitant étudier en Allemagne.
+                            Nous préparons les candidats aux examens de langue allemande Nécessaires pour obtenir un visa étudiant
+                            ( Goethe-Zertifikat A1: Start Deutsch1, Goethe-Zertifikat B1, Goethe-Zertifikat B2, Test-DaF) offerts par l’Institut-Goethe à Yaoundé.<br/>
+                            <a href="/ile/Views/allemand_prepa_exam.php">plus d'informations sont disponible sur la page speciale allemand</a>
+                        </div>
+
+                    </div>
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href="/ile/Views/anglais_groupes.php">COURS D’ANGLAIS POUR TOUS</a></h3>
+                        </div>
+                        Tous nos cours permettent de préparer les candidats aux examens internationaux : <strong>TOEFL, IELTS, TOEIC</strong>.<br><br>
+
+                        No cours sont conçus d’après le Cadre Européen Commun de Référence pour les Langues (CECR).<br>
+                        <div class="category-desktop-contain">
+                            Après un test de niveau qui dure 30 minutes, l’apprenant peut être admis à un des niveaux du programme : A1, A2, B1, B2, C1, C2.<br>
+                            Nous dispensons des cours d’Anglais général pour tous les niveaux.<br>
+                            Que vous soyez élève, étudiant, chercheur d’emplois ou même travailleurs les différents cours d’Anglais que nous dispensons au
+                            Churchill Training Institute permettrons d’améliorer ou de perfectionner vos connaissances en anglais,
+                            vous donnant ainsi un atout supplémentaire pour votre progrès professionnel ou académique.
+                            <br/><a href="/ile/Views/anglais_groupes.php">plus d'informations sont disponible sur la page speciale du cours d'anglais</a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href="/ile/Views/anglais_groupes.php">COURS D'INFORMATIQUE</a></h3>
+                        </div>
+
+                        CTI offre des formations de haute qualité dans plusieurs domaines de l’informatique. <br>
+                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i>	<strong>Secrétariat bureautique:</strong> Microsoft Word, Excel,  Power point, Access. <br>
+                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i> <strong>Infographie, Design Artistique et Média:</strong> Adobe Photoshop, illustrator, InDesign. Microsoft Publisher <br>
+                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i>	<strong>Formation à l’utilisation de l’Internet</strong> <br>
+                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i>	<strong>Sécurité informatique</strong> <br>
+                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i>	<strong>Développement d’Applications Web:</strong> HTML5, CSS3, Flex Box, JavaScript, PHP, Jquery, MysQL, Symfony, Responsive Web Design
+
+                    </div>
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href="/ile/Views/anglais_groupes.php">Cours aux particuliers</a></h3>
+                        </div>
+                        Cours basés sur des contenus particuliers, destinés à des groupes-cibles spéciaux ou pour l’exercice d’aptitudes uniques: <br><br>
+                        N’hésitez pas à nous contacter si vous souhaitez suivre une formation à la carte dans un de nos domaines de compétence.
+                    </div>
+                </div>
+                <h3>INFORMATIONS</h3>
+                <div class="info-container">
+
+                    <div class="information">
+                        <div class="info-title"><h3><a href="/ile/Views/dates.php">DATES ET TARIFS</a></h3></div>
+                        Tous les cours de Douala
+                        <div class="datecours">
+                            Prochaine rentrée : {% trans from 'ctihome' %} debutDesCours {% endtrans %}
+                        </div>
+                    </div>
+                    <div class="information contact">
+                        <div class="info-title"><h3><a href="#">CONTACT ET INSCRIPTION</a></h3></div>
+
+                        Nous sommes Situé à Bonamoussadi, à l’entrée du centre des impôts de douala 5ème<br>
+                        Tel / WhatsApp: 673 91 94 90; 695 50 48 82 <br>
+                        Email : info@cticamer.com<br>
+
+                        <div class="titre">Horaires d'ouverture:</div>
+                        <div class="sous-titre"> Cours:</div>
+
+                        Du Lundi au Vendredi: 8h - 21h. <br>
+                        Samedi: 9h -16h <br>
+                        <div class="sous-titre">Renseignements et Inscriptions:</div>
+                        Du Lundi au Vendredi: 8h - 18h30. <br>
+                        Samedi: 9h -12h
+
+                    </div>
+                    <div class="information">
+                        <div class="info-title"><h3><a href="#">NOTRE CONCEPT D'APPRENTISSAGE</a></h3></div>
+
+                        Des progrès rapides dans votre apprentissage sont garantis par des enseignants hautement qualifiés, des méthodes d’enseignement modernes, un accompagnement et un soutien soutenu ainsi qu’un système de niveaux de cours reconnu mondialement.
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="message_and_image">
+            <div class="message_on_image">{% trans from 'about' %} about.block1 {% endtrans %}</div>
+
+            <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
+                <img  id="top_img" src="{{ asset('data/img/about4.jpg') }}" alt="">
+                {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
+            </div>
+        </div>
+
+        <div class="row line">
+            <div> {% trans from 'about' %} about.title1 {% endtrans %} : {% trans from 'about' %} about.block14 {% endtrans %} </div>
+
+        </div>
+
+        <!--
+<div class="row section admission">
+            <h2 class="bloc-title">ADMISSIONS</h2>
+            <div class="inner padding">
+                <div class="flex">
+                    <div class="hexagon degrade admission-hexagon">
+                        <div class="triangle-top"></div>
+                        <div class="titre">ADMISSION AU</div>
+                        <h3>
+                            <i class="icon-fleche-droite grand"></i>
+                            <span class="adm-niv">ANGLAIS</span>
+                            <i class="icon-fleche-gauche grand"></i></h3>
+                        <div class="content">
+                            {% trans from 'about' %} about.bac1 {% endtrans %}
+                        </div>
+                        <a class="myButton" href="javascript:;">PLUS D'INFO</a>
+                        <div class="triangle-bottom"></div>
+                    </div>
+
+                    <div class="hexagon degrade admission-hexagon">
+                        <div class="triangle-top"></div>
+                        <div class="titre">ADMISSION AU</div>
+                        <h3>
+                            <i class="icon-fleche-droite grand"></i>
+                            <span class="adm-niv">ALLEMAND</span>
+                            <i class="icon-fleche-gauche grand"></i></h3>
+                        <div class="content">
+                            {% trans from 'about' %} about.bac1 {% endtrans %}
+                        </div>
+                        <a class="myButton" href="javascript:;">PLUS D'INFO</a>
+                        <div class="triangle-bottom"></div>
+                    </div>
+
+                    <div class="hexagon degrade admission-hexagon">
+                        <div class="triangle-top"></div>
+                        <div class="titre">ADMISSION AU</div>
+                        <h3>
+                            <i class="icon-fleche-droite grand"></i>
+                            <span class="adm-niv">INFORMATIQUE</span>
+                            <i class="icon-fleche-gauche grand"></i></h3>
+                        <div class="content">
+                            {% trans from 'about' %} about.bac1 {% endtrans %}
+                        </div>
+                        <a class="myButton" href="javascript:;">PLUS D'INFO</a>
+                        <div class="triangle-bottom"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+         <div class="section programmes-main-div">
+            <h2 class="bloc-title">PROGRAMMES</h2>
+
+            <div class="inner-prog padding">
+                <div class="flex">
+
+                    <div class="programme">
+                        <div class="diamant">
+                            <div class="diamant-shape">
+
+                            </div>
+                            <div class="diamant-content"> &beta; </div>
+                        </div>
+                        <h4>{% trans from 'about' %}about.year1{% endtrans %}</h4>
+                        <h3 class="titre-prog">{% trans from 'about' %} about.discover1 {% endtrans %}</h3>
+                        {% trans from 'about' %} about.discover {% endtrans %}
+                    </div>
+
+                    <div class="programme">
+                        <div class="diamant">
+                            <div class="diamant-shape">
+
+                            </div>
+                            <div class="diamant-content"> &kappa; </div>
+                        </div>
+                        <h4> {% trans from 'about' %}about.year2{% endtrans %}  </h4>
+                        <h3 class="titre-prog">{% trans from 'about' %} about.learn1 {% endtrans %}  </h3>
+                        {% trans from 'about' %} about.learn {% endtrans %}
+                    </div>
+
+                    <div class="programme">
+                        <div class="diamant">
+                            <div class="diamant-shape">
+
+                            </div>
+                            <div class="diamant-content"> &phi; </div>
+                        </div>
+                        <h4> {% trans from 'about' %}about.year3{% endtrans %} </h4>
+                        <h3 class="titre-prog">{% trans from 'about' %} about.improve1 {% endtrans %}</h3>
+                        {% trans from 'about' %} about.improve {% endtrans %}
+                    </div>
+
+                    <div class="programme">
+                        <div class="diamant">
+                            <div class="diamant-shape">
+
+                            </div>
+                            <div class="diamant-content"> &omega; </div>
+                        </div>
+                        <h4>  {% trans from 'about' %}about.year4{% endtrans %} </h4>
+                        <h3 class="titre-prog">{% trans from 'about' %} about.master1 {% endtrans %}</h3>
+                        {% trans from 'about' %} about.master {% endtrans %}
+                    </div>
+
+                    <div class="programme">
+                        <div class="diamant">
+                            <div class="diamant-shape">
+
+                            </div>
+                            <div class="diamant-content"> &epsilon; </div>
+                        </div>
+                        <h4>  {% trans from 'about' %}about.year5{% endtrans %} </h4>
+                        <h3 class="titre-prog">{% trans from 'about' %} about.expert1 {% endtrans %}</h3>
+                        {% trans from 'about' %} about.expert {% endtrans %}
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+-->
+
+
+
+        <div class="section admission parallax-container ">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('data/img/computerstudents2.jpg') }}" data-position="left top">
+
+
+            </div>
+
+            <div class="edito supinfo-slogan">
+                <div class="triangle-left"></div>
+                <div class="contenu">
+                    <div class="supinfo-slogan-titre">CTI: {% trans from 'about' %} about.contenu1 {% endtrans %}</div>
+                    <p class="home-slogan">{% trans from 'about' %} about.contenu2 {% endtrans %}</p>
+                    <p><a href="">{% trans from 'about' %} about.contenu3 {% endtrans %}</a></p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="separator"></div>
+
+
+        <div class="section programmes-main-div">
+            <h2 class="bloc-title">{% trans from 'about' %} about.news {% endtrans %}</h2>
+
+            <div class="inner padding">
+                <div class="flex">
+                    <div class="hexagon degrade admission-hexagon">
+                        {% trans from 'about' %} about.block16 {% endtrans %}
+                    </div>
+
+                    <div class="hexagon degrade admission-hexagon">
+                        {% trans from 'about' %} about.bac1 {% endtrans %}
+                    </div>
+
+                    <div class="hexagon degrade admission-hexagon">
+                        {% trans from 'about' %} about.bac1 {% endtrans %}
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--
+        <div class="section admission">
+            <h2 class="bloc-title">CAMPUS</h2>
+            <div class="inner padding">
+                <div class="flex">
+                    <div class="hexagon degrade admission-hexagon">
+                        {% trans from 'about' %} about.bac1 {% endtrans %}
+                    </div>
+
+                    <div class="hexagon degrade admission-hexagon">
+                        {% trans from 'about' %} about.bac1 {% endtrans %}
+                    </div>
+
+                    <div class="hexagon degrade admission-hexagon">
+                        {% trans from 'about' %} about.bac1 {% endtrans %}
+                    </div>
+
+                    <div class="hexagon degrade admission-hexagon">
+                        {% trans from 'about' %} about.bac1 {% endtrans %}
+                    </div>
+
+                    <div class="hexagon degrade admission-hexagon">
+                        {% trans from 'about' %} about.bac1 {% endtrans %}
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        -->
+
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {% include 'MainBundle:Default:cti-footer.html.twig' %}
+{% endblock %}
+{% block myjs %}
+    {# mettre des liens vers des pages externe js si c'est  necessaire #}
+{% endblock %}
