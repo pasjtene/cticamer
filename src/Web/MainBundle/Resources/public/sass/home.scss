@@ -38,7 +38,6 @@
   }
 
   .slide-img {
-    border: 1px solid red;
     width: 100%!important;
   }
 
@@ -298,7 +297,7 @@
     /*padding-bottom: 20px;*/
     padding-top: 20px;
     text-align: center;
-    margin: 0 0 70px;
+    /*margin: 0 0 70px;*/
   }
 
   .section.padding {
@@ -838,7 +837,6 @@
     float: left;
     background-position: left;
     background-color: transparent!important;
-    border: 2px solid red;
     height: 500px;
     width: 65%;
     background-size: 20%;
@@ -930,7 +928,6 @@
   #parallax-container{
     //max-width: 40% !important;
     border: 2px solid orange;
-    background-color: red !important;
   }
 
 }
@@ -973,7 +970,6 @@ and (max-device-width : 667px)
 
     }
     .slide-img {
-      border: 1px solid red;
       width: 100%!important;
     }
 
