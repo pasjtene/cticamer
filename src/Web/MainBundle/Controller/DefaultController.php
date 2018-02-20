@@ -53,7 +53,7 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
     public function anglaisAction()
     {
         $array = [];
-        return $this->render('MainBundle:Default:anglais.html.twig', $array);
+        return $this->render('MainBundle:CTI:anglais.html.twig', $array);
     }
 
     /**
