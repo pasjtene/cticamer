@@ -1,6 +1,16 @@
 
 #main_home{
 
+  .news-title {
+    color: #271549;
+    line-height: 42px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
   #jssor_1 {
     position:relative;
     margin:0 auto;
@@ -285,7 +295,7 @@
     text-transform: uppercase;
     color: #271549;
     position: relative;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
     padding-top: 20px;
     text-align: center;
     margin: 0 0 70px;
