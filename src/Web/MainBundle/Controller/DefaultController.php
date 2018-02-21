@@ -71,7 +71,7 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
     public function informatiqueAction()
     {
         $array = [];
-        return $this->render('MainBundle:Default:informatique.html.twig', $array);
+        return $this->render('MainBundle:CTI:informatique.html.twig', $array);
     }
 
     /**
