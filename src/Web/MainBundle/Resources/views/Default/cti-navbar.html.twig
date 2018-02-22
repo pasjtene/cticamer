@@ -6,7 +6,7 @@
             </div>
 
             <div class="nav_bar">
-                <div class="slogan">qualité et succès garanti</div>
+                <div class="slogan">{% trans from 'ctinav' %} slogan {% endtrans %}</div>
                 <div class="nav-items">
                     <ul>
                         <li>
@@ -21,40 +21,40 @@
                             </a>
 
                             <div class="dropdown-content">
-                                <a href="/ile/Views/anglais_groupes.php">Cours intensifs</a>
-                                <a href="/ile/Views/anglais_groupes.php">Formations continues</a>
-                                <a href="/ile/Views/anglais_groupes.php">Pour entreprises </a>
-                                <a href="/ile/Views/anglais_groupes.php">Cours aux particuliers</a>
+                                <a href="/ile/Views/anglais_groupes.php"> {% trans from 'ctinav' %} CI {% endtrans %} </a>
+                                <a href="/ile/Views/anglais_groupes.php"> {% trans from 'ctinav' %} FC {% endtrans %} </a>
+                                <a href="/ile/Views/anglais_groupes.php"> {% trans from 'ctinav' %} PE {% endtrans %} </a>
+                                <a href="/ile/Views/anglais_groupes.php"> {% trans from 'ctinav' %} CP {% endtrans %} </a>
                             </div>
 
                         </li>
 
                         <li class="ctidropdown">
                             <a href="{{ path('main_allemand') }}" class="dropbtn">
-                                {% trans from 'cti' %} navbar.allemand {% endtrans %}
+                                {% trans from 'ctinav' %} m_allemand {% endtrans %}
                             </a>
 
                             <div class="dropdown-content">
-                                <a href="/ile/Views/allemand_adultes.php">Pour etudier en allemagne</a>
-                                <a href="/ile/Views/allemand_jeunes.php">Pour regroupement familial</a>
-                                <a href="/ile/Views/allemand_prepa_exam.php">Cours aux particuliers</a>
-                                <a href="/ile/Views/allemand_cours_speciaux.php">Cours spécialisés</a>
+                                <a href="/ile/Views/allemand_adultes.php"> {% trans from 'ctinav' %} etudeAll {% endtrans %} </a>
+                                <a href="/ile/Views/allemand_jeunes.php"> {% trans from 'ctinav' %} regrFamill {% endtrans %} </a>
+                                <a href="/ile/Views/allemand_prepa_exam.php"> {% trans from 'ctinav' %} coursParti {% endtrans %} </a>
+                                <a href="/ile/Views/allemand_cours_speciaux.php"> {% trans from 'ctinav' %} coursSpec {% endtrans %} </a>
                             </div>
                         </li>
 
 
                         <li class="ctidropdown">
                             <a href="{{ path('main_informatique') }}" class="dropbtn">
-                                {% trans from 'cti' %} navbar.informatique {% endtrans %}
+                                {% trans from 'ctinav' %} m_informatique {% endtrans %}
                             </a>
 
                             <div class="dropdown-content">
-                                <a href="/ile/Views/informatique.php">Logiciels Bureautique</a>
-                                <a href="/ile/Views/informatique.php">Infographie, Design Artistique et Média </a>
-                                <a href="/ile/Views/informatique.php">Formation à l’utilisation de l’Internet</a>
-                                <a href="/ile/Views/informatique.php">Développement d’Applications Web </a>
-                                <a href="/ile/Views/informatique.php">Sécurité informatique</a>
-                                <a href="/ile/Views/informatique.php">Cours aux particuliers</a>
+                                <a href="/ile/Views/informatique.php"> {% trans from 'ctinav' %} logiBur {% endtrans %} </a>
+                                <a href="/ile/Views/informatique.php"> {% trans from 'ctinav' %} art {% endtrans %} </a>
+                                <a href="/ile/Views/informatique.php"> {% trans from 'ctinav' %} internet {% endtrans %} </a>
+                                <a href="/ile/Views/informatique.php"> {% trans from 'ctinav' %} appWeb {% endtrans %}  </a>
+                                <a href="/ile/Views/informatique.php"> {% trans from 'ctinav' %} secuInfo {% endtrans %} </a>
+                                <a href="/ile/Views/informatique.php"> {% trans from 'ctinav' %} coursPartiInfo {% endtrans %} </a>
                             </div>
                         </li>
                         <!--
@@ -78,7 +78,7 @@
 
                         <li class="ctidropdown">
                             <a href="{{ path('main_login') }}" class="dropbtn">
-                                {% trans from 'ctinav' %} m4 {% endtrans %}
+                                {% trans from 'ctinav' %} m_inscription {% endtrans %}
                             </a>
                             <!--
                             <div class="dropdown-content">

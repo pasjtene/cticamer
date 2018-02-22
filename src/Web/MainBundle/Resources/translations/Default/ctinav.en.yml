@@ -1,4 +1,25 @@
 m_anglais: ENGLISH
-m2: GERMAN
-m3: COMPUTING
-m4: REGISTER
+m_allemand: GERMAN
+m_informatique: COMPUTING
+m_inscription: REGISTER
+slogan: quality and success guaranteed
+CI: Accelerated Training
+FC: Normal Training
+PE: Corporate training
+CP: Private lessons
+
+
+
+
+
+etudeAll: For studies in Germany
+regrFamill: For family reunification
+coursParti: Private lessons
+coursSpec: Specialized courses
+
+logiBur: Office Software
+art: Computer Graphics, Artistic Design and Media
+internet: Internet Usage Training
+appWeb: Web Application Development
+secuInfo: IT Security
+coursPartiInfo: Private lessons
