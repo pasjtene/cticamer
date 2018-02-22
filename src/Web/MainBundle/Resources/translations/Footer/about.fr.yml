@@ -23,11 +23,12 @@ about:
   bac1: 2 fois par semaine
 
   discover: Peut comprendre et utiliser des expressions familières et quotidiennes ainsi que des énoncés très simples qui visent à satisfaire des besoins concrets. Peut communiquer de façon simple si l'interlocuteur parle lentement et distinctement et se montre coopératif.
-  year1: Première Année
-  year2: Deuxième Année
-  year3: Troisième Année
-  year4: Quatrième Année
-  year5: Cinquième Année
+  year1: Utilisateur Débutant
+  year2: Intermédiaire ou Usuel
+  year3: Niveau Seuil
+  year4: Utilisateur Indépendant
+  year5: Utilisateur Autonome
+  year6: Utilisateur Expérimenté
   discover1: Découvrir
   learn1: Apprendre
   learn: Acquérir des connaissances essentielles pour réussir les missions qui vous seront confiées dans votre futur métier.
