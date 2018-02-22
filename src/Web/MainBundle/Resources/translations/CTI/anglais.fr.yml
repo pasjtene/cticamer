@@ -19,9 +19,15 @@ master: Peut comprendre le contenu essentiel de sujets concrets ou abstraits dan
         Peut s'exprimer de façon claire et détaillée sur plusieurs sujets, émettre un avis sur
         un sujet et exposer les avantages et les inconvénients.
 
-expert: Peut comprendre des textes longs et exigeants, ainsi que saisir des significations implicites.
+expert1: Peut comprendre des textes longs et exigeants, ainsi que saisir des significations implicites.
         Peut s'exprimer spontanément et couramment sans trop devoir chercher ses mots, sur des sujets  de sa vie sociale,
         professionnelle ou académique.
+
+expert2: Peut comprendre sans effort pratiquement tout ce qu'il/elle lit ou entend. Peut restituer faits et arguments de
+         diverses sources écrites et orales en les résumant de façon cohérente. Peut s'exprimer spontanément,
+         très couramment et de façon précise et peut rendre distinctes de fines nuances de sens en rapport avec des
+         sujets complexes.
+
 
 coursDispo: COURS DISPONIBLES
 block1: FORMATION INTENSIVE
