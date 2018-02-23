@@ -57,6 +57,16 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
     }
 
     /**
+     * @Route("/cours-intensifs", name="main_CoursIntensifs))
+     */
+    public function CoursIntensifsAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:cours_intensifs.html.twig',$array);
+    }
+
+
+    /**
      * @Route("/allemand", name="main_allemand"))
      */
     public function allemandAction()
