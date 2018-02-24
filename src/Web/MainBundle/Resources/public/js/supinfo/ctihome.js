@@ -56,11 +56,25 @@ $("#sous-titre-lef-nav-fr").click(function(e){
         console.log("This is a mobile phone:++ 1");
     }
 
-    if(IsMobile()) {
 
+
+    $(".mlist").hide();
+
+    if(!IsMobile()){
+        $("#cti-mobile-nav").hide();
+    }
+
+
+    if(IsMobile()) {
+        $(".mlist").slideUp();
         $(".ftitle").click(function(){
             /*$(".fcontent").slideToggle();*/
             $(this).siblings().slideToggle();
+        });
+
+        $(".mobile-bars").click(function(){
+            $(".mlist").slideToggle();
+            console.log("clicked...");
         });
     }
 
