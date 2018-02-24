@@ -57,6 +57,42 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
     }
 
     /**
+     * @Route("/cours_intensifs", name="main_CoursIntensifs"))
+     */
+    public function CoursIntensifsAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:cours_intensifs.html.twig', $array);
+    }
+
+    /**
+     * @Route("/formation_continue", name="main_FormationContinue"))
+     */
+    public function FormationContinueAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:formation_continue.html.twig', $array);
+    }
+
+    /**
+     * @Route("/pour_entreprises", name="main_PourEntreprises"))
+     */
+    public function PourEntreprisesAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:pour_entreprises.html.twig', $array);
+    }
+
+    /**
+     * @Route("/cours_particuliers", name="main_CoursParticulier"))
+     */
+    public function CoursParticulierAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:cours_particuliers.html.twig', $array);
+    }
+
+    /**
      * @Route("/allemand", name="main_allemand"))
      */
     public function allemandAction()
