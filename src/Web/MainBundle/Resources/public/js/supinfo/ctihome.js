@@ -66,10 +66,20 @@ $("#sous-titre-lef-nav-fr").click(function(e){
 
 
     if(IsMobile()) {
+        //Gestion du menu sur le mobile
         $(".mlist").slideUp();
         $(".ftitle").click(function(){
             /*$(".fcontent").slideToggle();*/
-            $(this).siblings().slideToggle();
+            var sibling = $(this).next('.fcontent');
+            $(".fcontent").each(function() {
+                var content = $(this);
+                if (!content.is(sibling)) {
+                    $(this).slideUp();
+                }
+            });
+            $(this).siblings(".fcontent").slideToggle();
+
+            //$(this).siblings().slideToggle();
         });
 
         $(".mobile-bars").click(function(){
@@ -77,8 +87,6 @@ $("#sous-titre-lef-nav-fr").click(function(e){
             console.log("clicked...");
         });
     }
-
-
 
 });
 
