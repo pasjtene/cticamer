@@ -1,6 +1,7 @@
 
 #cti-nav {
-padding-top: 50px;
+
+  margin-top: 1px!important;
   .slogan {
     align-self: flex-end;
     display: block;
@@ -139,7 +140,7 @@ and (max-device-width : 667px)
 
 {
   #cti-nav {
-
+    padding-top: 50px;
     .nav-items {
       display: none;
     }
@@ -160,7 +161,7 @@ and (max-device-width : 568px)
 
 {
   #cti-nav {
-
+    padding-top: 50px;
     .nav-items {
       display: none;
     }
