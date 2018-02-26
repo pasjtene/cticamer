@@ -101,6 +101,103 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
         return $this->render('MainBundle:CTI:allemand.html.twig', $array);
     }
 
+
+
+
+
+
+
+
+    /**
+     * @Route("/etudier_en_Allemagne", name="main_etudierEnAllemagne"))
+     */
+    public function etudierEnAllemagneAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:etudier_en_Allemagne.html.twig', $array);
+    }
+
+    /**
+     * @Route("/Regroupement_familial", name="main_regroupementFamilial"))
+     */
+    public function regroupementFamilialAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:regroupement_familial.html.twig', $array);
+    }
+
+    /**
+     * @Route("/Cours_particuliers_dAllemand", name="main_CoursParticuliersdAll"))
+     */
+    public function main_CoursParticuliersdAllAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:cours_particuliers_dAllemand.html.twig', $array);
+    }
+
+    /**
+     * @Route("/Cours_Specialises", name="main_CoursSpecialise"))
+     */
+    public function CoursSpecialiseAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:cours_Specialises.html.twig', $array);
+    }
+
+    /**
+     * @Route("/Logiciels_de_Bureautique", name="main_LogicielsBureautique"))
+     */
+    public function LogicielsBureautiqueAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:logiciels_de_Bureautique.html.twig', $array);
+    }
+
+    /**
+     * @Route("/Infographie_Design_et_Media", name="main_Design"))
+     */
+    public function DesignAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:infographie_Design_et_Media.html.twig', $array);
+    }
+
+    /**
+     * @Route("/Utiliser_Internet", name="main_Internet"))
+     */
+    public function InternetAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:utiliser_Internet.html.twig', $array);
+    }
+
+    /**
+     * @Route("/Developpement_dApplication_Web", name="main_AppliWeb"))
+     */
+    public function AppliWebAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:developpement_dApplication_Web.html.twig', $array);
+    }
+
+    /**
+     * @Route("/Securite_Informatique", name="main_SecuriteInfo"))
+     */
+    public function SecuriteInfoAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:securite_Informatique.html.twig', $array);
+    }
+
+    /**
+     * @Route("/Cours_Particuliers_dInformatique", name="main_CoursParticuliersdInfo"))
+     */
+    public function CoursParticuliersdInfoAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:cours_Particuliers_dInformatique.html.twig', $array);
+    }
+
     /**
      * @Route("/informatique", name="main_informatique"))
      */
