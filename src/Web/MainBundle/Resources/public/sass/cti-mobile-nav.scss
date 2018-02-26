@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    border-top: 1px solid #52616d;
   }
   img {
     width: 100%;
@@ -84,8 +85,8 @@
     }
   }
   .list-content {
-    /* background-color: #fff;*/
-    border: 1px solid darkgrey;
+    /* background-color: #fff;
+    border: 1px solid darkgrey;*/
     background-color: #373737;
     display: flex;
     flex-direction: column;
@@ -219,7 +220,7 @@
       margin-top: 0;
       margin-bottom: 0.4em;
       color: #f16e00;
-      font-size: 25px!important;
+      font-size: 20px!important;
     }
 
     .list-content {
@@ -274,7 +275,7 @@
       margin-top: 0;
       margin-bottom: 0.4em;
       color: #f16e00;
-      font-size: 25px!important;
+      font-size: 20px!important;
     }
 
     .list-content {
