@@ -92,6 +92,11 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
         return $this->render('MainBundle:CTI:cours_particuliers.html.twig', $array);
     }
 
+
+
+
+
+
     /**
      * @Route("/allemand", name="main_allemand"))
      */
@@ -100,13 +105,6 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
         $array = [];
         return $this->render('MainBundle:CTI:allemand.html.twig', $array);
     }
-
-
-
-
-
-
-
 
     /**
      * @Route("/etudier_en_Allemagne", name="main_etudierEnAllemagne"))
@@ -142,6 +140,20 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
     {
         $array = [];
         return $this->render('MainBundle:CTI:cours_Specialises.html.twig', $array);
+    }
+
+
+
+
+
+
+    /**
+     * @Route("/informatique", name="main_informatique"))
+     */
+    public function informatiqueAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:informatique.html.twig', $array);
     }
 
     /**
@@ -198,14 +210,9 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
         return $this->render('MainBundle:CTI:cours_Particuliers_dInformatique.html.twig', $array);
     }
 
-    /**
-     * @Route("/informatique", name="main_informatique"))
-     */
-    public function informatiqueAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:informatique.html.twig', $array);
-    }
+
+
+
 
     /**
      * @Route("/admission", name="main_admission"))

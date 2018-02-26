@@ -18,13 +18,13 @@
     <ul class="list">
         <li class="list-item">
             <div class="list-content">
-                <div class="ftitle"><h2>LANGUE ANGLAISE</h2></div>
+                <div class="ftitle"><h2> {% trans from 'ctifooter' %} langAngl {% endtrans %} </h2></div>
                 <p class="fcontent">
-                    <span><a class="liens_footer" href="">Cours d'anglais</a></span><br>
-                    <span><a class="liens_footer" href="">Enseigner l'anglais</a></span><br>
-                    <span><a class="liens_footer" href="">Examens d'anglais</a></span><br>
-                    <span><a class="liens_footer" href="/ile/Views/inscription.php">Inscription en ligne</a></span><br>
-                    <span><a class="liens_footer" href="">Pourquoi apprendre l'anglais</a></span><br>
+                    <span><a class="liens_footer" href="{{ path('main_anglais') }}"> {% trans from 'ctifooter' %} coursAngl {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href=""> {% trans from 'ctifooter' %} enseignerANGLAIS {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href=""> {% trans from 'ctifooter' %} examANGLAIS {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href=""> {% trans from 'ctifooter' %} inscrLIGNE {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href=""> {% trans from 'ctifooter' %} pourquoiANGLAIS {% endtrans %} </a></span><br>
 
                 </p>
 
@@ -35,9 +35,9 @@
             <div class="list-content">
                 <div class="ftitle"><h2>LANGUE ALLEMANDE</h2></div>
                 <p class="fcontent">
-                    <span><a class="liens_footer" href="">Cours d'allemand</a></span><br>
-                    <span><a class="liens_footer" href="">Enseigner l'allemand</a></span><br>
-                    <span><a class="liens_footer" href="">Examens d'allemand</a></span><br>
+                    <span><a class="liens_footer" href="{{ path('main_allemand') }}"> {% trans from 'ctifooter' %} coursAllemand {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href=""> {% trans from 'ctifooter' %} enseignerAllemand {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href=""> {% trans from 'ctifooter' %} examALLEMAND {% endtrans %} </a></span><br>
 
                 </p>
 
@@ -46,15 +46,15 @@
 
         <li class="list-item">
             <div class="list-content">
-                <div class="ftitle"><h2>INFORMATIQUE</h2></div>
+                <div class="ftitle"><h2> {% trans from 'ctifooter' %} pourquoiCTI {% endtrans %} INFORMATIQUE</h2></div>
                 <p class="fcontent">
 
-                    <span><a class="liens_footer" href="">Secrétariat bureautique </a></span><br>
-                    <span><a class="liens_footer" href="">Infographie, Design Artistique et Média</a></span><br>
-                    <span><a class="liens_footer" href="">Formation à l’utilisation de l’Internet</a></span><br>
-                    <span><a class="liens_footer" href="">Sécurité informatique</a></span><br>
-                    <span><a class="liens_footer" href="">Développement d’Applications Web </a></span><br>
-                    <span><a class="liens_footer" href="">Pourquoi choisir le CTI ?</a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_LogicielsBureautique') }}"> {% trans from 'ctifooter' %} bureautique {% endtrans %}  </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_Design') }}"> {% trans from 'ctifooter' %} design {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_Internet') }}"> {% trans from 'ctifooter' %} internet {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_SecuriteInfo') }}"> {% trans from 'ctifooter' %} secuINFO {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_AppliWeb') }}"> {% trans from 'ctifooter' %} appWEB {% endtrans %}  </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_homepage') }}"> {% trans from 'ctifooter' %} pourquoiCTI {% endtrans %} </a></span><br>
                 </p>
 
             </div>
