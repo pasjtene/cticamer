@@ -1,5 +1,5 @@
 #cti-mobile-nav {
-
+  display: none;
   margin: 0px !important;
   position: fixed;
   width: 100%;
@@ -189,38 +189,44 @@
     margin: 0;
   }
 
-  /*iPhone 6 in portrait*/
-  @media only screen
-  and (min-device-width : 375px)
-  and (max-device-width : 667px)
-    /*and (orientation : portrait) */
+}
 
-  {
 
+/*iPhone 6 in portrait*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+  /*and (orientation : portrait) */
+
+{
+
+  #cti-mobile-nav {
+    display: block;
+    width: 100%;
     .list-item {
       /*width: 33.33%;*/
       width: 100%;
-      padding: 0px!important;
+      padding: 0px !important;
     }
 
     .social-div-item {
       width: 19%;
-      font-size: 35px!important;
+      font-size: 35px !important;
     }
 
     .ftitle {
-      font-size: 50px!important;
+      font-size: 50px !important;
     }
     .fcontent {
-      display:none;
-      font-size: 20px!important;
+      display: none;
+      font-size: 20px !important;
     }
 
     h2 {
       margin-top: 0;
       margin-bottom: 0.4em;
       color: #f16e00;
-      font-size: 20px!important;
+      font-size: 20px !important;
     }
 
     .list-content {
@@ -232,21 +238,27 @@
     }
   }
 
+}
 
 
 
-  /*iPhone 5 & 5S in portrait*/
 
-  @media only screen
-  and (min-device-width : 320px)
-  and (max-device-width : 568px)
-    /*and (orientation : portrait) */
+/*iPhone 5 & 5S in portrait*/
 
-  {
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+  /*and (orientation : portrait) */
+
+{
+
+  #cti-mobile-nav {
+    display: block;
+    width: 100%;
     .list-item {
       /*width: 33.33%;*/
       width: 100%;
-      padding: 0px!important;
+      padding: 0px !important;
     }
 
     .social-div-item {
@@ -255,12 +267,12 @@
     }
 
     .ftitle {
-      font-size: 50px!important;
+      font-size: 50px !important;
     }
 
     .fcontent {
-      display:none;
-      font-size: 20px!important;
+      display: none;
+      font-size: 20px !important;
     }
 
     .item-text {
@@ -275,7 +287,7 @@
       margin-top: 0;
       margin-bottom: 0.4em;
       color: #f16e00;
-      font-size: 20px!important;
+      font-size: 20px !important;
     }
 
     .list-content {
@@ -287,5 +299,6 @@
     }
 
   }
+
 
 }
