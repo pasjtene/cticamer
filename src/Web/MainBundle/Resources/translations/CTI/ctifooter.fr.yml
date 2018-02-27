@@ -6,9 +6,13 @@ inscrLIGNE: Inscription en ligne
 pourquoiANGLAIS: Pourquoi apprendre l'anglais
 
 
+langALL: LANGUE ALLEMANDE
 coursAllemand: Cours d'allemand
 enseignerAllemand: Enseigner l'allemand
 examALLEMAND: Examens d'allemand
+
+
+informatique: INFORMATIQUE
 bureautique: Secrétariat bureautique
 design: Infographie, Design Artistique et Média
 
@@ -17,3 +21,14 @@ secuINFO: Sécurité informatique
 appWEB: Développement d’Applications Web
 pourquoiCTI: Pourquoi choisir le CTI ?
 
+ctiQUI: QUI SOMMES NOUS?
+mission: Missions et objectifs
+contactEtHORAIRES: Contacts et horaires d'ouverture
+equipeCTI: Notre équipe
+carriere: Carrière
+partners: Nos Partenaires
+
+legal: Mentions légales
+secuDONNEES: Protection des données personnelles
+inFOS: Informations complémentaires
+ReseauxSOCIAUX: Réseaux Sociaux
