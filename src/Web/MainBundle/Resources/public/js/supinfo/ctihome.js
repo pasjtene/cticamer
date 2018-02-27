@@ -60,8 +60,8 @@ $("#sous-titre-lef-nav-fr").click(function(e){
 
     $(".mlist").hide();
 
-    if(!IsMobile()){
-        $("#cti-mobile-nav").hide();
+    if(IsMobile()){
+        $("#cti-mobile-nav").show();
     }
 
 
