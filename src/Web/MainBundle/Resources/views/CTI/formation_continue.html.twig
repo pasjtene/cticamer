@@ -38,6 +38,41 @@
             /*background-size: cover;*/
             background-size: 50%  auto;
         }
+
+        .manuels-img {
+            width: 18%;
+        }
+        .manuels-img {
+            width: 18%;
+        }
+        .horaire {
+            display: inline-block;
+            padding: 1%;
+            margin: 1%;
+            background: white;
+        }
+        .baniere{
+            width: 100%;
+            max-height: 400px;
+        }
+        .baniere-img{
+            width: 40%;
+        }
+        .baniere-msg {
+            width: 55%;
+            float: right;
+            color: white;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+            font-size: 150%;
+            padding: 3%;
+        }
+
+        .sous-menu {
+            background-color: #f16e00;
+            color: white;
+            font-size: 200%;
+            text-align: center;
+
     </style>
     {# mettre le css si la page t'oublige #}
 {% endblock %}
@@ -45,73 +80,246 @@
     {% include 'MainBundle:CTI:mobile-nav.html.twig' %}
     {% include 'MainBundle:Default:cti-navbar.html.twig' %}
 
+
 {% endblock %}
 
 {% block  mainLg %}
 
     <div id="main_home">
 
+        <div class="sous-menu">
+            Formation continue
+        </div>
 
 
+        <div class="flex-contain">
 
-        <div class="message_and_image">
-            <div class="message_on_image">{% trans from 'anglais' %} baniere {% endtrans %}</div>
+            <div class="left-nav">
+                <div class="left-nav-contain">
+                    <div class="titre_lef-nav">FORMATIONS CTI Cameroon</div>
 
-            <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-                <img  id="top_img" src="{{ asset('data/img/about4.jpg') }}" alt="">
-                {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
+                    <div class="sous-titre-lef-nav" id="sous-titre-lef-nav-an"><h3>Anglais</h3></div>
+                    <div class="sous-titre-contenu" id="sous-titre-anglais">
+                        <div class="left-nav-text">
+                            Nous dispensons des cours d’Anglais général pour tous les niveaux.
+                            Que vous soyez élève, étudiant, chercheur d’emplois ou même travailleurs les différents cours
+                            d’Anglais que nous dispensons au Churchill Training Institute permettrons d’améliorer ou de perfectionner vos connaissances en anglais,
+                            vous donnant ainsi un atout supplémentaire pour votre progrès professionnel ou académique. <br>
+                        </div>
+                        <div class="left-nav-links">
+                            <a href="">Pour adultes</a>
+
+                            <a href="">Pour enfants et jeunes</a>
+
+                            <a href="">Préparation aux examens</a>
+                            <a href="">Cours aux particuliers</a>
+
+                        </div>
+                    </div>
+                    <div class="sous-titre-lef-nav" id="sous-titre-lef-nav-al"><h3>Cours d'Allemand</h3></div>
+                    <div class="sous-titre-contenu" id="left-nav-al-cont">
+                        <div class="left-nav-text">
+                            Le Churchill Training Institute offres des cours de langue allemande aux jeunes souhaitant étudier en Allemagne.
+                            Nous préparons les candidats aux examens de langue allemande Nécessaires pour obtenir un visa étudiant ( Goethe-Zertifikat A1: Start Deutsch1, Goethe-Zertifikat B1, Goethe-Zertifikat B2, Test-DaF) offerts par l’Institut-Goethe à Yaoundé.<br>
+                        </div>
+                        <div class="left-nav-links">
+                            <a href="{{ path('main_allemand') }}">En savoir plus</a>
+
+                        </div>
+                    </div>
+                    <div class="sous-titre-lef-nav" id="sous-titre-lef-nav-it"><h3>Cours d'Informatique</h3></div>
+                    <div class="sous-titre-contenu" id="left-nav-it-cont">
+                        <div class="left-nav-text">
+                            Le CTI offre des formations de haute qualité dans plusieurs domaines de l’informatique<br>
+
+                        </div>
+                        <div class="left-nav-links">
+                            <a href="">Secrétariat bureautique</a>
+
+                            <a href="">Infographie, Design Artistique et Média</a>
+
+                            <a href="">Développement d’Applications Web</a>
+                            <a href="">Sécurité informatique</a>
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
 
-        <div class="row line">
-            <div>  {% trans from 'about' %} about.block15 {% endtrans %} </div>
+            <div class="main-contain-middle">
 
-        </div>
+                <div class="baniere cat-container">
+
+                    <img class="baniere-img categorie" src="{{ asset('data/img/students3.jpg') }}" alt="">
+
+                    <div class="baniere-msg categorie ">
+                        <h2>{% trans from 'anglais' %} coursINTENSIF {% endtrans %}</h2> <BR>
+                        {% trans from 'anglais' %} objectifs {% endtrans %}
+                    </div>
+
+                    <!--
+                    <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
+
+                        {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
+                    </div>
+-->
+
+                </div>
+
+                <div class="row line">
+                    <div>  {% trans from 'anglais' %} service {% endtrans %} </div>
+
+                </div>
 
 
+
+                <div class="cat-container">
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href="{{ path('main_allemand') }}"> COURS D'ANGLAIS INTENSIF POUR TOUS </a></h3>
+                        </div>
+                        <div class="datecours">
+                            {% trans from 'ctihome' %} prochaineRentree {% endtrans %}:
+                            {% trans from 'ctihome' %} debutDesCours {% endtrans %}
+                        </div>
+
+                        <div class="annonce-inscription">
+                            Les Inscriptions sont en cour. Il y a encore quelques places disponibles.
+                        </div>
+
+                        <div class="category-desktop-contain">
+                            Le Churchill Training Institute vous offre des cours d'Anglais de qualité:
+                            <ul>
+                                <li>Enseignants Qualifiés</li>
+                                <li>Programme de cours conçu selon le Cadre Européen Commun de Référence pour les Langues (CECR).</li>
+                                <li>Cadre agréable et Propice aux études</li>
+                                <li>Matériel didactique au point </li>
+                                <li>Salles Climatisées </li>
+                            </ul>
+                            Nous préparons les candidats aux tests d'Anglais Nécessaires pour obtenir un visa étudiant, booster votre carrière ou vos affaires
+                            ( TOEFL, IELTS, TOEIC ).
+                        </div>
+
+                    </div>
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href="{{ path('main_anglais') }}"> MANUELS REQUIS </a></h3>
+                        </div>
+                        Pour votre formation, vous avez droit aux meilleurs manuels d'apprentissage.<br>
+                        Nos cours sont conçus d’après le Cadre Européen Commun de Référence pour les Langues (CECR).<br>
+                        <div class="category-desktop-contain">
+
+                        </div>
+                        <div class="category-desktop-contain">
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href="{{ path('main_informatique') }}">HORAIRES DE COURS</a></h3>
+                        </div>
+
+                        Choisissez vos heures de cours en fonction de votre disponibilité. <br>
+
+                        <div class="">
+                            <div class=" horaire ">
+                                <div class="news-title"><h4>Matinées</h4></div>
+
+                                <div class="news-title"><p>08H00 - 10h00</p></div>
+                            </div>
+
+                            <div class=" horaire ">
+                                <div class="news-title"><h4>Après-midi</h4></div>
+
+                                <div class="news-title"><p>14H00 - 16h00</p></div>
+                            </div>
+
+                            <div class="horaire">
+                                <div class="news-title"><h4>Cours du Soirs</h4></div>
+
+                                <div class="news-title"><p>18H30 - 20h30</p></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href="{{ path('main_anglais') }}">Cours aux particuliers</a></h3>
+                        </div>
+                        Cours basés sur des contenus particuliers, destinés à des groupes-cibles spéciaux ou pour
+                        l’exercice d’aptitudes uniques: <br><br>
+                        N’hésitez pas à nous contacter si vous souhaitez suivre une formation à la carte dans un
+                        de nos domaines de compétence.
+                    </div>
+                </div>
+
+
+
+                <!--
         <div class="row section admission">
-            <h2 class="bloc-title"> {% trans from 'anglais' %} coursDispo {% endtrans %} </h2>
+            <h2 class="bloc-title">  {% trans from 'allemand' %} coursDispo {% endtrans %} </h2>
             <div class="inner padding">
                 <div class="flex">
                     <div class="hexagon degrade admission-hexagon">
                         <div class="triangle-top"></div>
-                        <div class="titre"> {% trans from 'anglais' %} block1 {% endtrans %} </div>
+                        <div class="titre">Goethe-Zertifikat A1</div>
                         <h3>
                             <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">IEPL</span>
+                            <span class="adm-niv">GZA1</span>
                             <i class="icon-fleche-gauche grand"></i></h3>
                         <div class="content">
-                            {% trans from 'anglais' %} bac1 {% endtrans %}
+                            {% trans from 'allemand' %} gza1 {% endtrans %}
                         </div>
-                        <a class="myButton" href="javascript:;">{% trans from 'anglais' %} bac4 {% endtrans %}</a>
+                        <a class="myButton" href="javascript:;"> {% trans from 'allemand' %} bac4 {% endtrans %} </a>
                         <div class="triangle-bottom"></div>
                     </div>
 
                     <div class="hexagon degrade admission-hexagon">
                         <div class="triangle-top"></div>
-                        <div class="titre"> {% trans from 'anglais' %} block2 {% endtrans %} </div>
+                        <div class="titre">Goethe-Zertifikat A2</div>
                         <h3>
                             <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">REPL</span>
+                            <span class="adm-niv">GZA2</span>
                             <i class="icon-fleche-gauche grand"></i></h3>
                         <div class="content">
-                            {% trans from 'anglais' %} bac2 {% endtrans %}
+                            {% trans from 'allemand' %} gza2 {% endtrans %}
                         </div>
-                        <a class="myButton" href="javascript:;">{% trans from 'anglais' %} bac4 {% endtrans %}</a>
+                        <a class="myButton" href="javascript:;"> {% trans from 'allemand' %} bac4 {% endtrans %} </a>
                         <div class="triangle-bottom"></div>
                     </div>
 
                     <div class="hexagon degrade admission-hexagon">
                         <div class="triangle-top"></div>
-                        <div class="titre">{% trans from 'anglais' %} block3 {% endtrans %}</div>
+                        <div class="titre">Goethe-Zertifikat B1</div>
                         <h3>
                             <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">REPL2</span>
+                            <span class="adm-niv">GZB1</span>
                             <i class="icon-fleche-gauche grand"></i></h3>
                         <div class="content">
-                            {% trans from 'anglais' %} bac3 {% endtrans %}
+                            {% trans from 'allemand' %} gzb1 {% endtrans %}
                         </div>
-                        <a class="myButton" href="javascript:;">{% trans from 'anglais' %} bac4 {% endtrans %}</a>
+                        <a class="myButton" href="javascript:;"> {% trans from 'allemand' %} bac4 {% endtrans %} </a>
+                        <div class="triangle-bottom"></div>
+                    </div>
+
+                    <div class="hexagon degrade admission-hexagon">
+                        <div class="triangle-top"></div>
+                        <div class="titre">Goethe-Zertifikat B2</div>
+                        <h3>
+                            <i class="icon-fleche-droite grand"></i>
+                            <span class="adm-niv">GZB2</span>
+                            <i class="icon-fleche-gauche grand"></i></h3>
+                        <div class="content">
+                            {% trans from 'allemand' %} gzb2 {% endtrans %}
+                        </div>
+                        <a class="myButton" href="javascript:;"> {% trans from 'allemand' %} bac4 {% endtrans %} </a>
                         <div class="triangle-bottom"></div>
                     </div>
 
@@ -120,100 +328,22 @@
             </div>
 
         </div>
+        -->
 
 
-        <div class="section programmes-main-div">
-            <h2 class="bloc-title">{% trans from 'anglais' %} niv {% endtrans %}</h2>
-
-            <div class="inner-prog padding">
-                <div class="flex">
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> A1 </div>
-                        </div>
-                        <h4>{% trans from 'about' %}about.year1{% endtrans %}</h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.discover1 {% endtrans %}</h3>
-                        {% trans from 'anglais' %} discover {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> A2 </div>
-                        </div>
-                        <h4> {% trans from 'about' %}about.year2{% endtrans %}  </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.learn1 {% endtrans %}  </h3>
-                        {% trans from 'anglais' %} learn {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> B1 </div>
-                        </div>
-                        <h4> {% trans from 'about' %}about.year3{% endtrans %} </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.improve1 {% endtrans %}</h3>
-                        {% trans from 'anglais' %} improve {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> B2 </div>
-                        </div>
-                        <h4>  {% trans from 'about' %}about.year4{% endtrans %} </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.master1 {% endtrans %}</h3>
-                        {% trans from 'anglais' %} master {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> C1 </div>
-                        </div>
-                        <h4>  {% trans from 'about' %}about.year5{% endtrans %} </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.expert1 {% endtrans %}</h3>
-                        {% trans from 'anglais' %} expert1 {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> C2 </div>
-                        </div>
-                        <h4>  {% trans from 'about' %}about.year6{% endtrans %} </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.expert1 {% endtrans %}</h3>
-                        {% trans from 'anglais' %} expert2 {% endtrans %}
-                    </div>
 
 
-                </div>
+                <div class="separator"></div>
+
+
+
+
             </div>
-
         </div>
 
 
 
-
-
-        <div class="separator"></div>
-
-
-        <div class="section programmes-main-div">
+        <div class="section programmes-main-div ">
             <h2 class="bloc-title">{% trans from 'about' %} about.news {% endtrans %}</h2>
 
             <div class="inner padding">
@@ -238,6 +368,11 @@
             </div>
 
         </div>
+
+
+
+
+
 
 
 

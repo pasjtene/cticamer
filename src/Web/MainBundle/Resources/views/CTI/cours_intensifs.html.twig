@@ -42,12 +42,36 @@
         .manuels-img {
             width: 18%;
         }
+        .manuels-img {
+            width: 18%;
+        }
         .horaire {
             display: inline-block;
             padding: 1%;
             margin: 1%;
             background: white;
         }
+        .baniere{
+            width: 100%;
+            max-height: 400px;
+        }
+        .baniere-img{
+            width: 40%;
+        }
+        .baniere-msg {
+            width: 55%;
+            float: right;
+            color: white;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+            font-size: 150%;
+            padding: 3%;
+        }
+
+        .sous-menu {
+            background-color: #f16e00;
+            color: white;
+            font-size: 200%;
+            text-align: center;
 
     </style>
     {# mettre le css si la page t'oublige #}
@@ -62,6 +86,10 @@
 {% block  mainLg %}
 
     <div id="main_home">
+
+        <div class="sous-menu">
+            Cours Intensifs d'Anglais
+        </div>
 
 
         <div class="flex-contain">
@@ -120,16 +148,23 @@
             </div>
 
             <div class="main-contain-middle">
-                <div class="message_and_image">
-                    <div class="message_on_image">
-                        {% trans from 'anglais' %} coursINTENSIF {% endtrans %} <BR>
-                        <h2>{% trans from 'anglais' %} objectifs {% endtrans %}</h2>
+
+                <div class="baniere cat-container">
+
+                    <img class="baniere-img categorie" src="{{ asset('data/img/students2.jpg') }}" alt="">
+
+                    <div class="baniere-msg categorie ">
+                        <h2>{% trans from 'anglais' %} coursINTENSIF {% endtrans %}</h2> <BR>
+                        {% trans from 'anglais' %} objectifs {% endtrans %}
                     </div>
 
+                    <!--
                     <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-                        <img  id="top_img" src="{{ asset('data/img/about4.jpg') }}" alt="">
+
                         {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
                     </div>
+-->
+
                 </div>
 
                 <div class="row line">
