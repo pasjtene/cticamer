@@ -48,6 +48,28 @@
             margin: 1%;
             background: white;
         }
+        .baniere{
+            width: 100%;
+            max-height: 400px;
+        }
+        .baniere-img{
+            width: 40%;
+        }
+        .baniere-msg {
+            width: 55%;
+            float: right;
+            color: white;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+            font-size: 150%;
+            padding: 3%;
+        }
+
+        .sous-menu {
+            background-color: #f16e00;
+            color: white;
+            font-size: 200%;
+            text-align: center;
+        }
 
     </style>
     {# mettre le css si la page t'oublige #}
@@ -63,7 +85,9 @@
 
     <div id="main_home">
 
-
+        <div class="sous-menu">
+            Pour étudier en Allemagne
+        </div>
         <div class="flex-contain">
 
             <div class="left-nav">
@@ -120,16 +144,23 @@
             </div>
 
             <div class="main-contain-middle">
-                <div class="message_and_image">
-                    <div class="message_on_image">
-                        {% trans from 'allemand' %} title1 {% endtrans %} <BR>
+
+                <div class="baniere cat-container">
+
+                    <img class="baniere-img categorie" src="{{ asset('data/img/students1.jpg') }}" alt="">
+
+                    <div class="baniere-msg categorie ">
+                        <h2>{% trans from 'allemand' %} title1 {% endtrans %}</h2> <BR>
                         {% trans from 'allemand' %} text1 {% endtrans %}
                     </div>
 
+<!--
                     <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-                        <img  id="top_img" src="{{ asset('data/img/about4.jpg') }}" alt="">
+
                         {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
                     </div>
+-->
+
                 </div>
 
                 <div class="row line">
