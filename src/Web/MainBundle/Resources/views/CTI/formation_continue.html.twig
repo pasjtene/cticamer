@@ -72,6 +72,34 @@
             color: white;
             font-size: 200%;
             text-align: center;
+        }
+        .but {
+            color: #221199;
+        }
+        .table01 {
+            width: 90%;
+            color: #f16e00;
+            background-color: white;
+
+        }
+
+
+        .table01 td {
+            padding: 2%;
+            margin: 2%;
+            border: 5px;
+        }
+
+        .table02 {
+            width: 90%;
+            color: #f16e00;;
+        }
+
+        .table02 td {
+            padding: 2%;
+            margin: 5%;
+            border-color: transparent;
+        }
 
     </style>
     {# mettre le css si la page t'oublige #}
@@ -154,8 +182,8 @@
                     <img class="baniere-img categorie" src="{{ asset('data/img/students3.jpg') }}" alt="">
 
                     <div class="baniere-msg categorie ">
-                        <h2>{% trans from 'anglais' %} coursINTENSIF {% endtrans %}</h2> <BR>
-                        {% trans from 'anglais' %} objectifs {% endtrans %}
+                        <h2>{% trans from 'anglais' %} formationCONTINUE {% endtrans %}</h2> <BR>
+                        {% trans from 'anglais' %} object {% endtrans %}
                     </div>
 
                     <!--
@@ -168,8 +196,25 @@
                 </div>
 
                 <div class="row line">
-                    <div>  {% trans from 'anglais' %} service {% endtrans %} </div>
+                    <div>  {% trans from 'anglais' %} serviceCONTINUE {% endtrans %} </div>
 
+                </div>
+
+
+
+                <div class="cat-container">
+                    <div class="">
+                        <div class="category-title">
+                            <h3>{% trans from 'ctihome' %} prochaineRentree {% endtrans %}:
+                                {% trans from 'ctihome' %} debutDesCours {% endtrans %}
+                            </h3>
+                        </div>
+                        <div class="datecours">
+                            <div class="annonce-inscription">
+                                Les Inscriptions sont en cour. Il y a encore quelques places disponibles.
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -177,43 +222,73 @@
                 <div class="cat-container">
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_allemand') }}"> COURS D'ANGLAIS INTENSIF POUR TOUS </a></h3>
+                            <h3><a href="{{ path('main_allemand') }}"> {% trans from 'anglais' %} FReg {% endtrans %} </a></h3>
                         </div>
                         <div class="datecours">
-                            {% trans from 'ctihome' %} prochaineRentree {% endtrans %}:
-                            {% trans from 'ctihome' %} debutDesCours {% endtrans %}
+                            {% trans from 'anglais' %} detail0 {% endtrans %}
                         </div>
 
-                        <div class="annonce-inscription">
-                            Les Inscriptions sont en cour. Il y a encore quelques places disponibles.
+                        <div class="annonce-inscription but">
+                            La  formation Régulière  est  subdivisée en 6 niveaux  et permet à l’apprenant de parler
+                            couramment l’Anglais dans tous les domaines de la vie.
                         </div>
 
                         <div class="category-desktop-contain">
-                            Le Churchill Training Institute vous offre des cours d'Anglais de qualité:
-                            <ul>
-                                <li>Enseignants Qualifiés</li>
-                                <li>Programme de cours conçu selon le Cadre Européen Commun de Référence pour les Langues (CECR).</li>
-                                <li>Cadre agréable et Propice aux études</li>
-                                <li>Matériel didactique au point </li>
-                                <li>Salles Climatisées </li>
-                            </ul>
-                            Nous préparons les candidats aux tests d'Anglais Nécessaires pour obtenir un visa étudiant, booster votre carrière ou vos affaires
-                            ( TOEFL, IELTS, TOEIC ).
+                            <table class="table01">
+                                <tr>
+                                    <th> SIX Niveaux  </th>
+                                    <td> A1, A2, B1, B2, C1, C2 </td>
+                                </tr>
+                                <tr>
+                                    <th> Préparation aux tests  </th>
+                                    <td> IELTS, TOEFL,TOEIC </td>
+                                </tr>
+                                <tr>
+                                    <th> Durée de la formation  </th>
+                                    <td> 5 semaines par niveaux </td>
+                                </tr>
+                                <tr>
+                                    <th> Fréquence  </th>
+                                    <td> 2 fois par semaine </td>
+                                </tr>
+
+                            </table>
                         </div>
 
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_anglais') }}"> MANUELS REQUIS </a></h3>
+                            <h3><a href="{{ path('main_allemand') }}"> {% trans from 'anglais' %} FRegAcc {% endtrans %} </a></h3>
                         </div>
-                        Pour votre formation, vous avez droit aux meilleurs manuels d'apprentissage.<br>
-                        Nos cours sont conçus d’après le Cadre Européen Commun de Référence pour les Langues (CECR).<br>
-                        <div class="category-desktop-contain">
-
+                        <div class="datecours">
+                            {% trans from 'anglais' %} detail2 {% endtrans %}
                         </div>
+
+                        <div class="annonce-inscription but">
+                            Cette seconde option permet à l’apprenant de parler l’anglais dans un délai plus bref et
+                            dans  tous les domaines de la vie.
+                        </div>
+
                         <div class="category-desktop-contain">
+                            <table class="table01">
+                                <tr>
+                                    <th> SIX Niveaux  </th>
+                                    <td> A1, A2, B1, B2, C1, C2 </td>
+                                </tr>
+                                <tr>
+                                    <th> Préparation aux tests  </th>
+                                    <td> IELTS, TOEFL,TOEIC </td>
+                                </tr>
+                                <tr>
+                                    <th> Durée de la formation  </th>
+                                    <td> 5 semaines par niveaux </td>
+                                </tr>
+                                <tr>
+                                    <th> Fréquence  </th>
+                                    <td> 3 fois par semaine </td>
+                                </tr>
 
-
+                            </table>
                         </div>
 
                     </div>
@@ -257,6 +332,32 @@
                         l’exercice d’aptitudes uniques: <br><br>
                         N’hésitez pas à nous contacter si vous souhaitez suivre une formation à la carte dans un
                         de nos domaines de compétence.
+                    </div>
+                </div>
+
+                <div class="cat-container">
+                    <div class="">
+                        <div class="datecours">
+                            <div class="annonce-inscription">
+                                Choisissez une de nos rentrées pour vos cours du jour et soir en Anglais (2017-2018)
+                            </div>
+                        </div>
+                        <table class="table02">
+                            <tr>
+                                <td> 16 janv  </td>
+                                <td> 20 fev  </td>
+                                <td> 05 mar  </td>
+                                <td> 02 avr  </td>
+                                <td> 07 mai  </td>
+                                <td> 4 juin  </td>
+                                <td> 02 juil  </td>
+                                <td> 06 aoû  </td>
+                                <td> 3 sep  </td>
+                                <td> 01 oct </td>
+                                <td> 05 nov  </td>
+                            </tr>
+
+                        </table>
                     </div>
                 </div>
 
