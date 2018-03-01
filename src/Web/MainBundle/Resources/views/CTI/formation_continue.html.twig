@@ -76,7 +76,7 @@
         .but {
             color: #221199;
         }
-        .table01 {
+        table.table01 {
             width: 90%;
             color: #f16e00;
             background-color: white;
@@ -84,22 +84,31 @@
         }
 
 
-        .table01 td {
+        table.table01 td,th {
             padding: 2%;
-            margin: 2%;
-            border: 5px;
+            margin: 5px!important;
+            border: 5px solid transparent!important;
         }
 
         .table02 {
-            width: 90%;
-            color: #f16e00;;
+             width: 100%;
+             background-color: #f16e00;
+             color: white;
+             border-collapse: separate;
+         }
+
+        .table03 {
+            width: 100%;
+            background-color: #0000cc;
+            color: white;
+            border-collapse: separate;
         }
 
-        .table02 td {
-            padding: 2%;
-            margin: 5%;
-            border-color: transparent;
+        .abc {
+            border: 5px solid transparent;
         }
+
+
 
     </style>
     {# mettre le css si la page t'oublige #}
@@ -299,7 +308,7 @@
                             <h3><a href="{{ path('main_informatique') }}">HORAIRES DE COURS</a></h3>
                         </div>
 
-                        Choisissez vos heures de cours en fonction de votre disponibilité. <br>
+                        Choisissez vos heures de cours en fonction de votre disponibilité.
 
                         <div class="">
                             <div class=" horaire ">
@@ -337,24 +346,48 @@
 
                 <div class="cat-container">
                     <div class="">
-                        <div class="datecours">
-                            <div class="annonce-inscription">
+                        <div class="datecours annonce-inscription">
                                 Choisissez une de nos rentrées pour vos cours du jour et soir en Anglais (2017-2018)
-                            </div>
                         </div>
                         <table class="table02">
                             <tr>
-                                <td> 16 janv  </td>
-                                <td> 20 fev  </td>
-                                <td> 05 mar  </td>
-                                <td> 02 avr  </td>
-                                <td> 07 mai  </td>
-                                <td> 4 juin  </td>
-                                <td> 02 juil  </td>
-                                <td> 06 aoû  </td>
-                                <td> 3 sep  </td>
-                                <td> 01 oct </td>
-                                <td> 05 nov  </td>
+                                <td class="abc"> 16 janv  </td>
+                                <td class="abc"> 20 fev  </td>
+                                <td class="abc"> 05 mar  </td>
+                                <td class="abc"> 02 avr  </td>
+                                <td class="abc"> 07 mai  </td>
+                                <td class="abc"> 04 juin  </td>
+                                <td class="abc"> 02 juil  </td>
+                                <td class="abc"> 06 aoû  </td>
+                                <td class="abc"> 3 sep  </td>
+                                <td class="abc"> 01 oct </td>
+                                <td class="abc"> 05 nov  </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="cat-container">
+                    <div class="">
+                        <div class="datecours annonce-inscription">
+                            <br><br>
+                            Date des examens internationaux en anglais (2017-2018)
+                        </div>
+                        <table class="table03">
+                            <tr>
+                                <td class="abc"> 27 janv  </td>
+                                <td class="abc"> 20 fev  </td>
+                                <td class="abc"> 31 mar  </td>
+                                <td class="abc"> 28 avr  </td>
+                                <td class="abc"> 26 mai  </td>
+                                <td class="abc"> 30 juin  </td>
+                                <td class="abc"> 17 juil  </td>
+                                <td class="abc"> 25 aoû  </td>
+                                <td class="abc"> 29 sep  </td>
+                                <td class="abc"> 27 oct  </td>
+                                <td class="abc"> 24 nov  </td>
+                                <td class="abc"> 29 dec  </td>
                             </tr>
 
                         </table>
