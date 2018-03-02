@@ -110,17 +110,6 @@
             padding: 3%;
         }
 
-        .utiles {
-            padding: 2%;
-            margin: 2%;
-        }
-
-        .liens-utiles {
-
-            background-color: #f16e00;
-            color: white;
-        }
-
     </style>
     {# mettre le css si la page t'oublige #}
 {% endblock %}
@@ -133,6 +122,11 @@
 {% block  mainLg %}
 
     <div id="main_home">
+
+        <div class="sous-menu">
+            {% trans from 'anglais' %} niv {% endtrans %}
+        </div>
+
 
         <div class="message_and_image">
             <div class="message_on_image">{% trans from 'anglais' %} baniere {% endtrans %}</div>
@@ -203,83 +197,87 @@
 
                 <div class="accueil">
 
-                    <div>
-                        Plusieurs formats disponibles:
-                        <ul>
-                            <li><a href="{{ path('main_CoursIntensifs') }}">Cours Intensifs</a></li>
-                            <li><a href="{{ path('main_FormationContinue') }}">FORMATION REGULIERE (REPL)</a></li>
-                            <li><a href="{{ path('main_FormationContinue') }}">FORMATION REGULIERE ACCELEREE (REPL2</a>)</li>
-                            <li><a href="{{ path('main_PourEntreprises') }}">Cours pour les Entreprises</a> </li>
-                            <li><a href="{{ path('main_CoursDeVacances') }}">Cours de Vacances</a> </li>
-                            <li><a href="{{ path('main_CoursParticulier') }}">Cours Particuliers</a> </li>
-                        </ul>
-                    </div>
-
-                    <div>  {% trans from 'about' %} about.block15 {% endtrans %} </div>
-                    <div class="utiles">
-                         <a class="liens-utiles" href="{{ path('main_NiveauxDeLangue') }}">>>Consulter les différents niveaux de langue</a>
-                    </div>
+                    <div>  {% trans from 'anglais' %} niveauxLANGUE {% endtrans %} </div>
 
                 </div>
 
-                <div class="row section admission">
-                    <h2 class="bloc-title"> {% trans from 'anglais' %} coursDispo {% endtrans %} </h2>
-                    <div class="">
+
+                <div class="section programmes-main-div">
+
+
+                    <div class="inner-prog padding">
                         <div class="flex">
-                            <div class="hexagon degrade admission-hexagon">
-                                <div class="triangle-top"></div>
-                                <div class="titre"> {% trans from 'anglais' %} block1 {% endtrans %} </div>
-                                <h3>
-                                    <i class="icon-fleche-droite grand"></i>
-                                    <span class="adm-niv">IEPL</span>
-                                    <i class="icon-fleche-gauche grand"></i></h3>
-                                <div class="content">
-                                    {% trans from 'anglais' %} bac1 {% endtrans %}
+
+                            <div class="programme">
+                                <div class="diamant">
+                                    <div class="diamant-shape">
+
+                                    </div>
+                                    <div class="diamant-content"> A1 </div>
                                 </div>
-                                <a class="myButton" href="{{ path('main_CoursIntensifs') }}">{% trans from 'anglais' %} bac4 {% endtrans %}</a>
-                                <div class="triangle-bottom"></div>
+                                <h4>{% trans from 'about' %}about.year1{% endtrans %}</h4>
+                                <h3 class="titre-prog">{% trans from 'about' %} about.discover1 {% endtrans %}</h3>
+                                {% trans from 'anglais' %} discover {% endtrans %}
                             </div>
 
-                            <div class="hexagon degrade admission-hexagon">
-                                <div class="triangle-top"></div>
-                                <div class="titre"> {% trans from 'anglais' %} block2 {% endtrans %} </div>
-                                <h3>
-                                    <i class="icon-fleche-droite grand"></i>
-                                    <span class="adm-niv">REPL</span>
-                                    <i class="icon-fleche-gauche grand"></i></h3>
-                                <div class="content">
-                                    {% trans from 'anglais' %} bac2 {% endtrans %}
+                            <div class="programme">
+                                <div class="diamant">
+                                    <div class="diamant-shape">
+
+                                    </div>
+                                    <div class="diamant-content"> A2 </div>
                                 </div>
-                                <a class="myButton" href="{{ path('main_FormationContinue') }}">{% trans from 'anglais' %} bac4 {% endtrans %}</a>
-                                <div class="triangle-bottom"></div>
+                                <h4> {% trans from 'about' %}about.year2{% endtrans %}  </h4>
+                                <h3 class="titre-prog">{% trans from 'about' %} about.learn1 {% endtrans %}  </h3>
+                                {% trans from 'anglais' %} learn {% endtrans %}
                             </div>
 
-                            <div class="hexagon degrade admission-hexagon">
-                                <div class="triangle-top"></div>
-                                <div class="titre">{% trans from 'anglais' %} block3 {% endtrans %}</div>
-                                <h3>
-                                    <i class="icon-fleche-droite grand"></i>
-                                    <span class="adm-niv">REPL2</span>
-                                    <i class="icon-fleche-gauche grand"></i></h3>
-                                <div class="content">
-                                    {% trans from 'anglais' %} bac3 {% endtrans %}
+                            <div class="programme">
+                                <div class="diamant">
+                                    <div class="diamant-shape">
+
+                                    </div>
+                                    <div class="diamant-content"> B1 </div>
                                 </div>
-                                <a class="myButton" href="{{ path('main_FormationContinue') }}">{% trans from 'anglais' %} bac4 {% endtrans %}</a>
-                                <div class="triangle-bottom"></div>
+                                <h4> {% trans from 'about' %}about.year3{% endtrans %} </h4>
+                                <h3 class="titre-prog">{% trans from 'about' %} about.improve1 {% endtrans %}</h3>
+                                {% trans from 'anglais' %} improve {% endtrans %}
                             </div>
 
-                            <div class="hexagon degrade admission-hexagon">
-                                <div class="triangle-top"></div>
-                                <div class="titre">{% trans from 'anglais' %} block4 {% endtrans %}</div>
-                                <h3>
-                                    <i class="icon-fleche-droite grand"></i>
-                                    <span class="adm-niv"></span>
-                                    <i class="icon-fleche-gauche grand"></i></h3>
-                                <div class="content">
-                                    {% trans from 'anglais' %} bac5 {% endtrans %}
+                            <div class="programme">
+                                <div class="diamant">
+                                    <div class="diamant-shape">
+
+                                    </div>
+                                    <div class="diamant-content"> B2 </div>
                                 </div>
-                                <a class="myButton" href="{{ path('main_CoursParticulier') }}">{% trans from 'anglais' %} bac4 {% endtrans %}</a>
-                                <div class="triangle-bottom"></div>
+                                <h4>  {% trans from 'about' %}about.year4{% endtrans %} </h4>
+                                <h3 class="titre-prog">{% trans from 'about' %} about.master1 {% endtrans %}</h3>
+                                {% trans from 'anglais' %} master {% endtrans %}
+                            </div>
+
+                            <div class="programme">
+                                <div class="diamant">
+                                    <div class="diamant-shape">
+
+                                    </div>
+                                    <div class="diamant-content"> C1 </div>
+                                </div>
+                                <h4>  {% trans from 'about' %}about.year5{% endtrans %} </h4>
+                                <h3 class="titre-prog">{% trans from 'about' %} about.expert1 {% endtrans %}</h3>
+                                {% trans from 'anglais' %} expert1 {% endtrans %}
+                            </div>
+
+                            <div class="programme">
+                                <div class="diamant">
+                                    <div class="diamant-shape">
+
+                                    </div>
+                                    <div class="diamant-content"> C2 </div>
+                                </div>
+                                <h4>  {% trans from 'about' %}about.year6{% endtrans %} </h4>
+                                <h3 class="titre-prog">{% trans from 'about' %} about.expert1 {% endtrans %}</h3>
+                                {% trans from 'anglais' %} expert2 {% endtrans %}
                             </div>
 
 
@@ -290,9 +288,16 @@
 
 
 
+
             </div>
 
         </div>
+
+
+
+
+
+
 
 
 
