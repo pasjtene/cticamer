@@ -33,11 +33,13 @@ coursDispo: COURS DISPONIBLES
 block1: FORMATION INTENSIVE
 block2: FORMATION REGULIERE
 block3: FORMATION REGULIERE ACCELEREE
+block4: COURS PARTICULIERS
 bac1: Cette formule s’adresse aux personnes désirant acquérir des connaissances en anglais dans  un délai plus bref.
 bac2: La  formation Régulière  est  subdivisée en 6 niveaux  et permet à l’apprenant de parler couramment l’Anglais dans
       tous les domaines de la vie.
 bac3: Cette seconde option permet à l’apprenant de parler l’anglais dans un délai plus bref et dans  tous les domaines de
       la vie.
+bac5: Vous désirez une formation à domicile ou  en ligne et à votre rythme, n'hésitez pas à nous contacter.
 bac4: PLUS D'INFO
 niv: LES DIFFERENTS NIVEAUX
 
@@ -67,6 +69,17 @@ detail2: (Regular English Proficiency Learner Accelerated)
 
 
 prEntrp: Des formules conçues pour vos entreprises
-object2: Avec Nos formations ciblées et orientées offrez à votre entreprise tout le bilinguisme dont elle a besoins pour sa croissance.
+object2: Avec Nos formations ciblées et orientées offrez à votre entreprise tout le bilinguisme dont elle a besoins pour
+         sa croissance.
 serviceENTREP: Apprendre l'Anglais dans un contexte professionnel est un sujet très délicat. Au CTI, nous vos propososons
-               des formations orientées suivant différents domaines d'activité. 
+               des formations orientées suivant différents domaines d'activité.
+
+
+coursVACANCES: DES COURS POUR ENFANTS ET LYCEENS PENDANT LES VACANCES
+object3: Relevez le niveau d'Anglais de votre enfant pendant les Vacances et donnez lui plus d'atouts pour réussir.
+serviceVACANCES: Nos proposons des cours intensifs adaptés aux besoins des écoliers et lycéens.
+
+
+
+niveauxLANGUE: Après votre test de niveau, nous sommes en mésure de vous admettre à un des 6 niveaux de langue établis
+               par le Cadre européen commun de référence pour les langues (CECRL).

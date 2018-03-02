@@ -101,6 +101,15 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
         return $this->render('MainBundle:CTI:cours_particuliers.html.twig', $array);
     }
 
+    /**
+     * @Route("/niveaux_de_langue", name="main_NiveauxDeLangue"))
+     */
+    public function NiveauxDeLangueAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:niveaux_de_langue.html.twig', $array);
+    }
+
 
 
 
