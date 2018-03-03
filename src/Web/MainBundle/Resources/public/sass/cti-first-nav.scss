@@ -1,0 +1,28 @@
+#first-nav {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  background-color: #6a148e;
+
+  font-size: 13px;
+  font-family: Roboto,sans-serif;
+
+
+
+  .first-nav-items {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    margin-left: auto;
+    color: #fff !important;
+    margin-right: 16% !important;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .first-nav-items a {
+
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif !important;
+    color: white !important;
+
+  }
+
+}
