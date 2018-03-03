@@ -10,10 +10,15 @@ infoNews: Les inscriptions pour la formation en secrétariat bureautique continu
           Un suivi particulier est accordé à chaque apprenant.
           Les inscriptions pour la formation en infographie et en développement d’application Web se poursuivent également.
 prochaineRentree: Prochaine Rentrée
-debutDesCours: 5 mars 2018.
+debutDesCours: 2 Avril 2018.
 english: COURS d'ANGLAIS
 german: COURS D'ALLEMAND
 computing: COURS D'INFORMATIQUE
 englishNews: La prochaine session des cours d’anglais au CTI débutera le 05 Mars 2018. Encore quelques places disponibles.<br>
              Améliorez votre niveau en Anglais avec le Churchill Training Institute et accroissez vos chances de décrocher
              un emploi ou de progresser plus rapidement dans votre emploi actuel.
+
+language:
+   title: Langue du site
+   fr: Français
+   en: Anglais
