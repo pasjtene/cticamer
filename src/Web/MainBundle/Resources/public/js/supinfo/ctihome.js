@@ -84,7 +84,7 @@ $("#sous-titre-lef-nav-fr").click(function(e){
 
         $(".mobile-bars").click(function(){
             $(".mlist").slideToggle();
-            console.log("clicked...");
+
         });
     }
 

@@ -1,5 +1,7 @@
 
 #cti-nav {
+  position: relative;
+  z-index: 100;
 
   .slogan {
     align-self: flex-end;
@@ -139,7 +141,7 @@ and (max-device-width : 667px)
 
 {
   #cti-nav {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     .nav-items {
       display: none;
     }
@@ -160,7 +162,7 @@ and (max-device-width : 568px)
 
 {
   #cti-nav {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     .nav-items {
       display: none;
     }

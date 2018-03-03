@@ -1,7 +1,44 @@
+.mnav-wrapper {
+  display: none;
+  position: absolute;
+  z-index: 10050;
+  width: 100%;
+
+  .nav-title {
+    padding-left: 10px;
+  }
+}
+#cti-mobile-nav-top {
+ display: none;
+  margin: 0px !important;
+  position: relative;
+  width: 100%;
+
+
+  .mobile-nav-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #251549;
+    color: white;
+  }
+
+  .navbtn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-right: 20px !important;
+    margin-left: auto;
+
+  }
+}
+
+
+
 #cti-mobile-nav {
   display: none;
   margin: 0px !important;
-  position: fixed;
+  position: relative;
   width: 100%;
   z-index: 10050;
 
@@ -24,6 +61,7 @@
 
   }
 
+  /*
   .mobile-nav-header {
     display: flex;
     flex-direction: row;
@@ -40,6 +78,7 @@
     margin-left: auto;
 
   }
+  */
 
   /*Flex items*/
   .mlist {
@@ -48,7 +87,8 @@
     background-color: #373737;
     width: 100%;
 
-    position: fixed;
+  position: relative;
+    z-index: 10050;
   }
   .list-item {
     display: flex;
@@ -199,6 +239,13 @@ and (max-device-width : 667px)
   /*and (orientation : portrait) */
 
 {
+  .mnav-wrapper {
+    display: block;
+  }
+
+  #cti-mobile-nav-top {
+    display: block;
+  }
 
   #cti-mobile-nav {
     display: block;
@@ -251,6 +298,15 @@ and (max-device-width : 568px)
   /*and (orientation : portrait) */
 
 {
+  .mnav-wrapper {
+    display: block;
+  }
+
+  #cti-mobile-nav-top {
+    display: block;
+  }
+
+
 
   #cti-mobile-nav {
     display: block;
