@@ -106,6 +106,11 @@
             border: 5px solid transparent;
         }
 
+        .vagues {
+            color: #710909;
+            font-size: 150%;
+        }
+
     </style>
     {# mettre le css si la page t'oublige #}
 {% endblock %}
@@ -210,12 +215,12 @@
                     <div class="">
                         <div class="category-title">
                             <h3>{% trans from 'ctihome' %} prochaineRentree {% endtrans %}:
-                                {% trans from 'ctihome' %} debutDesCours {% endtrans %}
+                                {% trans from 'anglais' %} debutCoursVacances {% endtrans %}
                             </h3>
                         </div>
                         <div class="datecours">
                             <div class="annonce-inscription">
-                                Les Inscriptions sont en cour. Il y a encore quelques places disponibles.
+                                Les Inscriptions sont en cours. Il y a encore quelques places disponibles.
                             </div>
                         </div>
                     </div>
@@ -226,20 +231,18 @@
                 <div class="cat-container">
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_allemand') }}"> COURS D'ANGLAIS INTENSIF POUR TOUS </a></h3>
+                            <h3> TROIS VAGUES DE COURS</h3>
                         </div>
 
                         <div class="category-desktop-contain">
-                            Le Churchill Training Institute vous offre des cours d'Anglais de qualité:
+                            Nous vous proposons trois vagues de cours (1 par mois) pour vous remettre à niveau.
                             <ul>
-                                <li>Enseignants Qualifiés</li>
-                                <li>Programme de cours conçu selon le Cadre Européen Commun de Référence pour les Langues (CECR).</li>
-                                <li>Cadre agréable et Propice aux études</li>
-                                <li>Matériel didactique au point </li>
-                                <li>Salles Climatisées </li>
+                                <li> Première Vague: <span class="vagues"> Du 4 au 29 Juin </span> </li>
+                                <li> Deuxième Vague: <span class="vagues"> Du 2 au 27 juillet </span> </li>
+                                <li> Troisième Vague: <span class="vagues"> Du 6 au 31 Aout </span> </li>
                             </ul>
-                            Nous préparons les candidats aux tests d'Anglais Nécessaires pour obtenir un visa étudiant, booster votre carrière ou vos affaires
-                            ( TOEFL, IELTS, TOEIC ).
+                            Notre Objectif est d'améliorer le niveau de langue des apprenants afin qu'ils aient plus
+                            d'aisance à étudier dans la langue de Shakespeare.
                         </div>
 
                     </div>
@@ -248,9 +251,13 @@
                             <h3><a href="{{ path('main_anglais') }}"> MANUELS REQUIS </a></h3>
                         </div>
                         Pour votre formation, vous avez droit aux meilleurs manuels d'apprentissage.<br>
-                        Nos cours sont conçus d’après le Cadre Européen Commun de Référence pour les Langues (CECR).<br>
+                        Avec nos cours conçus d’après le Cadre Européen Commun de Référence pour les Langues (CECR), relevez votre niveau de manière efficace.<br>
                         <div class="category-desktop-contain">
-
+                            <img class="manuels-angl-img" src="{{ asset('data/img/englishUnlimited2.jpg') }}">
+                            <img class="manuels-angl-img" src="{{ asset('data/img/english-unlimited-elementary-a-combo-with-dvd-roms-2.png') }}">
+                            <img class="manuels-angl-img" src="{{ asset('data/img/Official-toelf-Test-Prep.jpg') }}">
+                            <img class="manuels-angl-img" src="{{ asset('data/img/IELTS-Cambridge-Books.jpg') }}">
+                            <img class="manuels-angl-img" src="{{ asset('data/img/englishUnlimited1.png') }}">
                         </div>
                         <div class="category-desktop-contain">
 
@@ -301,133 +308,7 @@
                     </div>
                 </div>
 
-                <div class="cat-container">
-                    <div class="">
-                        <div class="datecours annonce-inscription">
-                            Choisissez une de nos rentrées pour vos cours du jour et soir en Anglais (2017-2018)
-                        </div>
-                        <table class="table02">
-                            <tr>
-                                <td class="abc"> 16 janv  </td>
-                                <td class="abc"> 20 fev  </td>
-                                <td class="abc"> 05 mar  </td>
-                                <td class="abc"> 02 avr  </td>
-                                <td class="abc"> 07 mai  </td>
-                                <td class="abc"> 04 juin  </td>
-                                <td class="abc"> 02 juil  </td>
-                                <td class="abc"> 06 aoû  </td>
-                                <td class="abc"> 3 sep  </td>
-                                <td class="abc"> 01 oct </td>
-                                <td class="abc"> 05 nov  </td>
-                            </tr>
-
-                        </table>
-                    </div>
-                </div>
-                <!--
-                <div class="cat-container">
-                    <div class="">
-                        <div class="datecours annonce-inscription">
-                            <br><br>
-                            Date des examens internationaux en anglais (2017-2018)
-                        </div>
-                        <table class="table03">
-                            <tr>
-                                <td class="abc"> 27 janv  </td>
-                                <td class="abc"> 20 fev  </td>
-                                <td class="abc"> 31 mar  </td>
-                                <td class="abc"> 28 avr  </td>
-                                <td class="abc"> 26 mai  </td>
-                                <td class="abc"> 30 juin  </td>
-                                <td class="abc"> 17 juil  </td>
-                                <td class="abc"> 25 aoû  </td>
-                                <td class="abc"> 29 sep  </td>
-                                <td class="abc"> 27 oct  </td>
-                                <td class="abc"> 24 nov  </td>
-                                <td class="abc"> 29 dec  </td>
-                            </tr>
-
-                        </table>
-                    </div>
-                </div>
--->
-
-
-                <!--
-        <div class="row section admission">
-            <h2 class="bloc-title">  {% trans from 'allemand' %} coursDispo {% endtrans %} </h2>
-            <div class="inner padding">
-                <div class="flex">
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">Goethe-Zertifikat A1</div>
-                        <h3>
-                            <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">GZA1</span>
-                            <i class="icon-fleche-gauche grand"></i></h3>
-                        <div class="content">
-                            {% trans from 'allemand' %} gza1 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'allemand' %} bac4 {% endtrans %} </a>
-                        <div class="triangle-bottom"></div>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">Goethe-Zertifikat A2</div>
-                        <h3>
-                            <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">GZA2</span>
-                            <i class="icon-fleche-gauche grand"></i></h3>
-                        <div class="content">
-                            {% trans from 'allemand' %} gza2 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'allemand' %} bac4 {% endtrans %} </a>
-                        <div class="triangle-bottom"></div>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">Goethe-Zertifikat B1</div>
-                        <h3>
-                            <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">GZB1</span>
-                            <i class="icon-fleche-gauche grand"></i></h3>
-                        <div class="content">
-                            {% trans from 'allemand' %} gzb1 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'allemand' %} bac4 {% endtrans %} </a>
-                        <div class="triangle-bottom"></div>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">Goethe-Zertifikat B2</div>
-                        <h3>
-                            <i class="icon-fleche-droite grand"></i>
-                            <span class="adm-niv">GZB2</span>
-                            <i class="icon-fleche-gauche grand"></i></h3>
-                        <div class="content">
-                            {% trans from 'allemand' %} gzb2 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'allemand' %} bac4 {% endtrans %} </a>
-                        <div class="triangle-bottom"></div>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </div>
-        -->
-
-
-
-
                 <div class="separator"></div>
-
-
-
 
             </div>
         </div>
@@ -459,12 +340,6 @@
             </div>
 
         </div>
-
-
-
-
-
-
 
 
     </div>
