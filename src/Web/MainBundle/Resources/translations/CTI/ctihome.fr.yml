@@ -10,7 +10,11 @@ infoNews: Les inscriptions pour la formation en secrétariat bureautique continu
           Un suivi particulier est accordé à chaque apprenant.
           Les inscriptions pour la formation en infographie et en développement d’application Web se poursuivent également.
 prochaineRentree: Prochaine Rentrée
+<<<<<<< HEAD
+debutDesCours: 2 avril 2018.
+=======
 debutDesCours: 2 Avril 2018.
+>>>>>>> master
 english: COURS d'ANGLAIS
 german: COURS D'ALLEMAND
 computing: COURS D'INFORMATIQUE

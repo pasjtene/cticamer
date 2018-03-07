@@ -38,7 +38,7 @@
             /*background-size: cover;*/
             background-size: 50%  auto;
         }
-
+/*
         .manuels-img {
             width: 18%;
         }
@@ -105,6 +105,8 @@
         .abc {
             border: 5px solid transparent;
         }
+*/
+
 
     </style>
     {# mettre le css si la page t'oublige #}
@@ -216,7 +218,7 @@
                         </div>
                         <div class="datecours">
                             <div class="annonce-inscription">
-                                Les Inscriptions sont en cour. Il y a encore quelques places disponibles.
+                                Les Inscriptions sont en cours. Il y a encore quelques places disponibles.
                             </div>
                         </div>
                     </div>
@@ -227,8 +229,9 @@
                 <div class="cat-container">
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_allemand') }}"> COURS D'ANGLAIS INTENSIF POUR TOUS </a></h3>
+                            <h3> COURS D'ANGLAIS INTENSIF POUR TOUS </h3>
                         </div>
+                        <div class="importante"> Du Lundi au Vendredi </div>
 
                         <div class="category-desktop-contain">
                             Le Churchill Training Institute vous offre des cours d'Anglais de qualité:
@@ -246,7 +249,7 @@
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_anglais') }}"> MANUELS REQUIS </a></h3>
+                            <h3> MANUELS REQUIS </h3>
                         </div>
                         Pour votre formation, vous avez droit aux meilleurs manuels d'apprentissage.<br>
                         Nos cours sont conçus d’après le Cadre Européen Commun de Référence pour les Langues (CECR).<br>
@@ -254,8 +257,11 @@
 
                         </div>
                         <div class="category-desktop-contain">
-
-
+                                <img class="manuels-angl-img" src="{{ asset('data/img/englishUnlimited2.jpg') }}">
+                                <img class="manuels-angl-img" src="{{ asset('data/img/english-unlimited-elementary-a-combo-with-dvd-roms-2.png') }}">
+                                <img class="manuels-angl-img" src="{{ asset('data/img/Official-toelf-Test-Prep.jpg') }}">
+                                <img class="manuels-angl-img" src="{{ asset('data/img/IELTS-Cambridge-Books.jpg') }}">
+                                <img class="manuels-angl-img" src="{{ asset('data/img/englishUnlimited1.png') }}">
                         </div>
 
                     </div>
@@ -263,10 +269,10 @@
 
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_informatique') }}">HORAIRES DE COURS</a></h3>
+                            <h3>HORAIRES DE COURS</h3>
                         </div>
 
-                        Choisissez vos heures de cours en fonction de votre disponibilité. <br>
+                        Tous les jours, du lundi au vendredi, Choisissez vos heures de cours en fonction de votre disponibilité. <br>
 
                         <div class="">
                             <div class=" horaire ">
@@ -293,12 +299,11 @@
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_anglais') }}">Cours aux particuliers</a></h3>
+                            <h3>Fréquence et Différents Niveaux</h3>
                         </div>
-                        Cours basés sur des contenus particuliers, destinés à des groupes-cibles spéciaux ou pour
-                        l’exercice d’aptitudes uniques: <br><br>
-                        N’hésitez pas à nous contacter si vous souhaitez suivre une formation à la carte dans un
-                        de nos domaines de compétence.
+                        <div>Vous évoluez suivant les six niveaux de langue du CECRL (A1,A2,B1,B2,C1,C2).</div>
+                        <div>Chaque niveau requiert 5 semaines de formation.</div>
+                        <div> 5 jours / semaine en cours intensifs.</div>
                     </div>
                 </div>
 
@@ -460,14 +465,6 @@
             </div>
 
         </div>
-
-
-
-
-
-
-
-
     </div>
 {% endblock %}
 
