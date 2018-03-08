@@ -133,7 +133,7 @@
 
 {% block  mainLg %}
 
-    <div id="main_allemand">
+    <div class="main_allemand">
 
         <div class="message_and_image" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
             <img  id="top_img" src="{{ asset('data/img/baniere2.png') }}" alt="">
@@ -160,7 +160,7 @@
                 <div class="accueil">
 
                     <div>
-                        {% trans from 'allemand' %} text1 {% endtrans %}
+                        {% trans from 'allemand' %} text1 {% endtrans %} <br>
                         Plusieurs formats disponibles:
                         <ul>
                             <li><a href="{{ path('main_etudierEnAllemagne') }}">Cours Pour Etudes en Allemagne</a></li>
