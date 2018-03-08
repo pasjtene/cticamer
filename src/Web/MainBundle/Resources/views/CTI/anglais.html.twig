@@ -205,20 +205,20 @@
                 <div class="accueil">
 
                     <div>
-                        Plusieurs formats disponibles:
+                        {% trans from 'anglais' %} PlsFormats {% endtrans %}
                         <ul>
-                            <li><a href="{{ path('main_CoursIntensifs') }}">Cours Intensifs</a></li>
-                            <li><a href="{{ path('main_FormationContinue') }}">FORMATION REGULIERE (REPL)</a></li>
-                            <li><a href="{{ path('main_FormationContinue') }}">FORMATION REGULIERE ACCELEREE (REPL2</a>)</li>
-                            <li><a href="{{ path('main_PourEntreprises') }}">Cours pour les Entreprises</a> </li>
-                            <li><a href="{{ path('main_CoursDeVacances') }}">Cours de Vacances</a> </li>
-                            <li><a href="{{ path('main_CoursParticulier') }}">Cours Particuliers</a> </li>
+                            <li><a href="{{ path('main_CoursIntensifs') }}">{% trans from 'anglais' %} CoursIntens {% endtrans %}</a></li>
+                            <li><a href="{{ path('main_FormationContinue') }}">{% trans from 'anglais' %} FormatReg {% endtrans %}</a></li>
+                            <li><a href="{{ path('main_FormationContinue') }}">{% trans from 'anglais' %} FormatRegACC {% endtrans %}</a></li>
+                            <li><a href="{{ path('main_PourEntreprises') }}">{% trans from 'anglais' %} prEntrep {% endtrans %}</a> </li>
+                            <li><a href="{{ path('main_CoursDeVacances') }}">{% trans from 'anglais' %} CoursVACCANCES {% endtrans %}</a> </li>
+                            <li><a href="{{ path('main_CoursParticulier') }}">{% trans from 'anglais' %} CoursPARTICULIERS {% endtrans %}</a> </li>
                         </ul>
                     </div>
 
                     <div>  {% trans from 'about' %} about.block15 {% endtrans %} </div>
                     <div class="utiles">
-                         <a class="liens-utiles" href="{{ path('main_NiveauxDeLangue') }}">>>Consulter les différents niveaux de langue</a>
+                         <a class="liens-utiles" href="{{ path('main_NiveauxDeLangue') }}">>>{% trans from 'anglais' %} diffNIVEAUX {% endtrans %}</a>
                     </div>
 
                 </div>
