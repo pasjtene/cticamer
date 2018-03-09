@@ -1,3 +1,9 @@
+# Ici on retrouve des traductions se reférant à la page d'Accueil , Mais aussi des traduction pour des Informations se
+#retrouvant dans plusieurs pages.
+
+
+# TRANDUCTIONS DE LA PAGE D'ACCUEIL
+
 allemandNews: The next session of German courses at the Churchill Training Institute will start on April 02, 2018. <br>
               Obtain your visa to study in Germany by attending our intensive German courses. CTI is the best place in
               Douala to get you ready for your studies in Germany.
@@ -24,3 +30,22 @@ language:
   title: Site Language
   fr: French
   en: English
+
+
+# INFORMATIONS APPARAISSANT DANS PLUSIEURS PAGES
+
+placesDISPO: Registrations are in progress. There are still some places available.
+
+
+choixRENTREE: Choose one of our back-to-school days for your day and evening classes in English (2017-2018)
+rentree1: Jan 16th
+rentree2: Feb 20th
+rentree3: Mar 5th
+rentree4: Apr 2nd
+rentree5: May 7th
+rentree6: Jun 4th
+rentree7: Jul 2nd
+rentree8: Aug 6th
+rentree9: Sep 3rd
+rentree10: Oct 1st
+rentree11: Nov 5th
