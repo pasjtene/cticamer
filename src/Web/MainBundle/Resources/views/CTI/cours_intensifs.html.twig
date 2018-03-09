@@ -7,7 +7,7 @@
 
 {% endblock %}
 {% block title %}
-    {% trans from 'about' %} about.title {% endtrans %}
+    {% trans from 'cours-intensifs' %} title {% endtrans %}
 {% endblock  %}
 
 {% block mycss %}
@@ -124,7 +124,7 @@
     <div id="main_home">
 
         <div class="sous-menu">
-            Cours Intensifs d'Anglais
+            {% trans from 'cours-intensifs' %} coursIntensANGL {% endtrans %}
         </div>
 
 
@@ -145,8 +145,8 @@
                     <img class="baniere-img categorie" src="{{ asset('data/img/students2.jpg') }}" alt="">
 
                     <div class="baniere-msg categorie ">
-                        <h2>{% trans from 'anglais' %} coursINTENSIF {% endtrans %}</h2> <BR>
-                        {% trans from 'anglais' %} objectifs {% endtrans %}
+                        <h2>{% trans from 'cours-intensifs' %} coursINTENSIF {% endtrans %}</h2> <BR>
+                        {% trans from 'cours-intensifs' %} objectifs {% endtrans %}
                     </div>
 
                     <!--
@@ -159,7 +159,7 @@
                 </div>
 
                 <div class="row line">
-                    <div>  {% trans from 'anglais' %} service {% endtrans %} </div>
+                    <div>  {% trans from 'cours-intensifs' %} service {% endtrans %} </div>
 
                 </div>
 
@@ -173,7 +173,7 @@
                         </div>
                         <div class="datecours">
                             <div class="annonce-inscription">
-                                Les Inscriptions sont en cours. Il y a encore quelques places disponibles.
+                                {% trans from 'ctihome' %} placesDISPO {% endtrans %}
                             </div>
                         </div>
                     </div>
@@ -184,30 +184,28 @@
                 <div class="cat-container">
                     <div class="categorie">
                         <div class="category-title">
-                            <h3> COURS D'ANGLAIS INTENSIF POUR TOUS </h3>
+                            <h3> {% trans from 'cours-intensifs' %} IntensPrTous {% endtrans %} </h3>
                         </div>
-                        <div class="importante"> Du Lundi au Vendredi </div>
+                        <div class="importante"> {% trans from 'cours-intensifs' %} frequence {% endtrans %} </div>
 
                         <div class="category-desktop-contain">
-                            Le Churchill Training Institute vous offre des cours d'Anglais de qualité:
+                            {% trans from 'cours-intensifs' %} messagDEBUT {% endtrans %}
                             <ul>
-                                <li>Enseignants Qualifiés</li>
-                                <li>Programme de cours conçu selon le Cadre Européen Commun de Référence pour les Langues (CECR).</li>
-                                <li>Cadre agréable et Propice aux études</li>
-                                <li>Matériel didactique au point </li>
-                                <li>Salles Climatisées </li>
+                                <li> {% trans from 'cours-intensifs' %} atout1 {% endtrans %} </li>
+                                <li> {% trans from 'cours-intensifs' %} atout2 {% endtrans %} </li>
+                                <li> {% trans from 'cours-intensifs' %} atout3 {% endtrans %} </li>
+                                <li> {% trans from 'cours-intensifs' %} atout4 {% endtrans %} </li>
+                                <li> {% trans from 'cours-intensifs' %} atout5 {% endtrans %} </li>
                             </ul>
-                            Nous préparons les candidats aux tests d'Anglais Nécessaires pour obtenir un visa étudiant, booster votre carrière ou vos affaires
-                            ( TOEFL, IELTS, TOEIC ).
+                            {% trans from 'cours-intensifs' %} messagFIN {% endtrans %}
                         </div>
 
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3> MANUELS REQUIS </h3>
+                            <h3> {% trans from 'cours-intensifs' %} manuels {% endtrans %} </h3>
                         </div>
-                        Pour votre formation, vous avez droit aux meilleurs manuels d'apprentissage.<br>
-                        Nos cours sont conçus d’après le Cadre Européen Commun de Référence pour les Langues (CECR).<br>
+                        {% trans from 'cours-intensifs' %} messagMANUELS {% endtrans %}
                         <div class="category-desktop-contain">
 
                         </div>
@@ -224,28 +222,28 @@
 
                     <div class="categorie">
                         <div class="category-title">
-                            <h3>HORAIRES DE COURS</h3>
+                            <h3> {% trans from 'cours-intensifs' %} HORAIRES {% endtrans %} </h3>
                         </div>
 
-                        Tous les jours, du lundi au vendredi, Choisissez vos heures de cours en fonction de votre disponibilité. <br>
+                        {% trans from 'cours-intensifs' %} messagHORAIRE {% endtrans %}
 
                         <div class="">
                             <div class=" horaire ">
-                                <div class="news-title"><h4>Matinées</h4></div>
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode1 {% endtrans %}</h4></div>
 
-                                <div class="news-title"><p>08H00 - 10h00</p></div>
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures1 {% endtrans %} </p></div>
                             </div>
 
                             <div class=" horaire ">
-                                <div class="news-title"><h4>Après-midi</h4></div>
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode2 {% endtrans %}</h4></div>
 
-                                <div class="news-title"><p>14H00 - 16h00</p></div>
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures2 {% endtrans %}</p></div>
                             </div>
 
                             <div class="horaire">
-                                <div class="news-title"><h4>Cours du Soirs</h4></div>
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode3 {% endtrans %}</h4></div>
 
-                                <div class="news-title"><p>18H30 - 20h30</p></div>
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures3 {% endtrans %}</p></div>
                             </div>
 
                         </div>
@@ -254,32 +252,32 @@
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3>Fréquence et Différents Niveaux</h3>
+                            <h3> {% trans from 'cours-intensifs' %} diffNIV {% endtrans %} </h3>
                         </div>
-                        <div>Vous évoluez suivant les six niveaux de langue du CECRL (A1,A2,B1,B2,C1,C2).</div>
-                        <div>Chaque niveau requiert 5 semaines de formation.</div>
-                        <div> 5 jours / semaine en cours intensifs.</div>
+                        <p> {% trans from 'cours-intensifs' %} phrase1 {% endtrans %} </p>
+                        <p> {% trans from 'cours-intensifs' %} phrase2 {% endtrans %} </p>
+                        <p> {% trans from 'cours-intensifs' %} phrase3 {% endtrans %} </p>
                     </div>
                 </div>
 
                 <div class="cat-container">
                     <div class="">
                         <div class="datecours annonce-inscription">
-                            Choisissez une de nos rentrées pour vos cours du jour et soir en Anglais (2017-2018)
+                            {% trans from 'ctihome' %} choixRENTREE {% endtrans %}
                         </div>
                         <table class="table02">
                             <tr>
-                                <td class="abc"> 16 janv  </td>
-                                <td class="abc"> 20 fev  </td>
-                                <td class="abc"> 05 mar  </td>
-                                <td class="abc"> 02 avr  </td>
-                                <td class="abc"> 07 mai  </td>
-                                <td class="abc"> 04 juin  </td>
-                                <td class="abc"> 02 juil  </td>
-                                <td class="abc"> 06 aoû  </td>
-                                <td class="abc"> 3 sep  </td>
-                                <td class="abc"> 01 oct </td>
-                                <td class="abc"> 05 nov  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree1 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree2 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree3 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree4 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree5 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree6 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree7 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree8 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree9 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree10 {% endtrans %} </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree11 {% endtrans %}  </td>
                             </tr>
 
                         </table>
