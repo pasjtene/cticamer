@@ -1,3 +1,11 @@
+#Block META
+
+descriptionANGL: Quality English classes, accessible to all. Intensive Courses, Normal Training, Holyday Classes, Private Lessons, Corporate Training, for you give the perfect mastery of English
+keywordANGL: bilingualism, english, courses, become bilingual, training, learning English, TOEFL, TOEIC, IELTS, A1, A2, B1, B2, C1, C2
+
+
+#Les formats disponibles
+
 PlsFormats: Several options available:
 CoursIntens: Accelerated Training
 FormatReg: REGULAR TRAINING (REPL)
@@ -8,12 +16,28 @@ CoursPARTICULIERS: Private Lessons
 diffNIVEAUX: Consult the different language levels
 
 
+# Block Cours Disponibles
+
+coursDispo: AVAILABLE COURSES
+block1: INTENSIVE TRAINING
+block2: REGULAR TRAINING
+block3: ACCELERATED REGULAR TRAINING
+block4: PRIVATE LESSONS
+block5: HOLYDAY COURSES
+bac1: This formula is for people wishing to increase thier level in English in a shorter time.
+bac2: Regular training is divided into 6 levels and allows the learner to speak English fluently.
+bac3: With this option the learner is able to speak English in a shorter time.
+bac4: MORE ABOUT
+bac5: You want to be trained at home or online and at your own pace, do not hesitate to contact us.
+bac6:  Students!! During these holidays, accelerate your learning, and have more ease to study in English.
 
 
 
 
 
 
+
+niv: DIFFERENT LEVELS
 
 baniere: COMPLETE YOUR DREAM OF BILINGUALISM IN A FEW WEEKS. All our courses prepare candidates for international exams,
          TOEFL, IELTS, TOEIC. Our courses are designed according to the Common European Framework of Reference for Languages
@@ -28,19 +52,8 @@ expert1: The ability to communicate with the emphasis on how well it is done, in
 expert2: The capacity to deal with material which is academic or cognitively demanding, and to use language to good
          effect at a level of performance which may in certain respects be more advanced than that of an average native
           speaker.
-coursDispo: AVAILABLE COURSES
-block1: INTENSIVE TRAINING
-block2: REGULAR TRAINING
-block3: ACCELERATED REGULAR TRAINING
-block4: PRIVATE LESSONS
-block5: HOLYDAY COURSES
-bac1: This formula is for people wishing to increase thier level in English in a shorter time.
-bac2: Regular training is divided into 6 levels and allows the learner to speak English fluently.
-bac3: With this option the learner is able to speak English in a shorter time.
-bac4: MORE ABOUT
-bac5: You want to be trained at home or online and at your own pace, do not hesitate to contact us.
-bac6:  Students!! During these holidays, accelerate your learning, and have more ease to study in English.
-niv: DIFFERENT LEVELS
+
+
 
 niveauxLANGUE: Après votre test de niveau, nous sommes en mésure de vous admettre à un des 6 niveaux de langue établis
                par le Cadre européen commun de référence pour les langues (CECRL).
