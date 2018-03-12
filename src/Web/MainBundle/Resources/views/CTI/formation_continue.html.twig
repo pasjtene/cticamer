@@ -7,7 +7,7 @@
 
 {% endblock %}
 {% block title %}
-    {% trans from 'about' %} about.title {% endtrans %}
+    {% trans from 'formation-continu' %} title {% endtrans %}
 {% endblock  %}
 
 {% block mycss %}
@@ -126,7 +126,7 @@
     <div id="main_home">
 
         <div class="sous-menu">
-            Formation continue
+            {% trans from 'formation-continu' %} continuANGL {% endtrans %}
         </div>
 
 
@@ -146,8 +146,8 @@
                     <img class="baniere-img categorie" src="{{ asset('data/img/students3.jpg') }}" alt="">
 
                     <div class="baniere-msg categorie ">
-                        <h2>{% trans from 'anglais' %} formationCONTINUE {% endtrans %}</h2> <BR>
-                        {% trans from 'anglais' %} object {% endtrans %}
+                        <h2>{% trans from 'formation-continu' %} formationCONTINUE {% endtrans %}</h2> <BR>
+                        {% trans from 'formation-continu' %} object {% endtrans %}
                     </div>
 
                     <!--
@@ -160,7 +160,7 @@
                 </div>
 
                 <div class="row line">
-                    <div>  {% trans from 'anglais' %} serviceCONTINUE {% endtrans %} </div>
+                    <div>  {% trans from 'formation-continu' %} serviceCONTINUE {% endtrans %} </div>
 
                 </div>
 
@@ -175,7 +175,7 @@
                         </div>
                         <div class="datecours">
                             <div class="annonce-inscription">
-                                Les Inscriptions sont en cours. Il y a encore quelques places disponibles.
+                                {% trans from 'ctihome' %} placesDISPO {% endtrans %}
                             </div>
                         </div>
                     </div>
@@ -186,36 +186,35 @@
                 <div class="cat-container">
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_FormationContinue') }}"> {% trans from 'anglais' %} FReg {% endtrans %} </a></h3>
+                            <h3><a href="{{ path('main_FormationContinue') }}"> {% trans from 'formation-continu' %} FReg {% endtrans %} </a></h3>
                         </div>
-                        <div class="importante"> Deux fois / semaine </div>
+                        <div class="importante"> {% trans from 'formation-continu' %} freq0 {% endtrans %} </div>
 
                         <div class="datecours">
-                            {% trans from 'anglais' %} detail0 {% endtrans %}
+                            {% trans from 'formation-continu' %} detail0 {% endtrans %}
                         </div>
 
                         <div class="annonce-inscription but">
-                            La  formation Régulière  est  subdivisée en 6 niveaux  et permet à l’apprenant de parler
-                            couramment l’Anglais et interagir avec son environnement.
+                            {% trans from 'formation-continu' %} messag0 {% endtrans %}
                         </div>
 
                         <div class="category-desktop-contain">
                             <table class="table01">
                                 <tr>
-                                    <th> SIX Niveaux  </th>
+                                    <th> {% trans from 'formation-continu' %} tbl0Elt1 {% endtrans %}  </th>
                                     <td> A1, A2, B1, B2, C1, C2 </td>
                                 </tr>
                                 <tr>
-                                    <th> Préparation aux tests  </th>
+                                    <th> {% trans from 'formation-continu' %} tbl0Elt2 {% endtrans %}  </th>
                                     <td> IELTS, TOEFL,TOEIC </td>
                                 </tr>
                                 <tr>
-                                    <th> Durée de la formation  </th>
-                                    <td> 5 semaines par niveaux </td>
+                                    <th> {% trans from 'formation-continu' %} tbl0Elt3 {% endtrans %}  </th>
+                                    <td> {% trans from 'formation-continu' %} tbl0Elt4 {% endtrans %} </td>
                                 </tr>
                                 <tr>
-                                    <th> Fréquence  </th>
-                                    <td> 2 fois par semaine </td>
+                                    <th> {% trans from 'formation-continu' %} tbl0Elt5 {% endtrans %}  </th>
+                                    <td> {% trans from 'formation-continu' %} tbl0Elt6 {% endtrans %} </td>
                                 </tr>
 
                             </table>
@@ -224,36 +223,35 @@
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_FormationContinue') }}"> {% trans from 'anglais' %} FRegAcc {% endtrans %} </a></h3>
+                            <h3><a href="{{ path('main_FormationContinue') }}"> {% trans from 'formation-continu' %} FRegAcc {% endtrans %} </a></h3>
                         </div>
-                        <div class="importante"> Trois fois / semaine </div>
+                        <div class="importante"> {% trans from 'formation-continu' %} freq1 {% endtrans %} </div>
 
                         <div class="datecours">
-                            {% trans from 'anglais' %} detail2 {% endtrans %}
+                            {% trans from 'formation-continu' %} detail2 {% endtrans %}
                         </div>
 
                         <div class="annonce-inscription but">
-                            Cette seconde option permet à l’apprenant de parler l’anglais en peu de temps et
-                            de façon régulière.
+                            {% trans from 'formation-continu' %} messag1 {% endtrans %}
                         </div>
 
                         <div class="category-desktop-contain">
                             <table class="table01">
                                 <tr>
-                                    <th> SIX Niveaux  </th>
+                                    <th> {% trans from 'formation-continu' %} tbl1Elt1 {% endtrans %}  </th>
                                     <td> A1, A2, B1, B2, C1, C2 </td>
                                 </tr>
                                 <tr>
-                                    <th> Préparation aux tests  </th>
+                                    <th> {% trans from 'formation-continu' %} tbl1Elt2 {% endtrans %}  </th>
                                     <td> IELTS, TOEFL,TOEIC </td>
                                 </tr>
                                 <tr>
-                                    <th> Durée de la formation  </th>
-                                    <td> 5 semaines par niveaux </td>
+                                    <th> {% trans from 'formation-continu' %} tbl1Elt3 {% endtrans %}  </th>
+                                    <td> {% trans from 'formation-continu' %} tbl1Elt4 {% endtrans %} </td>
                                 </tr>
                                 <tr>
-                                    <th> Fréquence  </th>
-                                    <td> 3 fois par semaine </td>
+                                    <th> {% trans from 'formation-continu' %} tbl1Elt5 {% endtrans %}  </th>
+                                    <td> {% trans from 'formation-continu' %} tbl1Elt6 {% endtrans %} </td>
                                 </tr>
 
                             </table>
@@ -264,28 +262,28 @@
 
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_FormationContinue') }}">HORAIRES DE COURS</a></h3>
+                            <h3> {% trans from 'cours-intensifs' %} HORAIRES {% endtrans %} </h3>
                         </div>
 
-                        Choisissez vos heures de cours en fonction de votre disponibilité.
+                        {% trans from 'cours-intensifs' %} messagHORAIRE {% endtrans %}
 
                         <div class="">
                             <div class=" horaire ">
-                                <div class="news-title"><h4>Matinées</h4></div>
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode1 {% endtrans %}</h4></div>
 
-                                <div class="news-title"><p>08H00 - 10h00</p></div>
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures1 {% endtrans %} </p></div>
                             </div>
 
                             <div class=" horaire ">
-                                <div class="news-title"><h4>Après-midi</h4></div>
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode2 {% endtrans %}</h4></div>
 
-                                <div class="news-title"><p>14H00 - 16h00</p></div>
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures2 {% endtrans %}</p></div>
                             </div>
 
                             <div class="horaire">
-                                <div class="news-title"><h4>Cours du Soirs</h4></div>
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode3 {% endtrans %}</h4></div>
 
-                                <div class="news-title"><p>18H30 - 20h30</p></div>
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures3 {% endtrans %}</p></div>
                             </div>
 
                         </div>
@@ -294,33 +292,30 @@
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_CoursParticulier') }}">Cours aux particuliers</a></h3>
+                            <h3><a href="{{ path('main_CoursParticulier') }}">{% trans from 'formation-continu' %} crsParti {% endtrans %}</a></h3>
                         </div>
-                        Cours basés sur des contenus particuliers, destinés à des groupes-cibles spéciaux ou pour
-                        l’exercice d’aptitudes uniques: <br><br>
-                        N’hésitez pas à nous contacter si vous souhaitez suivre une formation à la carte dans un
-                        de nos domaines de compétence.
+                        {% trans from 'formation-continu' %} presentationCoursParti {% endtrans %}
                     </div>
                 </div>
 
                 <div class="cat-container">
                     <div class="">
                         <div class="datecours annonce-inscription">
-                                Choisissez une de nos rentrées pour vos cours du jour et soir en Anglais (2017-2018)
+                            {% trans from 'ctihome' %} choixRENTREE {% endtrans %}
                         </div>
                         <table class="table02">
                             <tr>
-                                <td class="abc"> 16 janv  </td>
-                                <td class="abc"> 20 fev  </td>
-                                <td class="abc"> 05 mar  </td>
-                                <td class="abc"> 02 avr  </td>
-                                <td class="abc"> 07 mai  </td>
-                                <td class="abc"> 04 juin  </td>
-                                <td class="abc"> 02 juil  </td>
-                                <td class="abc"> 06 aoû  </td>
-                                <td class="abc"> 3 sep  </td>
-                                <td class="abc"> 01 oct </td>
-                                <td class="abc"> 05 nov  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree1 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree2 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree3 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree4 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree5 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree6 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree7 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree8 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree9 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree10 {% endtrans %} </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree11 {% endtrans %}  </td>
                             </tr>
 
                         </table>
