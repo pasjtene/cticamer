@@ -7,7 +7,7 @@
 
 {% endblock %}
 {% block title %}
-    {% trans from 'about' %} about.title {% endtrans %}
+    {% trans from 'pourEntreprise' %} title {% endtrans %}
 {% endblock  %}
 
 {% block mycss %}
@@ -126,7 +126,7 @@
     <div id="main_home">
 
         <div class="sous-menu">
-            Pour les Entreprises
+            {% trans from 'pourEntreprise' %} entrpANGL {% endtrans %}
         </div>
 
 
@@ -146,8 +146,8 @@
                     <img class="baniere-img categorie" src="{{ asset('data/img/employe1.jpg') }}" alt="">
 
                     <div class="baniere-msg categorie ">
-                        <h2>{% trans from 'anglais' %} prEntrp {% endtrans %}</h2> <BR>
-                        {% trans from 'anglais' %} object2 {% endtrans %}
+                        <h2>{% trans from 'pourEntreprise' %} prEntrp {% endtrans %}</h2> <BR>
+                        {% trans from 'pourEntreprise' %} object2 {% endtrans %}
                     </div>
 
                     <!--
@@ -160,7 +160,7 @@
                 </div>
 
                 <div class="row line">
-                    <div>  {% trans from 'anglais' %} serviceENTREP {% endtrans %} </div>
+                    <div>  {% trans from 'pourEntreprise' %} serviceENTREP {% endtrans %} </div>
 
                 </div>
 
@@ -175,7 +175,7 @@
                         </div>
                         <div class="datecours">
                             <div class="annonce-inscription">
-                                Les Inscriptions sont en cour.s Il y a encore quelques places disponibles.
+                                {% trans from 'ctihome' %} placesDISPO {% endtrans %}
                             </div>
                         </div>
                     </div>
@@ -185,26 +185,21 @@
                 <div class="cat-container">
                     <div class="categorie">
                         <div class="category-title">
-                            <h3> {% trans from 'anglais' %} Des Formules adaptées à vos besoins {% endtrans %} </h3>
+                            <h3> {% trans from 'pourEntreprise' %} formulADAPT {% endtrans %} </h3>
                         </div>
 
 
                         <div class="datecours">
-                            {% trans from 'anglais' %} Nos formules pour entreprise prennent en compte votre secteur d'activité et votre
-                            disponibilité.
-
-                            {% endtrans %}
+                            {% trans from 'pourEntreprise' %} text01 {% endtrans %}
                         </div>
 
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3> {% trans from 'anglais' %} Programmes sur mésure {% endtrans %} </h3>
+                            <h3> {% trans from 'pourEntreprise' %} progMESUR {% endtrans %} </h3>
                         </div>
                         <div class="datecours">
-                            {% trans from 'anglais' %} Vous beneficierez d'un programme taillé sur mésure, répondant aux besoins
-                            à cours et à moyen terme de votre entreprise.
-                            {% endtrans %}
+                            {% trans from 'pourEntreprise' %} text02 {% endtrans %}
                         </div>
 
                     </div>
@@ -212,14 +207,14 @@
 
                     <div class="categorie">
                         <div class="category-title">
-                            <h3>Approche Coaching </h3>
+                            <h3>{% trans from 'pourEntreprise' %} apprCOACH {% endtrans %} </h3>
                         </div>
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3>Lieux des Cours </h3>
+                            <h3>{% trans from 'pourEntreprise' %} lieuxDsCours {% endtrans %} </h3>
                         </div>
-                        Vous pouvez bénéficier d'une formation au sein de votre entreprise.
+                        {% trans from 'pourEntreprise' %} text03 {% endtrans %}
                     </div>
                 </div>
 
