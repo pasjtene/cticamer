@@ -128,7 +128,7 @@
     <div id="main_home">
 
         <div class="sous-menu">
-            Cours de Vacances en Anglais et en Informatique
+            {% trans from 'vacances' %} coursVaccANGL {% endtrans %}
         </div>
 
 
@@ -148,8 +148,8 @@
                     <img class="baniere-img categorie" src="{{ asset('data/img/photo-cti-1.jpg') }}" alt="">
 
                     <div class="baniere-msg categorie ">
-                        <h2>{% trans from 'anglais' %} coursVACANCES {% endtrans %}</h2> <BR>
-                        {% trans from 'anglais' %} object3 {% endtrans %}
+                        <h2>{% trans from 'vacances' %} coursVACANCES {% endtrans %}</h2> <BR>
+                        {% trans from 'vacances' %} object3 {% endtrans %}
                     </div>
 
                     <!--
@@ -162,7 +162,7 @@
                 </div>
 
                 <div class="row line">
-                    <div>  {% trans from 'anglais' %} serviceVACANCES {% endtrans %} </div>
+                    <div>  {% trans from 'vacances' %} serviceVACANCES {% endtrans %} </div>
 
                 </div>
 
@@ -171,12 +171,12 @@
                     <div class="">
                         <div class="category-title">
                             <h3>{% trans from 'ctihome' %} prochaineRentree {% endtrans %}:
-                                {% trans from 'anglais' %} debutCoursVacances {% endtrans %}
+                                {% trans from 'vacances' %} debutCoursVacances {% endtrans %}
                             </h3>
                         </div>
                         <div class="datecours">
                             <div class="annonce-inscription">
-                                Les Inscriptions sont en cours. Il y a encore quelques places disponibles.
+                                {% trans from 'ctihome' %} placesDISPO {% endtrans %}
                             </div>
                         </div>
                     </div>
@@ -187,27 +187,28 @@
                 <div class="cat-container">
                     <div class="categorie">
                         <div class="category-title">
-                            <h3> TROIS VAGUES DE COURS</h3>
+                            <h3> {% trans from 'vacances' %} troisVAGUES {% endtrans %} </h3>
                         </div>
 
                         <div class="category-desktop-contain">
-                            Nous vous proposons trois vagues de cours (1 par mois) pour vous remettre à niveau.
+                            {% trans from 'vacances' %} texteDebut {% endtrans %}
                             <ul>
-                                <li> Première Vague: <span class="vagues"> Du 4 au 29 Juin </span> </li>
-                                <li> Deuxième Vague: <span class="vagues"> Du 2 au 27 juillet </span> </li>
-                                <li> Troisième Vague: <span class="vagues"> Du 6 au 31 Aout </span> </li>
+                                <li> {% trans from 'vacances' %} vague01 {% endtrans %} <span class="vagues"> {% trans from 'vacances' %} periode01 {% endtrans %} </span> </li>
+                                <li> {% trans from 'vacances' %} vague02 {% endtrans %} <span class="vagues"> {% trans from 'vacances' %} periode02 {% endtrans %} </span> </li>
+                                <li> {% trans from 'vacances' %} vague03 {% endtrans %} <span class="vagues"> {% trans from 'vacances' %} periode03 {% endtrans %} </span> </li>
                             </ul>
-                            Notre Objectif est d'améliorer le niveau de langue des apprenants afin qu'ils aient plus
-                            d'aisance à étudier dans la langue de Shakespeare.
+                            {% trans from 'vacances' %} texteFin {% endtrans %}
                         </div>
 
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_anglais') }}"> MANUELS REQUIS </a></h3>
+                            <h3> {% trans from 'cours-intensifs' %} manuels {% endtrans %} </h3>
                         </div>
-                        Pour votre formation, vous avez droit aux meilleurs manuels d'apprentissage.<br>
-                        Avec nos cours conçus d’après le Cadre Européen Commun de Référence pour les Langues (CECR), relevez votre niveau de manière efficace.<br>
+                        {% trans from 'cours-intensifs' %} messagMANUELS {% endtrans %}
+                        <div class="category-desktop-contain">
+
+                        </div>
                         <div class="category-desktop-contain">
                             <img class="manuels-angl-img" src="{{ asset('data/img/englishUnlimited2.jpg') }}">
                             <img class="manuels-angl-img" src="{{ asset('data/img/english-unlimited-elementary-a-combo-with-dvd-roms-2.png') }}">
@@ -215,38 +216,34 @@
                             <img class="manuels-angl-img" src="{{ asset('data/img/IELTS-Cambridge-Books.jpg') }}">
                             <img class="manuels-angl-img" src="{{ asset('data/img/englishUnlimited1.png') }}">
                         </div>
-                        <div class="category-desktop-contain">
-
-
-                        </div>
 
                     </div>
 
 
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_informatique') }}">HORAIRES DE COURS</a></h3>
+                            <h3> {% trans from 'cours-intensifs' %} HORAIRES {% endtrans %} </h3>
                         </div>
 
-                        Choisissez vos heures de cours en fonction de votre disponibilité. <br>
+                        {% trans from 'cours-intensifs' %} messagHORAIRE {% endtrans %}
 
                         <div class="">
                             <div class=" horaire ">
-                                <div class="news-title"><h4>Matinées</h4></div>
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode1 {% endtrans %}</h4></div>
 
-                                <div class="news-title"><p>08H00 - 10h00</p></div>
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures1 {% endtrans %} </p></div>
                             </div>
 
                             <div class=" horaire ">
-                                <div class="news-title"><h4>Après-midi</h4></div>
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode2 {% endtrans %}</h4></div>
 
-                                <div class="news-title"><p>14H00 - 16h00</p></div>
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures2 {% endtrans %}</p></div>
                             </div>
 
                             <div class="horaire">
-                                <div class="news-title"><h4>Cours du Soirs</h4></div>
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode3 {% endtrans %}</h4></div>
 
-                                <div class="news-title"><p>18H30 - 20h30</p></div>
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures3 {% endtrans %}</p></div>
                             </div>
 
                         </div>
@@ -255,12 +252,9 @@
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_anglais') }}">Cours aux particuliers</a></h3>
+                            <h3><a href="{{ path('main_CoursParticulier') }}">{% trans from 'formation-continu' %} crsParti {% endtrans %}</a></h3>
                         </div>
-                        Cours basés sur des contenus particuliers, destinés à des groupes-cibles spéciaux ou pour
-                        l’exercice d’aptitudes uniques: <br><br>
-                        N’hésitez pas à nous contacter si vous souhaitez suivre une formation à la carte dans un
-                        de nos domaines de compétence.
+                        {% trans from 'formation-continu' %} presentationCoursParti {% endtrans %}
                     </div>
                 </div>
 

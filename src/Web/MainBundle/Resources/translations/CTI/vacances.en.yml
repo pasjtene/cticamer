@@ -5,4 +5,27 @@ keywordPartVACC: courses, holidays, english, computer science, learn, bilinguali
 
 
 
-title: CTI, holiday classes in English, computer traing, microsoft office training for pupils and high school students at the Churchill Training Institute, Douala Bonamoussadi
+title: CTI, holiday classes in English, computer traing, microsoft office training for pupils and high school students
+       at the Churchill Training Institute, Douala Bonamoussadi                                                         # Titre de la page
+coursVaccANGL: English and Computer Holyday Courses                   # Sujet de la page
+
+
+#Messages de la banière
+
+coursVACANCES: COURSES FOR CHILDREN AND STUDENTS DURING HOLIDAYS
+object3: Raise your child's English level during the Holidays and give him more assets to succeed.
+serviceVACANCES: For these holidays 2018, we offer courses oriented according to the needs of students and schoolchildren.
+debutCoursVacances: June 4, 2018
+
+
+#Block VAGUES DE COURS
+
+troisVAGUES: THREE COURSE SESSIONS
+texteDebut: We offer three courses (1 per month) to update.
+vague01: First Session:
+vague02: Second Session:
+vague03: Third Session:
+periode01: From 4th to 29th of June
+periode02: From 2nd to 27th of July
+periode03: From 6th to 31th of August
+texteFin: Our goal is to improve the language level of learners so they have more fluency in studying in Shakespeare's language.

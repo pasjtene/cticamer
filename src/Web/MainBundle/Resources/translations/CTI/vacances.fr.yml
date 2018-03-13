@@ -4,4 +4,29 @@ descriptionVACC: Trois vagues de Cours de Vacances en Anglais et Informatique au
 keywordPartVACC: cours, vacances, anglais, informatique, apprendre, bilinguisme, devenir bilingue, formation
 
 
-title: CTI, Cours de vacances en Anglais et Informatique pour enfants et jeunes, a Douala Bonamoussadi au Churchill Training Institute
+title: CTI, Cours de vacances en Anglais et Informatique pour enfants et jeunes, a Douala Bonamoussadi au Churchill Training Institute   # Titre de la page
+coursVaccANGL: Cours de Vacances en Anglais et en Informatique                   # Sujet de la page
+
+
+#Messages de la banière
+
+coursVACANCES: DES COURS POUR ENFANTS ET LYCEENS PENDANT LES VACANCES
+object3: Relevez le niveau d'Anglais de votre enfant pendant les Vacances et donnez lui plus d'atouts pour réussir.
+serviceVACANCES: Pour ces vacances 2018, nous proposons des cours orientés selon les besoins des étudiants, élèves et écoliers.
+debutCoursVacances: 4 juin 2018
+
+
+#Block VAGUES DE COURS
+
+troisVAGUES: TROIS VAGUES DE COURS
+texteDebut: Nous vous proposons trois vagues de cours (1 par mois) pour vous remettre à niveau.
+vague01: Première Vague:
+vague02: Deuxième Vague:
+vague03: Troisième Vague:
+periode01: Du 4 au 29 Juin
+periode02: Du 2 au 27 juillet
+periode03: Du 6 au 31 Août
+texteFin: Notre Objectif est d'améliorer le niveau de langue des apprenants afin qu'ils aient plus d'aisance à étudier
+          dans la langue de Shakespeare.
+
+
