@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% endblock %}
 {% block title %}
-    {% trans from 'about' %} about.title {% endtrans %}
+    {% trans from 'cours-particuliers' %} title {% endtrans %}
 {% endblock  %}
 
 {% block mycss %}
@@ -123,7 +123,7 @@
     <div id="main_home">
 
         <div class="sous-menu">
-            Cours Particuliers
+            {% trans from 'cours-particuliers' %} coursPartiANGL {% endtrans %}
         </div>
 
 
@@ -144,8 +144,8 @@
                     <img class="baniere-img categorie" src="{{ asset('data/img/coursParticulier.jpg') }}" alt="">
 
                     <div class="baniere-msg categorie ">
-                        <h2>{% trans from 'anglais' %} coursVACANCES {% endtrans %}</h2> <BR>
-                        {% trans from 'anglais' %} object3 {% endtrans %}
+                        <h2>{% trans from 'cours-particuliers' %} coursPARangl {% endtrans %}</h2> <BR>
+                        {% trans from 'cours-particuliers' %} object3 {% endtrans %}
                     </div>
 
                     <!--
@@ -158,7 +158,7 @@
                 </div>
 
                 <div class="row line">
-                    <div>  {% trans from 'anglais' %} serviceVACANCES {% endtrans %} </div>
+                    <div>  {% trans from 'cours-particuliers' %} servicePARTICULIERS {% endtrans %} </div>
 
                 </div>
 
@@ -172,7 +172,7 @@
                         </div>
                         <div class="datecours">
                             <div class="annonce-inscription">
-                                Les Inscriptions sont en cours. Il y a encore quelques places disponibles.
+                                {% trans from 'ctihome' %} placesDISPO {% endtrans %}
                             </div>
                         </div>
                     </div>
@@ -183,35 +183,35 @@
                 <div class="cat-container">
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_allemand') }}"> COURS D'ANGLAIS INTENSIF POUR TOUS </a></h3>
+                            <h3><a href="#"> {% trans from 'cours-particuliers' %} programSurMesur {% endtrans %} </a></h3>
                         </div>
 
                         <div class="category-desktop-contain">
-                            Le Churchill Training Institute vous offre des cours d'Anglais de qualité:
+                            {% trans from 'cours-particuliers' %} texte_01 {% endtrans %}
                             <ul>
-                                <li>Enseignants Qualifiés</li>
-                                <li>Programme de cours conçu selon le Cadre Européen Commun de Référence pour les Langues (CECR).</li>
-                                <li>Cadre agréable et Propice aux études</li>
-                                <li>Matériel didactique au point </li>
-                                <li>Salles Climatisées </li>
+                                <li>{% trans from 'cours-particuliers' %} detail_01 {% endtrans %}</li>
+                                <li>{% trans from 'cours-particuliers' %} detail_02 {% endtrans %}</li>
+                                <li>{% trans from 'cours-particuliers' %} detail_03 {% endtrans %}</li>
+                                <li>{% trans from 'cours-particuliers' %} detail_04 {% endtrans %}</li>
                             </ul>
-                            Nous préparons les candidats aux tests d'Anglais Nécessaires pour obtenir un visa étudiant, booster votre carrière ou vos affaires
-                            ( TOEFL, IELTS, TOEIC ).
+                            {% trans from 'cours-particuliers' %} texte_02 {% endtrans %}
                         </div>
 
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_anglais') }}"> MANUELS REQUIS </a></h3>
+                            <h3><a href="#"> {% trans from 'cours-particuliers' %} materielDIDAC {% endtrans %} </a></h3>
                         </div>
-                        Pour votre formation, vous avez droit aux meilleurs manuels d'apprentissage.<br>
-                        Nos cours sont conçus d’après le Cadre Européen Commun de Référence pour les Langues (CECR).<br>
+                        {% trans from 'cours-particuliers' %} texte_11 {% endtrans %}<br><br>
+                        <ul>
+                            <li>{% trans from 'cours-particuliers' %} detail_11 {% endtrans %}</li>
+                            <li>{% trans from 'cours-particuliers' %} detail_12 {% endtrans %}</li>
+                            <li>{% trans from 'cours-particuliers' %} detail_13 {% endtrans %}</li>
+                        </ul>
                         <div class="category-desktop-contain">
-                            <img class="manuels-angl-img" src="{{ asset('data/img/englishUnlimited2.jpg') }}">
                             <img class="manuels-angl-img" src="{{ asset('data/img/english-unlimited-elementary-a-combo-with-dvd-roms-2.png') }}">
                             <img class="manuels-angl-img" src="{{ asset('data/img/Official-toelf-Test-Prep.jpg') }}">
                             <img class="manuels-angl-img" src="{{ asset('data/img/IELTS-Cambridge-Books.jpg') }}">
-                            <img class="manuels-angl-img" src="{{ asset('data/img/englishUnlimited1.png') }}">
                         </div>
                         <div class="category-desktop-contain">
 
@@ -223,63 +223,47 @@
 
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_informatique') }}">HORAIRES DE COURS</a></h3>
+                            <h3><a href="#"> {% trans from 'cours-particuliers' %} approchCoach {% endtrans %} </a></h3>
                         </div>
 
-                        Choisissez vos heures de cours en fonction de votre disponibilité. <br>
+                        {% trans from 'cours-particuliers' %} texte_21 {% endtrans %} <br>
 
-                        <div class="">
-                            <div class=" horaire ">
-                                <div class="news-title"><h4>Matinées</h4></div>
-
-                                <div class="news-title"><p>08H00 - 10h00</p></div>
-                            </div>
-
-                            <div class=" horaire ">
-                                <div class="news-title"><h4>Après-midi</h4></div>
-
-                                <div class="news-title"><p>14H00 - 16h00</p></div>
-                            </div>
-
-                            <div class="horaire">
-                                <div class="news-title"><h4>Cours du Soirs</h4></div>
-
-                                <div class="news-title"><p>18H30 - 20h30</p></div>
-                            </div>
-
-                        </div>
+                        <ul>
+                            <li>{% trans from 'cours-particuliers' %} detail_21 {% endtrans %}</li>
+                            <li>{% trans from 'cours-particuliers' %} detail_22 {% endtrans %}</li>
+                            <li>{% trans from 'cours-particuliers' %} detail_23 {% endtrans %}</li>
+                        </ul>
 
 
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_anglais') }}">Cours aux particuliers</a></h3>
+                            <h3> {% trans from 'cours-intensifs' %} diffNIV {% endtrans %} </h3>
                         </div>
-                        Cours basés sur des contenus particuliers, destinés à des groupes-cibles spéciaux ou pour
-                        l’exercice d’aptitudes uniques: <br><br>
-                        N’hésitez pas à nous contacter si vous souhaitez suivre une formation à la carte dans un
-                        de nos domaines de compétence.
+                        <p> {% trans from 'cours-intensifs' %} phrase1 {% endtrans %} </p>
+                        <p> {% trans from 'cours-intensifs' %} phrase2 {% endtrans %} </p>
+                        <p> {% trans from 'cours-intensifs' %} phrase3 {% endtrans %} </p>
                     </div>
                 </div>
 
                 <div class="cat-container">
                     <div class="">
                         <div class="datecours annonce-inscription">
-                            Choisissez une de nos rentrées pour vos cours du jour et soir en Anglais (2017-2018)
+                            {% trans from 'ctihome' %} choixRENTREE {% endtrans %}
                         </div>
                         <table class="table02">
                             <tr>
-                                <td class="abc"> 16 janv  </td>
-                                <td class="abc"> 20 fev  </td>
-                                <td class="abc"> 05 mar  </td>
-                                <td class="abc"> 02 avr  </td>
-                                <td class="abc"> 07 mai  </td>
-                                <td class="abc"> 04 juin  </td>
-                                <td class="abc"> 02 juil  </td>
-                                <td class="abc"> 06 aoû  </td>
-                                <td class="abc"> 3 sep  </td>
-                                <td class="abc"> 01 oct </td>
-                                <td class="abc"> 05 nov  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree1 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree2 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree3 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree4 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree5 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree6 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree7 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree8 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree9 {% endtrans %}  </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree10 {% endtrans %} </td>
+                                <td class="abc"> {% trans from 'ctihome' %} rentree11 {% endtrans %}  </td>
                             </tr>
 
                         </table>

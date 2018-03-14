@@ -29,7 +29,7 @@ messagFIN: We prepare candidates for the English tests Required to obtain a stud
 
 # Block MANUELS REQUIS
 
-manuels: required documents
+manuels: REQUIRED DOCUMENTS
 messagMANUELS: For your training, you are entitled to the best learning manuals. <br>
                Our courses are designed according to the Common European Framework of Reference for Languages (CEFR).<br>
 
@@ -48,7 +48,7 @@ heures3: 18:30 - 20:30
 
 # Fréquence et Différents Niveaux de Langue
 
-diffNIV: Period and Different Levels
+diffNIV: PERIODS AND DIFFERENTS LEVELS
 phrase1: You evolve according to the six language levels of the CEFR (A1, A2, B1, B2, C1, C2).
 phrase2: Each level requires 5 weeks of training.
 phrase3: 5 days / week in intensive classes.
