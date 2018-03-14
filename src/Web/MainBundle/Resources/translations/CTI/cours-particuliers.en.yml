@@ -4,14 +4,18 @@ descriptionPAR: Private English lessons for progression at your own pace. CTI te
 keywordPAR: private, lessons, Bilingual, English, Course, Becoming Bilingual, Training, A1, A2, B1, B2, C1, C2
 
 
-title: CTI, Private English Course at Churchill Training Institute
-coursPartiANGL: Private English Lessons
+title: CTI, Private English Course at Churchill Training Institute                                  # Titre de la page
+coursPartiANGL: Private English Lessons                                                                # Sujet de la page
 
+
+#Messages de la banière
 
 coursPARangl: PRIVATE COURSES VERY ACCESSIBLE !!
 object3: Would you like to take a private course to progress at your own pace and effectively?
 servicePARTICULIERS: The CTI provides its teachers for quality training.
 
+
+# Block Cours d'Anglais Intensifs
 
 programSurMesur: PROGRAM ON MEASURE
 texte_01: If you subcribe to private lessons, you benefit from a personalized training program:
@@ -22,6 +26,8 @@ detail_04: You can choose the course location
 texte_02: We prepare candidates for the English tests Required to obtain a student visa, boost your career or your
           business (TOEFL, IELTS, TOEIC).
 
+
+# Block MANUELS REQUIS
 
 materielDIDAC: TEACHING MATERIALS
 texte_11: The CTI is equipped with didactic tools suitable for easy and quick learning:

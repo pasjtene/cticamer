@@ -1,13 +1,14 @@
-{% extends 'MainBundle::layout.html.twig' %}
+{% extends 'MainBundle::cti-layout.html.twig' %}
 
 {% block meta %}
-    <meta name = "{% trans from 'about' %} about.block14 {% endtrans %}" >
-    <meta name = "keywords" content = "{% trans from 'about' %} about.block15 {% endtrans %}" >
     <meta charset="utf-8">
-
+    <meta name = "description" content = " {% trans from 'informatique' %} descriptionINFO {% endtrans %} " >
+    <meta name = "keywords" content = "{% trans from 'informatique' %} keywordINFO {% endtrans %}" >
+    <meta name="author" content="semanticatechnologies.com - Douala Bonamoussadi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% endblock %}
 {% block title %}
-    {% trans from 'cti' %} informatique.title {% endtrans %}
+    {% trans from 'informatique' %} title {% endtrans %}
 {% endblock  %}
 
 {% block mycss %}
@@ -38,6 +39,89 @@
             /*background-size: cover;*/
             background-size: 50%  auto;
         }
+
+        .manuels-img {
+            width: 18%;
+        }
+        .manuels-img {
+            width: 18%;
+        }
+        .horaire {
+            display: inline-block;
+            padding: 1%;
+            margin: 1%;
+            background: white;
+        }
+        .baniere{
+            width: 100%;
+            max-height: 400px;
+        }
+        .baniere-msg {
+            width: 55%;
+            float: right;
+            color: white;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+            font-size: 150%;
+            padding: 3%;
+        }
+
+        .sous-menu {
+            background-color: #f16e00;
+            color: white;
+            font-size: 200%;
+            text-align: center;
+        }
+
+        table.table01 {
+            width: 90%;
+            color: #f16e00;
+            background-color: white;
+
+        }
+
+
+        table.table01 td,th {
+            padding: 2%;
+            margin: 5px!important;
+            border: 5px solid transparent!important;
+        }
+
+        .table02 {
+            width: 100%;
+            background-color: #f16e00;
+            color: white;
+            border-collapse: separate;
+        }
+
+        .table03 {
+            width: 100%;
+            background-color: #0000cc;
+            color: white;
+            border-collapse: separate;
+        }
+
+        .abc {
+            border: 5px solid transparent;
+        }
+
+        .accueil {
+            background-color: rgba(225, 225, 225, 0.55);
+            color: #403574;
+            font-size: 150%;
+            padding: 3%;
+        }
+
+        .utiles {
+            padding: 2%;
+            margin: 2%;
+        }
+
+        .liens-utiles {
+
+            background-color: #f16e00;
+            color: white;
+        }
+
     </style>
     {# mettre le css si la page t'oublige #}
 {% endblock %}
@@ -46,119 +130,96 @@
     {% include 'MainBundle:CTI:mobile-nav.html.twig' %}
     {% include 'MainBundle:Default:cti-navbar.html.twig' %}
 
-
 {% endblock %}
 
 {% block  mainLg %}
 
-    <div id="main_home">
+    <div class="main_allemand">
 
+        <div class="message_and_image" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
+            <img  id="top_img" src="{{ asset('data/img/baniere2.png') }}" alt="">
 
-
-
-        <div class="message_and_image">
             <div class="message_on_image">
-                {% trans from 'informatique' %} text1 {% endtrans %}
+                {% trans from 'informatique' %} message_01 {% endtrans %} <BR>
+
             </div>
 
-            <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-                <img  id="top_img" src="{{ asset('data/img/about4.jpg') }}" alt="">
-                {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
-            </div>
+
         </div>
 
         <div class="row line">
-            <div>  {% trans from 'informatique' %} text2 {% endtrans %} </div>
+            <div>  {% trans from 'informatique' %} message_02 {% endtrans %} </div>
 
         </div>
 
 
-        <div class="row section admission">
-            <h2 class="bloc-title">  {% trans from 'informatique' %} coursDispo {% endtrans %} </h2>
-            <div class="inner padding">
-                <div class="flex">
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">  {% trans from 'informatique' %} secrBuro {% endtrans %} </div>
+        <div class="flex-contain">
 
-                        <div class="content">
-                            {% trans from 'informatique' %} detail-1 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
-                        <div class="triangle-bottom"></div>
+            <div class="">
+
+
+                <div class="accueil">
+
+                    <div>
+                        {% trans from 'informatique' %} texte_01 {% endtrans %} <br>
+                        <ul>
+                            <li><a href="{{ path('main_LogicielsBureautique') }}">{% trans from 'informatique' %}module_01{% endtrans %}</a></li>
+                            <li><a href="{{ path('main_Design') }}">{% trans from 'informatique' %}module_02{% endtrans %}</a></li>
+                            <li><a href="{{ path('main_Internet') }}">{% trans from 'informatique' %}module_03{% endtrans %}</a></li>
+                            <li><a href="{{ path('main_AppliWeb') }}">{% trans from 'informatique' %}module_04{% endtrans %}</a> </li>
+                            <li><a href="{{ path('main_SecuriteInfo') }}">{% trans from 'informatique' %}module_05{% endtrans %}</a> </li>
+                        </ul>
                     </div>
 
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">  {% trans from 'informatique' %} Infograph {% endtrans %} </div>
+                    <div>  {% trans from 'informatique' %}  {% endtrans %} </div>
 
-                        <div class="content">
-                            {% trans from 'informatique' %} detail-2 {% endtrans %}
+                </div>
+
+                <div class="row section admission">
+                    <h2 class="bloc-title">  {% trans from 'informatique' %} coursDispo {% endtrans %} </h2>
+                    <div class="inner padding">
+                        <div class="flex">
+                            <div class="hexagon degrade admission-hexagon">
+                                <div class="triangle-top"></div>
+                                <div class="titre">  {% trans from 'informatique' %} secrBuro {% endtrans %} </div>
+
+                                <div class="content">
+                                    {% trans from 'informatique' %} detail-1 {% endtrans %}
+                                </div>
+                                <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
+                                <div class="triangle-bottom"></div>
+                            </div>
+
+                            <div class="hexagon degrade admission-hexagon">
+                                <div class="triangle-top"></div>
+                                <div class="titre">  {% trans from 'informatique' %} Infograph {% endtrans %} </div>
+
+                                <div class="content">
+                                    {% trans from 'informatique' %} detail-2 {% endtrans %}
+                                </div>
+                                <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
+                                <div class="triangle-bottom"></div>
+                            </div>
+
+                            <div class="hexagon degrade admission-hexagon">
+                                <div class="triangle-top"></div>
+                                <div class="titre">  {% trans from 'informatique' %} devAppli {% endtrans %} </div>
+
+                                <div class="content">
+                                    {% trans from 'informatique' %} detail-3 {% endtrans %}
+                                </div>
+                                <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
+                                <div class="triangle-bottom"></div>
+                            </div>
+
+
                         </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
-                        <div class="triangle-bottom"></div>
                     </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">  {% trans from 'informatique' %} devAppli {% endtrans %} </div>
-
-                        <div class="content">
-                            {% trans from 'informatique' %} detail-3 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
-                        <div class="triangle-bottom"></div>
-                    </div>
-
 
                 </div>
             </div>
 
         </div>
-
-        <!-- Paralax area -->
-
-        <!---
-        <div class="message_and_image">
-
-
-            <div class="message_on_image">
-                {% trans from 'cti' %} informatique.text1 {% endtrans %}
-            </div>
-
-            <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-                <img  id="top_img" src="{{ asset('data/img/about4.jpg') }}" alt="">
-                {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
-            </div>
-        </div>
-        -->
-
-        <div class="row line">
-            <div> {% trans from 'about' %} about.title1 {% endtrans %} : {% trans from 'about' %} about.block14 {% endtrans %} </div>
-
-        </div>
-
-
-        <div class="section admission parallax-container ">
-            <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('data/img/computerstudents2.jpg') }}" data-position="left top">
-
-
-            </div>
-
-            <div class="edito supinfo-slogan">
-                <div class="triangle-left"></div>
-                <div class="contenu">
-                    <div class="supinfo-slogan-titre">CTI: {% trans from 'about' %} about.contenu1 {% endtrans %}</div>
-                    <p class="home-slogan">{% trans from 'about' %} about.contenu2 {% endtrans %}</p>
-                    <p><a href="">{% trans from 'about' %} about.contenu3 {% endtrans %}</a></p>
-
-                </div>
-
-            </div>
-        </div>
-        <div class="separator"></div>
-
-
 
 
 
@@ -193,6 +254,12 @@
 
 
 
+
+
+
+
+
+
     </div>
 {% endblock %}
 
@@ -202,3 +269,5 @@
 {% block myjs %}
     {# mettre des liens vers des pages externe js si c'est  necessaire #}
 {% endblock %}
+
+

@@ -1,14 +1,24 @@
+descriptionINFO: Des formations dans plusieurs domaine de l'Informatique ( Logiciel de Bureautique, Infographie,
+                 Design Artistique, Utilisation d Internet, Developpement Web, Sécurité Informatique ).
+keywordINFO: infographie, informatique, design, bureautique, internet, développement web, sécurité, formation, cours,
+
+
 title: Cours d'informatique a Douala au CTI - Churchill Training Institute - Douala
 
 # Les textes de la banière
 
-text1: Le CTI offre des formations de haute qualité dans plusieurs domaines de l’informatique
-text2: Augmentez vos chances de trouver un emploi en suivant une de nos formations en Informatique.
+message_01: Le CTI offre des formations de haute qualité dans plusieurs domaines de l’informatique
+message_02: Augmentez vos chances de trouver un emploi en suivant une de nos formations en Informatique.
 
 
+texte_01: Nous vous proposons des formations proféssionnelle dans les modules suivants,
+texte_02:
 
-
-
+module_01: Logiciel de Bureautique
+module_02: Infographie, Design Artistique
+module_03: Utilisation d Internet
+module_04: Developpement Web
+module_05: Sécurité Informatique
 
 
 
