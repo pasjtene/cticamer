@@ -16,7 +16,7 @@ message_01: Le CTI offre des formations de haute qualité dans plusieurs domaine
 message_02: Augmentez vos chances de trouver un emploi en suivant une de nos formations en Informatique.
 
 
-texte_01: Nous vous proposons des formations proféssionnelle dans les modules suivants,
+texte_01: Once considered as a domain reserved for specialists, computer science is now essential. The race towards the digitization of services, the digital economy, the rapid means of communication are all factors that encourage Africans to become familiar with this tool that has become unavoidable. Looking for a professional qualification? We offer training in the following areas,
 texte_02:
 
 module_01: Logiciel de Bureautique
@@ -40,3 +40,9 @@ detail-2: Infographie, Design Artistique et Média, Adobe Photoshop, illustrator
 
 devAppli: Développement d'Application Web
 detail-3: Langages HTML5, CSS3, Flex Box, JavaScript, PHP, Jquery, MysQL, Symfony, Responsive Web Design
+
+util_Internet: Utilisation d'Internet
+detail-4:
+
+securite_IT: Sécurité Informatique
+detail-5:
