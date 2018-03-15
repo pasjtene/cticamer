@@ -1,3 +1,7 @@
+
+
+
+
 {% extends 'MainBundle::cti-layout.html.twig' %}
 
 {% block meta %}
@@ -8,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% endblock %}
 {% block title %}
-    {% trans from 'informatique' %} title {% endtrans %}
+    {% trans from 'about' %} about.title {% endtrans %}
 {% endblock  %}
 
 {% block mycss %}
@@ -140,7 +144,7 @@
             <img  id="top_img" src="{{ asset('data/img/baniere2.png') }}" alt="">
 
             <div class="message_on_image">
-                {% trans from 'informatique' %} message_01 {% endtrans %} <BR>
+                {% trans from 'informatique' %} text1 {% endtrans %} <BR>
 
             </div>
 
@@ -148,12 +152,12 @@
         </div>
 
         <div class="row line">
-            <div>  {% trans from 'informatique' %} message_02 {% endtrans %} </div>
+            <div>  {% trans from 'informatique' %} text2 {% endtrans %} </div>
 
         </div>
 
 
-        <div class="flex-contain">
+        <div class="">
 
             <div class="">
 
@@ -172,6 +176,7 @@
                     </div>
 
                     <div>  {% trans from 'informatique' %}  {% endtrans %} </div>
+
 
                 </div>
 
@@ -212,16 +217,65 @@
                                 <div class="triangle-bottom"></div>
                             </div>
 
+                            <!--
+                            <div class="hexagon degrade admission-hexagon">
+                                <div class="triangle-top"></div>
+                                <div class="titre">  {% trans from 'informatique' %} util_Internet {% endtrans %} </div>
+
+                                <div class="content">
+                                    {% trans from 'informatique' %} detail-4 {% endtrans %}
+                                </div>
+                                <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
+                                <div class="triangle-bottom"></div>
+                            </div>
+
+                            <div class="hexagon degrade admission-hexagon">
+                                <div class="triangle-top"></div>
+                                <div class="titre">  {% trans from 'informatique' %} securite_IT {% endtrans %} </div>
+
+                                <div class="content">
+                                    {% trans from 'informatique' %} detail-5 {% endtrans %}
+                                </div>
+                                <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
+                                <div class="triangle-bottom"></div>
+                            </div>
+-->
+
 
                         </div>
                     </div>
 
                 </div>
+
+
+
             </div>
 
         </div>
 
+        <div class="row line">
+            <div> {% trans from 'about' %} about.title1 {% endtrans %} : {% trans from 'about' %} about.block14 {% endtrans %} </div>
 
+        </div>
+
+
+        <div class="section admission parallax-container ">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('data/img/computerstudents2.jpg') }}" data-position="left top">
+
+
+            </div>
+
+            <div class="edito supinfo-slogan">
+                <div class="triangle-left"></div>
+                <div class="contenu">
+                    <div class="supinfo-slogan-titre">CTI: {% trans from 'informatique' %} slogan1 {% endtrans %}</div>
+                    <p class="home-slogan">{% trans from 'informatique' %} slogan2 {% endtrans %}</p>
+                    <p><a href="">{% trans from 'informatique' %} slogan3 {% endtrans %}</a></p>
+
+                </div>
+
+            </div>
+        </div>
 
         <div class="separator"></div>
 
@@ -269,5 +323,3 @@
 {% block myjs %}
     {# mettre des liens vers des pages externe js si c'est  necessaire #}
 {% endblock %}
-
-

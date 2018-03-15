@@ -40,18 +40,18 @@
   .but {
     color: #221199;
   }
-  table.table01 {
-    width: 90%;
+  .table01 {
+    width: 98%;
     color: #f16e00;
-    background-color: white;
-
   }
 
 
-  table.table01 td,th {
+  .table01 td, .table01 th {
     padding: 2%;
-    margin: 5px!important;
-    border: 5px solid transparent!important;
+    margin: 2%;
+    background-color: white;
+    border: #75787b;
+
   }
 
   .table02 {
