@@ -78,6 +78,20 @@
     font-size: 150%;
   }
 
+  .titreFormation {
+    font-size: 160%;
+    background-color: #B0BED9;
+    color: #b35e14;
+    margin-top: 0.3em;
+    padding-left: 0.3em;
+  }
+
+  .liste {
+
+  }
+
+
+
 
 
 
@@ -1279,7 +1293,7 @@ and (max-device-width : 568px)
       font-weight: bold;
       font-family: "Times New Roman";
       padding-bottom: 1cm;
-      padding-left: 2%;
+      padding: 0.3em !important;
       margin: 0px !important;
     }
 

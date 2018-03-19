@@ -1,13 +1,14 @@
 {% extends 'MainBundle::layout.html.twig' %}
 
 {% block meta %}
-    <meta name = "{% trans from 'about' %} about.block14 {% endtrans %}" >
-    <meta name = "keywords" content = "{% trans from 'about' %} about.block15 {% endtrans %}" >
     <meta charset="utf-8">
-
+    <meta name = "description" content = "{% trans from 'infographie' %} descriptionInfograph {% endtrans %}" >
+    <meta name = "keywords" content = "{% trans from 'infographie' %} keywordInfograph {% endtrans %}" >
+    <meta name="author" content="semanticatechnologies.com - Douala Bonamoussadi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% endblock %}
 {% block title %}
-    {% trans from 'cti' %} informatique.title {% endtrans %}
+    {% trans from 'infographie' %} title {% endtrans %}
 {% endblock  %}
 
 {% block mycss %}
@@ -38,6 +39,39 @@
             /*background-size: cover;*/
             background-size: 50%  auto;
         }
+
+        .manuels-img {
+            width: 18%;
+        }
+        .horaire {
+            display: inline-block;
+            padding: 1%;
+            margin: 1%;
+            background: white;
+        }
+        .baniere{
+            width: 100%;
+            max-height: 400px;
+        }
+        .baniere-img{
+            width: 40%;
+        }
+        .baniere-msg {
+            width: 55%;
+            float: right;
+            color: white;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+            font-size: 150%;
+            padding: 3%;
+        }
+
+        .sous-menu {
+            background-color: #f16e00;
+            color: white;
+            font-size: 200%;
+            text-align: center;
+        }
+
     </style>
     {# mettre le css si la page t'oublige #}
 {% endblock %}
@@ -53,145 +87,159 @@
 
     <div id="main_home">
 
+        <div class="sous-menu">
+            {% trans from 'infographie' %} infoGRAH {% endtrans %}
+        </div>
+        <div class="flex-contain">
 
+            <div class="left-nav">
 
-
-        <div class="message_and_image">
-            <div class="message_on_image">
-                {% trans from 'informatique' %} text1 {% endtrans %}
+                {% block left_nav %}
+                    {% include 'MainBundle:Inc:left_nav.html.twig' %}
+                {% endblock %}
             </div>
 
-            <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-                <img  id="top_img" src="{{ asset('data/img/about4.jpg') }}" alt="">
-                {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
-            </div>
-        </div>
+            <div class="main-contain-middle">
 
-        <div class="row line">
-            <div>  {% trans from 'informatique' %} text2 {% endtrans %} </div>
+                <div class="baniere cat-container">
 
-        </div>
+                    <img class="baniere-img categorie" src="{{ asset('data/img/infograph.png') }}" alt="">
 
-
-        <div class="row section admission">
-            <h2 class="bloc-title">  {% trans from 'informatique' %} coursDispo {% endtrans %} </h2>
-            <div class="inner padding">
-                <div class="flex">
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">  {% trans from 'informatique' %} secrBuro {% endtrans %} </div>
-
-                        <div class="content">
-                            {% trans from 'informatique' %} detail-1 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
-                        <div class="triangle-bottom"></div>
+                    <div class="baniere-msg categorie ">
+                        <h2>{% trans from 'infographie' %} infographDESIGN {% endtrans %}</h2> <BR>
+                        {% trans from 'infographie' %} objectif {% endtrans %}
                     </div>
 
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">  {% trans from 'informatique' %} Infograph {% endtrans %} </div>
+                    <!--
+                    <div id="about_top" style="background-image:url('{{ asset('data/img/infograph.png') }}')">
 
-                        <div class="content">
-                            {% trans from 'informatique' %} detail-2 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
-                        <div class="triangle-bottom"></div>
+                        {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
                     </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">  {% trans from 'informatique' %} devAppli {% endtrans %} </div>
-
-                        <div class="content">
-                            {% trans from 'informatique' %} detail-3 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
-                        <div class="triangle-bottom"></div>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Paralax area -->
-
-        <!---
-        <div class="message_and_image">
-
-
-            <div class="message_on_image">
-                {% trans from 'cti' %} informatique.text1 {% endtrans %}
-            </div>
-
-            <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-                <img  id="top_img" src="{{ asset('data/img/about4.jpg') }}" alt="">
-                {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
-            </div>
-        </div>
-        -->
-
-        <div class="row line">
-            <div> {% trans from 'about' %} about.title1 {% endtrans %} : {% trans from 'about' %} about.block14 {% endtrans %} </div>
-
-        </div>
-
-
-        <div class="section admission parallax-container ">
-            <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('data/img/computerstudents2.jpg') }}" data-position="left top">
-
-
-            </div>
-
-            <div class="edito supinfo-slogan">
-                <div class="triangle-left"></div>
-                <div class="contenu">
-                    <div class="supinfo-slogan-titre">CTI: {% trans from 'informatique' %} slogan1 {% endtrans %}</div>
-                    <p class="home-slogan">{% trans from 'informatique' %} slogan2 {% endtrans %}</p>
-                    <p><a href="">{% trans from 'informatique' %} slogan3 {% endtrans %}</a></p>
+-->
 
                 </div>
 
-            </div>
-        </div>
-        <div class="separator"></div>
-
-
-
-
-
-        <div class="separator"></div>
-
-
-        <div class="section programmes-main-div">
-            <h2 class="bloc-title">{% trans from 'about' %} about.news {% endtrans %}</h2>
-
-            <div class="inner padding">
-                <div class="flex">
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="news-title"><h4>{% trans from 'ctihome' %} english {% endtrans %}</h4></div>
-
-                        <p style="text-align: left">{% trans from 'ctihome' %} englishNews {% endtrans %}</p>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="news-title"><h4>{% trans from 'ctihome' %} german {% endtrans %}</h4></div>
-                        <p style="text-align: left">{% trans from 'ctihome' %} allemandNews {% endtrans %}</p>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="news-title"><h4>{% trans from 'ctihome' %} computing {% endtrans %}</h4></div>
-                        <p style="text-align: left">{% trans from 'ctihome' %} infoNews {% endtrans %}</p>
-                    </div>
+                <div class="row line">
+                      {% trans from 'infographie' %} atoutINFOGR {% endtrans %}
 
                 </div>
-            </div>
 
+                <div class="titreFormation">
+                    <div>  {% trans from 'infographie' %} formationINFOGRAPHIE {% endtrans %} </div>
+
+                </div>
+
+
+
+                <div class="cat-container">
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href=""> {% trans from 'infographie' %} objectifINFOGR {% endtrans %} </a></h3>
+                        </div>
+
+                        <div class="">
+                            {% trans from 'infographie' %} texte_01 {% endtrans %}
+                        </div>
+                        <ul class="liste">
+                            <li> {% trans from 'infographie' %} but_01 {% endtrans %} </li>
+                            <li> {% trans from 'infographie' %} but_02 {% endtrans %} </li>
+                            <li> {% trans from 'infographie' %} but_03 {% endtrans %} </li>
+                            <li> {% trans from 'infographie' %} but_04 {% endtrans %} </li>
+                            <li> {% trans from 'infographie' %} but_05 {% endtrans %} </li>
+                        </ul>
+
+
+                    </div>
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href="#"> {% trans from 'bureautique' %} LogicielBUREAU {% endtrans %} </a></h3>
+                        </div>
+                        <div class="importante"> {% trans from 'bureautique' %} Frequ_02 {% endtrans %} </div>
+
+                        <div class="datecours">
+                            {% trans from 'bureautique' %} detail_02 {% endtrans %}
+                        </div>
+
+                        <div class="annonce-inscription but">
+                            {% trans from 'bureautique' %} messag_02 {% endtrans %}
+                        </div>
+
+                        <div class="category-desktop-contain">
+                            <table class="table01">
+                                <tr>
+                                    <th> {% trans from 'bureautique' %} Element_11 {% endtrans %}  </th>
+                                    <td>
+                                        <ul>
+                                            <li>{% trans from 'bureautique' %} module_11 {% endtrans %}</li>
+                                            <li>{% trans from 'bureautique' %} module_12 {% endtrans %}</li>
+                                            <li>{% trans from 'bureautique' %} module_13 {% endtrans %}</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th> {% trans from 'bureautique' %} Element_12 {% endtrans %}  </th>
+                                    <td> {% trans from 'bureautique' %} Duree_11 {% endtrans %} </td>
+                                </tr>
+                                <tr>
+                                    <th> {% trans from 'bureautique' %} Element_13 {% endtrans %}  </th>
+                                    <td> {% trans from 'bureautique' %} Frequ_02 {% endtrans %} </td>
+                                </tr>
+
+                            </table>                        </div>
+
+                    </div>
+
+
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3> {% trans from 'cours-intensifs' %} HORAIRES {% endtrans %} </h3>
+                        </div>
+
+                        {% trans from 'cours-intensifs' %} messagHORAIRE {% endtrans %}
+
+                        <div class="">
+                            <div class=" horaire ">
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode1 {% endtrans %}</h4></div>
+
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures1 {% endtrans %} </p></div>
+                            </div>
+
+                            <div class=" horaire ">
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode2 {% endtrans %}</h4></div>
+
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures2 {% endtrans %}</p></div>
+                            </div>
+
+                            <div class="horaire">
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode3 {% endtrans %}</h4></div>
+
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures3 {% endtrans %}</p></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href="{{ path('main_CoursParticulier') }}">{% trans from 'formation-continu' %} crsParti {% endtrans %}</a></h3>
+                        </div>
+                        {% trans from 'formation-continu' %} presentationCoursParti {% endtrans %}
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+            </div>
         </div>
 
+        <div class="section programmes-main-div ">
+            {% block ACTUALITE %}
+                {% include 'MainBundle:Inc:actualites.html.twig' %}
+            {% endblock %}
 
+        </div>
 
     </div>
 {% endblock %}
