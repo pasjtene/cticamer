@@ -166,7 +166,7 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
 
 
     /**
-     * @Route("/informatique", name="main_informatique"))
+     * @Route("/informatique", name="main_informatique-a"))
      */
     public function informatiqueAction()
     {
@@ -219,14 +219,7 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
         return $this->render('MainBundle:CTI:securite_Informatique.html.twig', $array);
     }
 
-    /**
-     * @Route("/Cours_Particuliers_dInformatique", name="main_CoursParticuliersdInfo"))
-     */
-    public function CoursParticuliersdInfoAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:cours_Particuliers_dInformatique.html.twig', $array);
-    }
+
 
 
 
