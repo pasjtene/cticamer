@@ -47,59 +47,6 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
         return $this->render('MainBundle:CTI:home.html.twig');
     }
 
-    /**
-     * @Route("/anglais", name="main_anglais"))
-     */
-    public function anglaisAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:anglais.html.twig', $array);
-    }
-
-    /**
-     * @Route("/cours_intensifs", name="main_CoursIntensifs"))
-     */
-    public function CoursIntensifsAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:cours_intensifs.html.twig', $array);
-    }
-
-    /**
-     * @Route("/formation_continue", name="main_FormationContinue"))
-     */
-    public function FormationContinueAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:formation_continue.html.twig', $array);
-    }
-
-    /**
-     * @Route("/pour_entreprises", name="main_PourEntreprises"))
-     */
-    public function PourEntreprisesAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:pour_entreprises.html.twig', $array);
-    }
-
-    /**
-     * @Route("/cours_de_vacances", name="main_CoursDeVacances"))
-     */
-    public function CoursDeVacancesAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:cours_vacances.html.twig', $array);
-    }
-
-    /**
-     * @Route("/cours_particuliers", name="main_CoursParticulier"))
-     */
-    public function CoursParticulierAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:cours_particuliers.html.twig', $array);
-    }
 
     /**
      * @Route("/niveaux_de_langue", name="main_NiveauxDeLangue"))
@@ -115,50 +62,7 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
 
 
 
-    /**
-     * @Route("/allemand", name="main_allemand"))
-     */
-    public function allemandAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:allemand.html.twig', $array);
-    }
 
-    /**
-     * @Route("/etudier_en_Allemagne", name="main_etudierEnAllemagne"))
-     */
-    public function etudierEnAllemagneAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:etudier_en_Allemagne.html.twig', $array);
-    }
-
-    /**
-     * @Route("/Regroupement_familial", name="main_regroupementFamilial"))
-     */
-    public function regroupementFamilialAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:regroupement_familial.html.twig', $array);
-    }
-
-    /**
-     * @Route("/Cours_particuliers_dAllemand", name="main_CoursParticuliersdAll"))
-     */
-    public function main_CoursParticuliersdAllAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:cours_particuliers_dAllemand.html.twig', $array);
-    }
-
-    /**
-     * @Route("/Cours_Specialises", name="main_CoursSpecialise"))
-     */
-    public function CoursSpecialiseAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:cours_Specialises.html.twig', $array);
-    }
 
 
 
@@ -174,50 +78,7 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
         return $this->render('MainBundle:CTI:informatique.html.twig', $array);
     }
 
-    /**
-     * @Route("/Logiciels_de_Bureautique", name="main_LogicielsBureautique"))
-     */
-    public function LogicielsBureautiqueAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:logiciels_de_Bureautique.html.twig', $array);
-    }
 
-    /**
-     * @Route("/Infographie_Design_et_Media", name="main_Design"))
-     */
-    public function DesignAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:infographie_Design_et_Media.html.twig', $array);
-    }
-
-    /**
-     * @Route("/Utiliser_Internet", name="main_Internet"))
-     */
-    public function InternetAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:utiliser_Internet.html.twig', $array);
-    }
-
-    /**
-     * @Route("/Developpement_dApplication_Web", name="main_AppliWeb"))
-     */
-    public function AppliWebAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:developpement_dApplication_Web.html.twig', $array);
-    }
-
-    /**
-     * @Route("/Securite_Informatique", name="main_SecuriteInfo"))
-     */
-    public function SecuriteInfoAction()
-    {
-        $array = [];
-        return $this->render('MainBundle:CTI:securite_Informatique.html.twig', $array);
-    }
 
 
 
