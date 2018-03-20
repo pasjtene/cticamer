@@ -14,7 +14,7 @@ prEntrp: Des formules conçues pour vos entreprises
 object2: Avec Nos formations ciblées et orientées offrez à votre entreprise tout le bilinguisme dont elle a besoins pour
          sa croissance.
 serviceENTREP: Apprendre l'Anglais dans un contexte professionnel est un sujet très délicat. Au CTI, nous vous propososons
-               des formations orientées suivant différents domaines d activité.                                                                        # Sujet de la page
+               des formations orientées suivant différents domaines d activité.                       # Sujet de la page
 
 
 # Block FORMULES ADAPTES
@@ -25,8 +25,8 @@ text01: Nos formules pour entreprise prennent en compte votre secteur d'activit�
 
 # Block PROGRAMME SUR MESURE
 
-progMESUR: Programmes sur mésure
-text02: Vous beneficierez d un programme taillé sur mésure, répondant aux besoins à cours et à moyen terme de votre entreprise.
+progMESUR: Programmes sur mesure
+text02: Vous beneficierez d un programme taillé sur mesure, répondant aux besoins à cours et à moyen terme de votre entreprise.
 
 
 # Block APPROCHE COACHING

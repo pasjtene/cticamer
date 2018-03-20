@@ -103,7 +103,7 @@
 
                 <div class="baniere cat-container">
 
-                    <img class="baniere-img categorie" src="{{ asset('data/img/infograph.png') }}" alt="">
+                    <img class="baniere-img categorie" src="{{ asset('data/img/infograph.jpg') }}" alt="">
 
                     <div class="baniere-msg categorie ">
                         <h2>{% trans from 'infographie' %} infographDESIGN {% endtrans %}</h2> <BR>
@@ -152,41 +152,38 @@
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="#"> {% trans from 'bureautique' %} LogicielBUREAU {% endtrans %} </a></h3>
+                            <h3><a href="#"> {% trans from 'infographie' %} programINFOGRAPHIE {% endtrans %} </a></h3>
                         </div>
-                        <div class="importante"> {% trans from 'bureautique' %} Frequ_02 {% endtrans %} </div>
-
-                        <div class="datecours">
-                            {% trans from 'bureautique' %} detail_02 {% endtrans %}
-                        </div>
+                        <div class=""> {% trans from 'infographie' %} texte_11 {% endtrans %} </div>
+                        <ul class="datecours">
+                            <li>{% trans from 'infographie' %} partie_1 {% endtrans %}</li>
+                            <li>{% trans from 'infographie' %} partie_2 {% endtrans %}</li>
+                            <li>{% trans from 'infographie' %} partie_3 {% endtrans %}</li>
+                            <li>{% trans from 'infographie' %} partie_4 {% endtrans %}</li>
+                        </ul>
 
                         <div class="annonce-inscription but">
-                            {% trans from 'bureautique' %} messag_02 {% endtrans %}
+                            {% trans from 'infographie' %} texte_12 {% endtrans %}
                         </div>
 
                         <div class="category-desktop-contain">
                             <table class="table01">
                                 <tr>
-                                    <th> {% trans from 'bureautique' %} Element_11 {% endtrans %}  </th>
-                                    <td>
-                                        <ul>
-                                            <li>{% trans from 'bureautique' %} module_11 {% endtrans %}</li>
-                                            <li>{% trans from 'bureautique' %} module_12 {% endtrans %}</li>
-                                            <li>{% trans from 'bureautique' %} module_13 {% endtrans %}</li>
-                                        </ul>
-                                    </td>
+                                    <td> {% trans from 'infographie' %} logiciel_1 {% endtrans %}  </td>
+                                    <td> {% trans from 'infographie' %} logiciel_2 {% endtrans %} </td>
                                 </tr>
 
                                 <tr>
-                                    <th> {% trans from 'bureautique' %} Element_12 {% endtrans %}  </th>
-                                    <td> {% trans from 'bureautique' %} Duree_11 {% endtrans %} </td>
+                                    <td> {% trans from 'infographie' %} logiciel_3 {% endtrans %}  </td>
+                                    <td> {% trans from 'infographie' %} logiciel_4 {% endtrans %} </td>
                                 </tr>
                                 <tr>
-                                    <th> {% trans from 'bureautique' %} Element_13 {% endtrans %}  </th>
-                                    <td> {% trans from 'bureautique' %} Frequ_02 {% endtrans %} </td>
+                                    <td> {% trans from 'infographie' %} logiciel_5 {% endtrans %}  </td>
+                                    <td> {% trans from 'infographie' %} logiciel_6 {% endtrans %} </td>
                                 </tr>
 
-                            </table>                        </div>
+                            </table>
+                        </div>
 
                     </div>
 
@@ -223,9 +220,26 @@
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_CoursParticulier') }}">{% trans from 'formation-continu' %} crsParti {% endtrans %}</a></h3>
+                            <h3><a href=""> {% trans from 'infographie' %} dureeEtFreq {% endtrans %} </a></h3>
                         </div>
-                        {% trans from 'formation-continu' %} presentationCoursParti {% endtrans %}
+
+                        <!--    <div> {% trans from 'infographie' %} texte_34 {% endtrans %} </div>  -->
+                        <table class="table01">
+                            <tr>
+                                <th> {% trans from 'infographie' %} texte_31 {% endtrans %}  </th>
+                                <td> {% trans from 'infographie' %} theorieEtPratique {% endtrans %} </td>
+                            </tr>
+
+                            <tr>
+                                <th> {% trans from 'infographie' %} texte_32 {% endtrans %}  </th>
+                                <td> {% trans from 'infographie' %} stage {% endtrans %} </td>
+                            </tr>
+                            <tr>
+                                <th> {% trans from 'infographie' %} texte_33 {% endtrans %}  </th>
+                                <td> {% trans from 'infographie' %} periode {% endtrans %} </td>
+                            </tr>
+
+                        </table>
                     </div>
                 </div>
 
