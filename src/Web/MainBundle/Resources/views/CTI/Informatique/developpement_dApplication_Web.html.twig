@@ -1,13 +1,14 @@
 {% extends 'MainBundle::layout.html.twig' %}
 
 {% block meta %}
-    <meta name = "{% trans from 'about' %} about.block14 {% endtrans %}" >
-    <meta name = "keywords" content = "{% trans from 'about' %} about.block15 {% endtrans %}" >
     <meta charset="utf-8">
-
+    <meta name = "description" content = "{% trans from 'webdevelopment' %} descriptionDevWeb {% endtrans %}" >
+    <meta name = "keywords" content = "{% trans from 'webdevelopment' %} keywordDevWeb {% endtrans %}" >
+    <meta name="author" content="semanticatechnologies.com - Douala Bonamoussadi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% endblock %}
 {% block title %}
-    {% trans from 'cti' %} informatique.title {% endtrans %}
+    {% trans from 'webdevelopment' %} title {% endtrans %}
 {% endblock  %}
 
 {% block mycss %}
@@ -38,6 +39,39 @@
             /*background-size: cover;*/
             background-size: 50%  auto;
         }
+
+        .manuels-img {
+            width: 18%;
+        }
+        .horaire {
+            display: inline-block;
+            padding: 1%;
+            margin: 1%;
+            background: white;
+        }
+        .baniere{
+            width: 100%;
+            max-height: 400px;
+        }
+        .baniere-img{
+            width: 40%;
+        }
+        .baniere-msg {
+            width: 55%;
+            float: right;
+            color: white;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+            font-size: 150%;
+            padding: 3%;
+        }
+
+        .sous-menu {
+            background-color: #f16e00;
+            color: white;
+            font-size: 200%;
+            text-align: center;
+        }
+
     </style>
     {# mettre le css si la page t'oublige #}
 {% endblock %}
@@ -53,145 +87,189 @@
 
     <div id="main_home">
 
+        <div class="sous-menu">
+            {% trans from 'webdevelopment' %} devWEB {% endtrans %}
+        </div>
+        <div class="flex-contain">
 
+            <div class="left-nav">
 
-
-        <div class="message_and_image">
-            <div class="message_on_image">
-                {% trans from 'informatique' %} text1 {% endtrans %}
+                {% block left_nav %}
+                    {% include 'MainBundle:Inc:left_nav.html.twig' %}
+                {% endblock %}
             </div>
 
-            <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-                <img  id="top_img" src="{{ asset('data/img/about4.jpg') }}" alt="">
-                {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
-            </div>
-        </div>
+            <div class="main-contain-middle">
 
-        <div class="row line">
-            <div>  {% trans from 'informatique' %} text2 {% endtrans %} </div>
+                <div class="baniere cat-container">
 
-        </div>
+                    <img class="baniere-img box-baniere" src="{{ asset('data/img/develop.png') }}" alt="">
 
-
-        <div class="row section admission">
-            <h2 class="bloc-title">  {% trans from 'informatique' %} coursDispo {% endtrans %} </h2>
-            <div class="inner padding">
-                <div class="flex">
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">  {% trans from 'informatique' %} secrBuro {% endtrans %} </div>
-
-                        <div class="content">
-                            {% trans from 'informatique' %} detail-1 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
-                        <div class="triangle-bottom"></div>
+                    <div class="baniere-msg box-baniere ">
+                        <h2>{% trans from 'webdevelopment' %} devMASTERING {% endtrans %}</h2> <BR>
+                        {% trans from 'webdevelopment' %} objectif {% endtrans %}
                     </div>
 
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">  {% trans from 'informatique' %} Infograph {% endtrans %} </div>
+                    <!--
+                    <div id="about_top" style="background-image:url('{{ asset('data/img/infograph.png') }}')">
 
-                        <div class="content">
-                            {% trans from 'informatique' %} detail-2 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
-                        <div class="triangle-bottom"></div>
+                        {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
                     </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="triangle-top"></div>
-                        <div class="titre">  {% trans from 'informatique' %} devAppli {% endtrans %} </div>
-
-                        <div class="content">
-                            {% trans from 'informatique' %} detail-3 {% endtrans %}
-                        </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
-                        <div class="triangle-bottom"></div>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Paralax area -->
-
-        <!---
-        <div class="message_and_image">
-
-
-            <div class="message_on_image">
-                {% trans from 'cti' %} informatique.text1 {% endtrans %}
-            </div>
-
-            <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-                <img  id="top_img" src="{{ asset('data/img/about4.jpg') }}" alt="">
-                {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
-            </div>
-        </div>
-        -->
-
-        <div class="row line">
-            <div> {% trans from 'about' %} about.title1 {% endtrans %} : {% trans from 'about' %} about.block14 {% endtrans %} </div>
-
-        </div>
-
-
-        <div class="section admission parallax-container ">
-            <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('data/img/computerstudents2.jpg') }}" data-position="left top">
-
-
-            </div>
-
-            <div class="edito supinfo-slogan">
-                <div class="triangle-left"></div>
-                <div class="contenu">
-                    <div class="supinfo-slogan-titre">CTI: {% trans from 'informatique' %} slogan1 {% endtrans %}</div>
-                    <p class="home-slogan">{% trans from 'informatique' %} slogan2 {% endtrans %}</p>
-                    <p><a href="">{% trans from 'informatique' %} slogan3 {% endtrans %}</a></p>
+-->
 
                 </div>
 
-            </div>
-        </div>
-        <div class="separator"></div>
-
-
-
-
-
-        <div class="separator"></div>
-
-
-        <div class="section programmes-main-div">
-            <h2 class="bloc-title">{% trans from 'about' %} about.news {% endtrans %}</h2>
-
-            <div class="inner padding">
-                <div class="flex">
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="news-title"><h4>{% trans from 'ctihome' %} english {% endtrans %}</h4></div>
-
-                        <p style="text-align: left">{% trans from 'ctihome' %} englishNews {% endtrans %}</p>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="news-title"><h4>{% trans from 'ctihome' %} german {% endtrans %}</h4></div>
-                        <p style="text-align: left">{% trans from 'ctihome' %} allemandNews {% endtrans %}</p>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="news-title"><h4>{% trans from 'ctihome' %} computing {% endtrans %}</h4></div>
-                        <p style="text-align: left">{% trans from 'ctihome' %} infoNews {% endtrans %}</p>
-                    </div>
+                <div class="row line">
+                    {% trans from 'webdevelopment' %} atoutDEVWEB {% endtrans %}
 
                 </div>
-            </div>
 
+                <div class="cat-container">
+                    <div class="">
+                        <div class="category-title">
+                            <h3>{% trans from 'ctihome' %} prochaineRentree {% endtrans %}:
+                                {% trans from 'ctihome' %} debutDesCours {% endtrans %}
+                            </h3>
+                        </div>
+                        <div class="datecours">
+                            <div class="annonce-inscription">
+                                {% trans from 'ctihome' %} placesDISPO {% endtrans %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="titreFormation">
+                    <div>  {% trans from 'webdevelopment' %} formationDEVWEB {% endtrans %} </div>
+
+                </div>
+
+
+
+                <div class="cat-container">
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href=""> {% trans from 'webdevelopment' %} objectifDEV {% endtrans %} </a></h3>
+                        </div>
+
+                        <div class="">
+                            {% trans from 'webdevelopment' %} texte_01 {% endtrans %}
+                        </div>
+                        <ul class="objectifs">
+                            <li > {% trans from 'webdevelopment' %} but_01 {% endtrans %} </li>
+                            <li> {% trans from 'webdevelopment' %} but_02 {% endtrans %} </li>
+                            <li> {% trans from 'webdevelopment' %} but_03 {% endtrans %} </li>
+                            <li> {% trans from 'webdevelopment' %} but_04 {% endtrans %} </li>
+                            <li> {% trans from 'webdevelopment' %} but_05 {% endtrans %} </li>
+                        </ul>
+
+
+                    </div>
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href="#"> {% trans from 'infographie' %} programINFOGRAPHIE {% endtrans %} </a></h3>
+                        </div>
+                        <div class=""> {% trans from 'infographie' %} texte_11 {% endtrans %} </div>
+                        <ul class="datecours">
+                            <li>{% trans from 'infographie' %} partie_1 {% endtrans %}</li>
+                            <li>{% trans from 'infographie' %} partie_2 {% endtrans %}</li>
+                            <li>{% trans from 'infographie' %} partie_3 {% endtrans %}</li>
+                            <li>{% trans from 'infographie' %} partie_4 {% endtrans %}</li>
+                        </ul>
+
+                        <div class="annonce-inscription but">
+                            {% trans from 'infographie' %} texte_12 {% endtrans %}
+                        </div>
+
+                        <div class="category-desktop-contain">
+                            <table class="table01">
+                                <tr>
+                                    <td> {% trans from 'infographie' %} logiciel_1 {% endtrans %}  </td>
+                                    <td> {% trans from 'infographie' %} logiciel_2 {% endtrans %} </td>
+                                </tr>
+
+                                <tr>
+                                    <td> {% trans from 'infographie' %} logiciel_3 {% endtrans %}  </td>
+                                    <td> {% trans from 'infographie' %} logiciel_4 {% endtrans %} </td>
+                                </tr>
+                                <tr>
+                                    <td> {% trans from 'infographie' %} logiciel_5 {% endtrans %}  </td>
+                                    <td> {% trans from 'infographie' %} logiciel_6 {% endtrans %} </td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+
+
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3> {% trans from 'cours-intensifs' %} HORAIRES {% endtrans %} </h3>
+                        </div>
+
+                        {% trans from 'cours-intensifs' %} messagHORAIRE {% endtrans %}
+
+                        <div class="">
+                            <div class=" horaire ">
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode1 {% endtrans %}</h4></div>
+
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures1 {% endtrans %} </p></div>
+                            </div>
+
+                            <div class=" horaire ">
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode2 {% endtrans %}</h4></div>
+
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures2 {% endtrans %}</p></div>
+                            </div>
+
+                            <div class="horaire">
+                                <div class="news-title"><h4>{% trans from 'cours-intensifs' %} periode3 {% endtrans %}</h4></div>
+
+                                <div class="news-title"><p>{% trans from 'cours-intensifs' %} heures3 {% endtrans %}</p></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href=""> {% trans from 'infographie' %} dureeEtFreq {% endtrans %} </a></h3>
+                        </div>
+
+                        <!--    <div> {% trans from 'infographie' %} texte_34 {% endtrans %} </div>  -->
+                        <table class="table01">
+                            <tr>
+                                <th> {% trans from 'infographie' %} texte_31 {% endtrans %}  </th>
+                                <td> {% trans from 'infographie' %} theorieEtPratique {% endtrans %} </td>
+                            </tr>
+
+                            <tr>
+                                <th> {% trans from 'infographie' %} texte_32 {% endtrans %}  </th>
+                                <td> {% trans from 'infographie' %} stage {% endtrans %} </td>
+                            </tr>
+                            <tr>
+                                <th> {% trans from 'infographie' %} texte_33 {% endtrans %}  </th>
+                                <td> {% trans from 'infographie' %} periode {% endtrans %} </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+            </div>
         </div>
 
+        <div class="section programmes-main-div ">
+            {% block ACTUALITE %}
+                {% include 'MainBundle:Inc:actualites.html.twig' %}
+            {% endblock %}
 
+        </div>
 
     </div>
 {% endblock %}
