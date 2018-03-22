@@ -1,0 +1,124 @@
+{% extends 'MainBundle::layout.html.twig' %}
+
+{% block meta %}
+    <meta name = "{% trans from 'login' %} refer.title {% endtrans %}" >
+    <meta name = "keywords" content = "{% trans from 'login' %} refer.description {% endtrans %}" >
+{% endblock %}
+
+{% block title %}
+    {% trans from 'login' %} title {% endtrans %}
+{% endblock  %}
+
+{% block mycss %}
+    {{ parent() }}
+    {# mettre le css si la page t'oublige #}
+{% endblock %}
+
+{% block header %}
+    {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
+    {% include 'MainBundle:Inc:horizontal-nav.html.twig' %}
+{% endblock %}
+
+{% block mainLg %}
+    <div id="main_home">
+    <div class="row" id="mainContentLg">
+        <div class="container">
+            <div class="row" id="mainLogin" data-page="mainLogin">
+
+                <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-confirm="{% trans from 'register' %} form.notification.success {% endtrans %}">
+                    <div class="modal-dialog " role="document">
+                        <div class="modal-content bg-success">
+                            <div class="modal-body text-white">
+                                <center>
+                                    <h4 class="card-title">{% trans from 'register' %} form.notification.content {% endtrans %}</h4>
+                                    <p class="card-text">
+                                        <img src="{{ asset('bundles/main/img/loading.gif') }}" alt="">
+                                    </p>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div  id="content-login">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.65311990878!2d9.741493314251581!3d4.09082869702542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10610de03bc82ba9%3A0x2c08b22c65a32370!2sChurchill+Training+Institute+Bonamoussadi!5e0!3m2!1sfr!2scm!4v1521726514360" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                </div>
+                <div  id="content-login">
+
+                    <table class="">
+                        <tr>
+                            <th colspan="2"> CHURCHILL TRAINING INSTITUTE</th>
+                        </tr>
+
+                        <tr>
+                            <th> Telephone:  </th>
+                            <td>
+                                <ul><li>673 91 94 90</li>
+                                    <li> 695 50 48 82 </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>  E-mail: </th>
+                            <td> info@cticamer.com </td>
+                        </tr>
+                        <tr>
+                            <th>  Adresse: </th>
+                            <td> Bonamoussadi, Douala, Cameroun en face de <br> l'Entrée de la DGI </td>
+                        </tr>
+
+                        <tr>
+                            <th>  BP: </th>
+                            <td> 8119 Douala </td>
+                        </tr>
+                    </table>
+                    <br><br>
+
+                    <table class="">
+                        <tr>
+                            <th colspan="2"> HEURES D'OUVERTURE</th>
+                        </tr>
+                        <tr>
+                            <th colspan="2"> Cours</th>
+                        </tr>
+
+                        <tr>
+                            <th> Du Lundi au Vendredi:  </th>
+                            <td>8h - 21h</td>
+                        </tr>
+                        <tr>
+                            <th>  Samedi: </th>
+                            <td> 9h -16h  </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2"> Renseignement</th>
+                        </tr>
+
+                        <tr>
+                            <th> Du Lundi au Vendredi:  </th>
+                            <td>8h - 18h30</td>
+                        </tr>
+                        <tr>
+                            <th>  Samedi: </th>
+                            <td> 9h -12h  </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {% include "MainBundle:Footer:registerFooter.html.twig" %}
+{% endblock %}
+
+{% block myjs %}
+    {# mettre des liens vers des pages externe js si c'est  necessaire #}
+{% endblock %}
+

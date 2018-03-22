@@ -100,4 +100,19 @@ class FooterController extends Controller implements TokenAuthenticatedControlle
 
 
 
+
+
+
+    /**
+     * @Route("/contacts_et_horaires", name="main_contactEtHoraires"))
+     */
+    public function contactEtHorairesAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:contact.html.twig', $array);
+    }
+
+
+
+
 }
