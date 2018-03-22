@@ -14,11 +14,39 @@ formationDEVWEB: Notre formation en Developement Web
 
 objectifDEV: OBJECTIF DE LA FORMATION
 texte_01: Un développeur web est un programmeur spécialisé, ou expressément impliqué dans le développement des applications
-          du World Wide Web, ou des applications qui sont exécutées à partir d'un serveur web sur un navigateur web et qui
+          du World Wide Web, ou des applications qui sont exécutées à partir d un serveur web sur un navigateur web et qui
           utilisent le protocole HTTP comme vecteur de transmission de l information. Les Objectifs seront donc entre autre;
 but_01: Développer vos connaissances des langage de programmation HTML, CSS, JavaScript, PHP, ...
 but_02: Apprendre les règles théoriques et les bonnes pratiques du codage (standards du Web et normes en vigueur)
 but_03: Maîtriser l animation des pages et la POO avec JavaScript
 but_04: Gérer les comptes utilisateurs
 but_05: Construire un site web fluide s’adaptant à tout type d’écran (web, smartphone et tablette)
+
+webdevelopment: CONTENU DE LA FORMATION
+texte_11: Cette formation comprend plusieurs modules tels que;
+contenu_1: Conception des pages avec HTML5 et CSS3
+contenu_2: Coder avec JavaScript
+contenu_3: Introduction à jQuery
+contenu_4: Conception de site Web avec PHP et MySQL
+contenu_5: Architecture MVC
+contenu_6: Versioning avec Git et GitHub
+contenu_7: Programmation Orienté Objet
+
+texte_12: Outils à maîtriser
+outil_1: Langage HTML et CSS
+outil_2: Langage JavaScript et PHP
+outil_3: Git et GitHub
+outil_4: Symfony
+outil_5: Apache
+outil_6: MySQL
+
+dureeEtFreq: DUREE ET FREQUENCE DE LA FORMATION
+texte_21: Cours Théoriques et Pratiques
+theorieEtPratique: 8 mois
+texte_22: Stage Academique
+stage: 2mois
+texte_23: Périodicité
+periode: 3 fois par mois
+
+
 
