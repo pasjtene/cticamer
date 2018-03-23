@@ -28,7 +28,7 @@ module_04: Internet
 module_05: English
 module_06: Secretarial and Arrangement
 Element_02: Training duration
-Duree_01: 3 months
+Duree_01: 6 months
 Element_03: Frequency
 
 
@@ -42,5 +42,5 @@ module_11: Introduction to computer science
 module_12: MS Word, MS Excel
 module_13: Microsoft Powerpoint
 Element_12: Training duration
-Duree_11: 3 months
+Duree_11: 6 months
 Element_13: Frequency
