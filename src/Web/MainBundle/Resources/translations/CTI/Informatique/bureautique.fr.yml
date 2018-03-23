@@ -30,7 +30,7 @@ module_04: Internet
 module_05: Anglais
 module_06: Secrétariat et organisation
 Element_02: Durée de la formation
-Duree_01: 3 mois
+Duree_01: 6 mois
 Element_03: Fréquence
 
 
@@ -44,5 +44,5 @@ module_11: Initiation à l’informatique
 module_12: MS Word, MS Excel
 module_13: Microsoft Powerpoint
 Element_12: Durée de la formation
-Duree_11: 3 mois
+Duree_11: 6 mois
 Element_13: Fréquence
