@@ -5,16 +5,33 @@
     flex-direction: column;
   }
 
+  .img-et-msg-baniere {
+    display: flex;
+    background-color: #ebeff0;
+  }
+  .messages-baniere {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
   .baniere-img {
-    width: 100%;
-    max-width: 100%;
+    width: 60%;
+    max-width: 60%;
+  }
+
+  .baniere-msg-2 {
+    margin-top: 20px;
+    font-family: BCSans,Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: 300;
+    font-size: larger;
   }
 
   .lineb{
     /*height: 4.3cm;*/
     border-bottom: 5px solid orange;
     width: 100%;
-    background-color: darkgrey !important;
+    /*background-color: darkgrey !important;*/
+    background-color: #c1c1c1;
     color: white;
     /*text-align: center;*/
     font-size: 2em;
@@ -1043,6 +1060,11 @@
 
 }
 
+
+
+
+
+
 //RESPONSIVITE DU SITE
 //CSS POUR TABLETE ET MObile
 
@@ -1053,7 +1075,14 @@
   #main_bureautique {
 
 
+    .img-et-msg-baniere {
+      display: flex;
+      flex-direction: column;
+    }
 
+    .messages-baniere {
+      padding: 2px;
+    }
 
 
     .img-class {
@@ -1189,9 +1218,23 @@
 
 
   #main_bureautique {
+
     .baniereb {
       display: flex;
       flex-direction: column;
+    }
+
+    .h2 {
+      font-weight: 200;
+    }
+
+    .img-et-msg-baniere {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .messages-baniere {
+      padding: 2px;
     }
 
     .baniere-img {
