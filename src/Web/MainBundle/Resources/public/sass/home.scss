@@ -103,8 +103,18 @@
     color: #8e2600;
   }
 
+  .contexte {
+    display: block;
+    /*line-height: 105.56%;*/
+    color: #8e2600;
+    font-size: 150%;
+    padding-bottom: 0.1em;
+    font-weight: bolder;
+  }
 
-
+.contexte-list {
+  list-style-type: cjk-ideographic;
+}
 
 
 
@@ -266,7 +276,7 @@
   .category-title {
     display: block;
     /*line-height: 105.56%;*/
-    color: #474d50;
+    color: #3300aa;
     font-size: 60px;
     padding-bottom: 0.1em;
 
