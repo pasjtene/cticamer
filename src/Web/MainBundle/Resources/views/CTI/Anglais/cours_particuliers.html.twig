@@ -120,12 +120,11 @@
 
 {% block  mainLg %}
 
-    <div id="main_home">
+    <div id="main_sousRubriqAngl">
 
         <div class="sous-menu">
             {% trans from 'cours-particuliers' %} coursPartiANGL {% endtrans %}
         </div>
-
 
         <div class="flex-contain">
 
@@ -139,31 +138,32 @@
 
             <div class="main-contain-middle">
 
-                <div class="baniere cat-container">
+                <div class="baniereb">
 
-                    <img class="baniere-img box-baniere" src="{{ asset('data/img/coursParticulier.jpg') }}" alt="">
+                    <div class="img-et-msg-baniere">
+                        <img class="baniere-img box-baniereb" src="{{ asset('data/img/coursParticulier.jpg') }}" alt="">
+                        <div class="messages-baniere">
+                            <div class="vertical">
+                                <div class="baniere-msgb">
+                                    <h2>{% trans from 'cours-particuliers' %} coursPARangl {% endtrans %}</h2>
 
-                    <div class="baniere-msg box-baniere ">
-                        <h2>{% trans from 'cours-particuliers' %} coursPARangl {% endtrans %}</h2> <BR>
-                        {% trans from 'cours-particuliers' %} object3 {% endtrans %}
+                                </div>
+
+                                <div class="baniere-msg-2">
+                                    {% trans from 'cours-particuliers' %} object3 {% endtrans %}
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <!--
-                    <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-
-                        {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
+                    <div class="lineb">
+                        {% trans from 'cours-particuliers' %} servicePARTICULIERS {% endtrans %}
                     </div>
--->
-
                 </div>
 
-                <div class="row line">
-                    <div>  {% trans from 'cours-particuliers' %} servicePARTICULIERS {% endtrans %} </div>
-
-                </div>
-
-
-                <div class="cat-container">
+                <div class="cat-containerb">
                     <div class="">
                         <div class="category-title">
                             <h3>{% trans from 'ctihome' %} prochaineRentree {% endtrans %}:
