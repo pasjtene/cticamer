@@ -1,4 +1,4 @@
-#main_bureautique{
+#main_sousRubriqInfo{
 
   .baniereb {
     display: flex;
@@ -25,6 +25,7 @@
     font-weight: 300;
     font-size: larger;
   }
+
 
   .lineb{
     /*height: 4.3cm;*/
@@ -1072,7 +1073,7 @@
 @media only screen and (max-device-width : 1024px)
 
 {
-  #main_bureautique {
+  #main_sousRubriqInfo {
 
 
     .img-et-msg-baniere {
@@ -1081,7 +1082,7 @@
     }
 
     .messages-baniere {
-      padding: 2px;
+      padding: 15px 0;
     }
 
 
@@ -1217,7 +1218,7 @@
 {
 
 
-  #main_bureautique {
+  #main_sousRubriqInfo {
 
     .baniereb {
       display: flex;
