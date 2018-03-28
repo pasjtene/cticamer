@@ -1,4 +1,4 @@
-#main_sousRubriqInfo{
+#main_sousRubriqAngl{
 
   .baniereb {
     display: flex;
@@ -7,7 +7,7 @@
 
   .img-et-msg-baniere {
     display: flex;
-    background-color: #ebeff0;
+    background-color: #f9ecec;
   }
   .messages-baniere {
     display: flex;
@@ -292,9 +292,10 @@
   .category-title {
     display: block;
     /*line-height: 105.56%;*/
-    color: #474d50;
+    color: #251549;
     font-size: 60px;
     padding-bottom: 0.1em;
+    font-weight: bolder;
 
   }
 
@@ -1078,7 +1079,7 @@
 @media only screen and (max-device-width : 1024px)
 
 {
-  #main_sousRubriqInfo {
+  #main_sousRubriqAngl {
 
 
     .img-et-msg-baniere {
@@ -1227,7 +1228,7 @@
 {
 
 
-  #main_sousRubriqInfo {
+  #main_sousRubriqAngl {
 
     .baniereb {
       display: flex;
