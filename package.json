@@ -6,7 +6,7 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-copy": "^1.1.0",
-    "sass": "latest"
+    "sass": "^1.1.1"
   },
   "devDependencies": {
     "gulp-concat": "^2.6.1",
@@ -16,7 +16,7 @@
     "gulp-minify": "latest",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^3.2.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglifyjs": "^0.6.2"
   },
