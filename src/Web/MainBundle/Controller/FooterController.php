@@ -109,7 +109,7 @@ class FooterController extends Controller implements TokenAuthenticatedControlle
     public function contactEtHorairesAction()
     {
         $array = [];
-        return $this->render('MainBundle:CTI:contact.html.twig', $array);
+        return $this->render('MainBundle:CTI:contact-jouani.html.twig', $array);
     }
 
 
