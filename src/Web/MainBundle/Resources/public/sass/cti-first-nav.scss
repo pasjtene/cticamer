@@ -26,3 +26,12 @@
   }
 
 }
+
+//Pour telephone mobile jusqu'a iphone 10
+@media only screen and (max-device-width : 812px) {
+  #first-nav {
+    .first-nav-items {
+      font-size: 17px;
+    }
+  }
+}
