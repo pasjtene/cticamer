@@ -144,6 +144,11 @@
 
   }
 
+  .vagues {
+    color: #710909;
+    font-size: 150%;
+  }
+
   .objectifs {
     width: 100%;
   }
@@ -299,6 +304,7 @@
     font-size: 60px;
     padding-bottom: 0.1em;
     font-weight: bolder;
+    text-align: left !important;
 
   }
 
@@ -1100,11 +1106,6 @@
     }
 
 
-    .centrage-vertical{
-      padding: 0em;
-    }
-
-
     .img-class {
       width: 319px!important;
 
@@ -1419,10 +1420,6 @@
       //border:1px solid red;
     }
 
-    .centrage-vertical{
-      padding: 0em;
-    }
-
     .separator {
       display: none;
     }
@@ -1437,6 +1434,14 @@
 
     .table01 {
       width: 100%;
+    }
+
+    .sous-menu {
+      font-size: 150%;
+    }
+
+    .vagues {
+      font-size: 100%;
     }
 
   }
