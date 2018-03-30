@@ -144,6 +144,11 @@
 
   }
 
+  .vagues {
+    color: #710909;
+    font-size: 150%;
+  }
+
   .objectifs {
     width: 100%;
   }
@@ -299,6 +304,7 @@
     font-size: 60px;
     padding-bottom: 0.1em;
     font-weight: bolder;
+    text-align: left !important;
 
   }
 
@@ -1432,6 +1438,10 @@
 
     .sous-menu {
       font-size: 150%;
+    }
+
+    .vagues {
+      font-size: 100%;
     }
 
   }
