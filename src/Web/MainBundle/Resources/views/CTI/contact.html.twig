@@ -79,8 +79,6 @@
     {% include 'MainBundle:CTI:first-nav.html.twig' %}
     {% include 'MainBundle:CTI:mobile-nav.html.twig' %}
     {% include 'MainBundle:Default:cti-navbar.html.twig' %}
-
-
 {% endblock %}
 
 {% block  mainLg %}
@@ -89,72 +87,66 @@
 
         <div class="flex-container">
             <div style="order: 3">
-                <table class="container">
-                    <thead>
-                    <tr>
-                        <th><h1>CHURCHILL TRAINING INSTITUTE</h1> </th><th>5</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Telephone</td>
-                        <td>
-                            <ul>
-                                <li>673 91 94 90</li>
-                                <li>695 50 48 82 </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>E-mail: </td>
-                        <td>info@cticamer.com</td>
-                    </tr>
-                    <tr>
-                        <td>Adresse: </td>
-                        <td>Bonamoussadi, Douala, Cameroun en face de
-                            l'Entrée de la DGI</td>
-                    </tr>
-                    <tr>
-                        <td>BP: </td>
-                        <td>8119 Douala </td>
-                    </tr>
-                    </tbody>
-                </table>
-                <br><br>
-                <table class="container">
-                    <thead>
-                    <tr>
-                        <th><h1>HEURES D'OUVERTURE ET DE DEBUT DES COURS</h1> </th><th>5</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Du Lundi au Vendredi:</td>
-                        <td>8h-21h</td>
-                    </tr>
-                    <tr>
-                        <td>Samedi: </td>
-                        <td>9h-16h</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <table class="container">
-                    <thead>
-                    <tr>
-                        <th><h1>RENSEIGNEMENTS</h1> </th><th>5</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Du Lundi au Vendredi: </td>
-                        <td>8h-21h</td>
-                    </tr>
-                    <tr>
-                        <td>Samedi: </td>
-                        <td>9h-12h</td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div style="overflow-x:auto;">
+                    <table>
+                        <th class="titre_tableau bordure_gauche_tableau">CHURCHILL TRAINING INSTITUTE</th>
+                        <th></th>
+                        <tr>
+                            <td class="trait_horizontal bordure_gauche_tableau">Telephone</td>
+                            <td class="trait_horizontal">
+                                <ul>
+                                    <li>673 91 94 90</li>
+                                    <li>695 50 48 82 </li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="trait_horizontal bordure_gauche_tableau">E-mail:</td>
+                            <td class="trait_horizontal">info@cticamer.com</td>
+                        </tr>
+                        <tr>
+                            <td class="trait_horizontal bordure_gauche_tableau">Adresse: </td>
+                            <td class="trait_horizontal">Bonamoussadi, Douala, Cameroun en face de l'Entrée de la DGI
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bordure_gauche_tableau">BP:</td>
+                            <td>8119 Douala</td>
+                        </tr>
+                        <tr>
+                    </table>
+                </div>
+                <div  style="overflow-x:auto;">
+                    <table>
+                        <th class="titre_tableau bordure_gauche_tableau">HEURES D'OUVERTURE ET DE DEBUT DES COURS</th>
+                        <th></th>
+                        <tr>
+                            <td class="trait_horizontal bordure_gauche_tableau">Du Lundi au Vendredi:</td>
+                            <td class="trait_horizontal ">
+                                8h - 21h30
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="trait_horizontal bordure_gauche_tableau">Samedi: </td>
+                            <td class="trait_horizontal ">8h - 16h</td>
+                        </tr>
+                        <tr>
+                            <td class="trait_horizontal titre_tableau bordure_gauche_tableau ">RENSEIGNEMENTS </td>
+                            <td class="trait_horizontal "></td>
+                        </tr>
+                        <tr>
+                            <td class=" bordure_gauche_tableau">Du Lundi au Vendredi: </td>
+                            <td> 8h - 21h30</td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td class="trait_horizontal bordure_gauche_tableau">Samedi: </td>
+                            <td class="trait_horizontal">8h - 16h</td>
+                        </tr>
+                        <tr>
+                    </table>
+                </div>
             </div>
             <div style="order: 2">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.65311990878!2d9.741493314251581!3d4.09082869702542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10610de03bc82ba9%3A0x2c08b22c65a32370!2sChurchill+Training+Institute+Bonamoussadi!5e0!3m2!1sfr!2scm!4v1521726514360" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
@@ -164,9 +156,6 @@
         </div>
 
     </div>
-
-
-
 
 {% endblock %}
 
