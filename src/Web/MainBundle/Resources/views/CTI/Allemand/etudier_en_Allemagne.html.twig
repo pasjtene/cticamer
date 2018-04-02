@@ -85,11 +85,13 @@
 
 {% block  mainLg %}
 
-    <div id="main_home">
+    <div id="main_sousRubriqAll">
 
         <div class="sous-menu">
             Pour étudier en Allemagne
         </div>
+
+
         <div class="flex-contain">
 
             <div class="left-nav">
@@ -97,33 +99,51 @@
                 {% block left_nav %}
                     {% include 'MainBundle:Inc:left_nav.html.twig' %}
                 {% endblock %}
+
             </div>
 
             <div class="main-contain-middle">
 
-                <div class="baniere cat-container">
+                <div class="baniereb">
 
-                    <img class="baniere-img box-baniere" src="{{ asset('data/img/students1.jpg') }}" alt="">
+                    <div class="img-et-msg-baniere">
+                        <img class="baniere-img " src="{{ asset('data/img/students1.jpg') }}" alt="">
+                        <div class="messages-baniere">
+                            <div class="vertical">
+                                <div class="">
+                                    <h2>{% trans from 'allemand' %} title1 {% endtrans %}</h2>
 
-                    <div class="baniere-msg box-baniere ">
-                        <h2>{% trans from 'allemand' %} title1 {% endtrans %}</h2> <BR>
-                        {% trans from 'allemand' %} text1 {% endtrans %}
+                                </div>
+
+                                <div class="baniere-msg-2">
+                                    {% trans from 'allemand' %} text1 {% endtrans %}
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
 
-<!--
-                    <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-
-                        {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
+                    <div class="lineb">
+                        {% trans from 'allemand' %} text2 {% endtrans %}
                     </div>
--->
-
                 </div>
 
-                <div class="row line">
-                    <div>  {% trans from 'allemand' %} text2 {% endtrans %} </div>
 
+                <div class="cat-containerb">
+                    <div class="">
+                        <div class="category-title">
+                            <h3>{% trans from 'ctihome' %} prochaineRentree {% endtrans %}:
+                                {% trans from 'ctihome' %} debutDesCours {% endtrans %}
+                            </h3>
+                        </div>
+                        <div class="datecours">
+                            <div class="annonce-inscription">
+                                {% trans from 'ctihome' %} placesDISPO {% endtrans %}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
 
 
                 <div class="cat-container">
