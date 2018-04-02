@@ -292,6 +292,28 @@ and (max-device-width : 667px)
     .ftitle {
       font-size: 50px !important;
     }
+
+    .plus {
+      width: 20%;
+      float: right;
+      text-align: center;
+      border-left: 1px solid #B0BED9;
+      color: #f16e00;
+      font-size: 20px !important;
+    }
+
+
+    .group-page {
+      width: 70%;
+      display: inline;
+      margin-top: 0;
+      margin-bottom: 0.4em;
+      color: #f16e00 !important;
+      font-size: 20px !important;
+    }
+
+
+
     .fcontent {
       display: none;
       font-size: 20px !important;
@@ -357,8 +379,27 @@ and (max-device-width : 568px)
     }
 
     .ftitle {
-      font-size: 50px !important;
+      font-size: 50px ;
     }
+
+    .group-page {
+      display: inline;
+      width: 70%;
+      margin-top: 0;
+      margin-bottom: 0.4em;
+      color: #f16e00 !important;
+      font-size: 20px !important;
+    }
+
+    .plus {
+      width: 20%;
+      float: right;
+      text-align: center;
+      border-left: 1px solid #B0BED9;
+      color: #f16e00;
+      font-size: 20px !important;
+    }
+
 
     .fcontent {
       display: none;
