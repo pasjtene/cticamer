@@ -204,7 +204,11 @@ and (max-device-width : 667px)
     display: none;
   }
   }
-
+  @media screen and (max-width: 1024px) {
+    .item-text {
+      display: none;
+    }
+  }
 
 
 
