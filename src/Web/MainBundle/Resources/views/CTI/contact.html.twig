@@ -14,66 +14,7 @@
 {% block mycss %}
     {{ parent() }}
 
-    <style>
-        .students-img {
-            border: 3px solid red;
-            background-color: #0000cc;
-            display:block;
-            width: 45%;
-            height: 100%;
-        }
-
-        .parallax {
-            /* The image used
-            background-image: url("img_parallax.jpg");*/
-            border: 2px solid red;
-            /* Set a specific height */
-            min-height: 500px;
-            width: 50%;
-            display:block;
-
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: left;
-            background-repeat: no-repeat;
-            /*background-size: cover;*/
-            background-size: 50%  auto;
-        }
-
-        .manuels-img {
-            width: 18%;
-        }
-        .horaire {
-            display: inline-block;
-            padding: 1%;
-            margin: 1%;
-            background: white;
-        }
-        .baniere{
-            width: 100%;
-            max-height: 400px;
-        }
-        .baniere-img{
-            width: 40%;
-        }
-        .baniere-msg {
-            width: 55%;
-            float: right;
-            color: white;
-            font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-            font-size: 150%;
-            padding: 3%;
-        }
-
-        .sous-menu {
-            background-color: #f16e00;
-            color: white;
-            font-size: 200%;
-            text-align: center;
-        }
-
-    </style>
-    {# mettre le css si la page t'oublige #}
+     {# mettre le css si la page t'oublige #}
 {% endblock %}
 {% block header %}
     {% include 'MainBundle:CTI:first-nav.html.twig' %}
