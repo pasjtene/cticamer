@@ -153,6 +153,10 @@ and (max-device-width : 667px)
       display: none;
     }
 
+    .logo{
+      margin-right: 0;
+    }
+
 
   }
 
@@ -172,6 +176,10 @@ and (max-device-width : 568px)
     /*padding-top: 50px;*/
     .nav-items {
       display: none;
+    }
+
+    .logo{
+      margin-right: 0;
     }
 
 

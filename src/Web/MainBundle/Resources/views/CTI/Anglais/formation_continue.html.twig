@@ -1,4 +1,4 @@
-{% extends 'MainBundle::layout.html.twig' %}
+{% extends 'MainBundle::cti-layout.html.twig' %}
 
 {% block meta %}
     <meta charset="utf-8">
@@ -189,7 +189,7 @@
                 <div class="cat-container">
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_FormationContinue') }}"> {% trans from 'formation-continu' %} FReg {% endtrans %} </a></h3>
+                            <h3> {% trans from 'formation-continu' %} FReg {% endtrans %} </h3>
                         </div>
                         <div class="importante"> {% trans from 'formation-continu' %} freq0 {% endtrans %} </div>
 
@@ -226,7 +226,7 @@
                     </div>
                     <div class="categorie">
                         <div class="category-title">
-                            <h3><a href="{{ path('main_FormationContinue') }}"> {% trans from 'formation-continu' %} FRegAcc {% endtrans %} </a></h3>
+                            <h3> {% trans from 'formation-continu' %} FRegAcc {% endtrans %} </h3>
                         </div>
                         <div class="importante"> {% trans from 'formation-continu' %} freq1 {% endtrans %} </div>
 
