@@ -1,9 +1,14 @@
 #main_contact{
   margin-top: 4%;
+
   .flex-container {
     margin-top: 4%;
     display: flex;
     align-items: stretch;
+  }
+
+  .carte {
+    padding: auto;
   }
 
   .flex-container>div {
