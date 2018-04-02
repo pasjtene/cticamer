@@ -18,10 +18,11 @@
                 <div class="ftitle"><h2> {% trans from 'ctifooter' %} langAngl {% endtrans %} </h2></div>
                 <p class="fcontent">
                     <span><a class="liens_footer" href="{{ path('main_NiveauxDeLangue') }}"> {% trans from 'ctifooter' %} coursAngl {% endtrans %} </a></span><br>
-                    <span><a class="liens_footer" href=""> {% trans from 'ctifooter' %} enseignerANGLAIS {% endtrans %} </a></span><br>
-                    <span><a class="liens_footer" href=""> {% trans from 'ctifooter' %} examANGLAIS {% endtrans %} </a></span><br>
-                    <span><a class="liens_footer" href=""> {% trans from 'ctifooter' %} inscrLIGNE {% endtrans %} </a></span><br>
-                    <span><a class="liens_footer" href=""> {% trans from 'ctifooter' %} pourquoiANGLAIS {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_CoursIntensifs') }}"> {% trans from 'ctifooter' %} enseignerANGLAIS {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_FormationContinue') }}"> {% trans from 'ctifooter' %} examANGLAIS {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_PourEntreprises') }}"> {% trans from 'ctifooter' %} inscrLIGNE {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_CoursDeVacances') }}"> {% trans from 'ctifooter' %} coursvacances {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_CoursParticulier') }}"> {% trans from 'ctifooter' %} pourquoiANGLAIS {% endtrans %} </a></span><br>
                 </p>
             </div>
         </li>
@@ -30,8 +31,10 @@
                 <div class="ftitle"><h2> {% trans from 'ctifooter' %} langALL {% endtrans %} </h2></div>
                 <p class="fcontent">
                     <span><a class="liens_footer" href="{{ path('main_allemand') }}"> {% trans from 'ctifooter' %} coursAllemand {% endtrans %} </a></span><br>
-                    <span><a class="liens_footer" href=""> {% trans from 'ctifooter' %} enseignerAllemand {% endtrans %} </a></span><br>
-                    <span><a class="liens_footer" href=""> {% trans from 'ctifooter' %} examALLEMAND {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_etudierEnAllemagne') }}"> {% trans from 'ctifooter' %} enseignerAllemand {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_regroupementFamilial') }}"> {% trans from 'ctifooter' %} regroupement_familial {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_CoursParticuliersdAll') }}"> {% trans from 'ctifooter' %} cours_particuliers {% endtrans %} </a></span><br>
+                    <span><a class="liens_footer" href="{{  path('main_CoursSpecialise') }}"> {% trans from 'ctifooter' %} cours_specialises {% endtrans %} </a></span><br>
                 </p>
             </div>
         </li>
