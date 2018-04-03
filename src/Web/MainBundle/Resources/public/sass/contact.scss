@@ -2,21 +2,30 @@
   margin-top: 4%;
 
   .flex-container {
-    margin-top: 4%;
     display: flex;
-    align-items: stretch;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    margin: 1em;
+    text-align: center;
   }
 
   .carte {
-    padding: auto;
+    width: 48%;
+    border: 1px solid #221199;
+    margin: 5px;
+    padding: 10px 3px;
+    overflow: hidden;
   }
 
-  .flex-container>div {
-    background-color: #f1f1f1;
-    width: 50%;
-    margin: 10px;
-    padding:3%;
-    text-align: center;
+  .insert {
+    width: 100%;
+  }
+
+  .contacts {
+    padding: 5px;
+    width: 48%;
+    border: 1px solid #221199;
+    margin: 5px;
   }
 
   table {
@@ -38,13 +47,58 @@
     padding: 10px;
   }
   .trait_horizontal{
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 2px solid #E1E1E1;
   }
 
   tr{background-color: #f1f1f1}
 
-
 }
 
+//RESPONSIVITE DU SITE
+//CSS POUR TABLETE ET MObile
+
+//pour ipad et autre tabletes
+@media only screen and (max-device-width : 1024px)
+
+{
+  #main_contact {
+
+    .carte {
+      padding: auto;
+    }
+
+    .contacts {
+      padding: auto;
+    }
+
+  }
+}
+
+
+
+//Pour telephone mobile jusqu'a iphone 10
+@media only screen and (max-device-width : 812px)
+
+{
+  #main_contact {
+    .flex-container {
+      flex-direction: column;
+      width: 98%;
+      margin: 1%;
+      padding: 1%;
+    }
+
+    .carte {
+      width: 100%;
+      padding: auto;
+    }
+
+    .contacts {
+      padding: auto;
+      width: 100%;
+    }
+
+  }
+}
 
 
