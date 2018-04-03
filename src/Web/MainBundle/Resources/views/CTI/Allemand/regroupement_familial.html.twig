@@ -1,13 +1,14 @@
 {% extends 'MainBundle::cti-layout.html.twig' %}
 
 {% block meta %}
-    <meta name = "{% trans from 'about' %} about.block14 {% endtrans %}" >
-    <meta name = "keywords" content = "{% trans from 'about' %} about.block15 {% endtrans %}" >
     <meta charset="utf-8">
-
+    <meta name = "description" content = "{% trans from 'regroupement-familial' %} descriptionRegrFamil {% endtrans %}" >
+    <meta name = "keywords" content = "{% trans from 'regroupement-familial' %} keywordRegrFamil {% endtrans %}" >
+    <meta name="author" content="semanticatechnologies.com - Douala Bonamoussadi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% endblock %}
 {% block title %}
-    {% trans from 'about' %} about.title {% endtrans %}
+    {% trans from 'regroupement-familial' %} title {% endtrans %}
 {% endblock  %}
 
 {% block mycss %}
@@ -38,6 +39,39 @@
             /*background-size: cover;*/
             background-size: 50%  auto;
         }
+
+        .manuels-img {
+            width: 18%;
+        }
+        .horaire {
+            display: inline-block;
+            padding: 1%;
+            margin: 1%;
+            background: white;
+        }
+        .baniere{
+            width: 100%;
+            max-height: 400px;
+        }
+        .baniere-img{
+            width: 40%;
+        }
+        .baniere-msg {
+            width: 55%;
+            float: right;
+            color: white;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+            font-size: 150%;
+            padding: 3%;
+        }
+
+        .sous-menu {
+            background-color: #f16e00;
+            color: white;
+            font-size: 200%;
+            text-align: center;
+        }
+
     </style>
     {# mettre le css si la page t'oublige #}
 {% endblock %}
@@ -51,29 +85,156 @@
 
 {% block  mainLg %}
 
-    <div id="main_home">
+    <div id="main_sousRubriqAll">
 
-
-
-
-        <div class="message_and_image">
-            <div class="message_on_image">
-                {% trans from 'allemand' %} title1 {% endtrans %} <BR>
-                {% trans from 'allemand' %} text1 {% endtrans %}
-            </div>
-
-            <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-                <img  id="top_img" src="{{ asset('data/img/about4.jpg') }}" alt="">
-                {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
-            </div>
-        </div>
-
-        <div class="row line">
-            <div>  {% trans from 'allemand' %} text2 {% endtrans %} </div>
-
+        <div class="sous-menu">
+            {% trans from 'regroupement-familial' %} regFamill {% endtrans %}
         </div>
 
 
+        <div class="flex-contain">
+
+            <div class="left-nav">
+
+                {% block left_nav %}
+                    {% include 'MainBundle:Inc:left_nav.html.twig' %}
+                {% endblock %}
+
+            </div>
+
+            <div class="main-contain-middle">
+
+                <div class="baniereb">
+
+                    <div class="img-et-msg-baniere">
+                        <img class="baniere-img " src="{{ asset('data/img/regroupement-famille.gif') }}" alt="">
+                        <div class="messages-baniere">
+                            <div class="vertical">
+                                <div class="">
+                                    <h2>{% trans from 'regroupement-familial' %} regFAMILL {% endtrans %}</h2>
+
+                                </div>
+
+                                <div class="baniere-msg-2">
+                                    {% trans from 'regroupement-familial' %} objectifs {% endtrans %}
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="lineb">
+                        {% trans from 'regroupement-familial' %} services {% endtrans %}
+                    </div>
+                </div>
+
+
+                <div class="cat-containerb">
+                    <div class="">
+                        <div class="category-title">
+                            <h3>{% trans from 'ctihome' %} prochaineRentree {% endtrans %}:
+                                {% trans from 'ctihome' %} debutDesCours {% endtrans %}
+                            </h3>
+                        </div>
+                        <div class="datecours">
+                            <div class="annonce-inscription">
+                                {% trans from 'ctihome' %} placesDISPO {% endtrans %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cat-container">
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3>COURS D'ALLEMAND POUR SEJOUR ET REGROUPEMENT FAMILIAL</h3>
+                        </div>
+
+                        <div class="category-desktop-contain">
+                            Vous bénéficiez des cours structurés et ciblés suivant vos objectifs. Passez votre Goethe Zertifikat
+                            de niveau A1 et A2 necessaire pour obtenir un visa de séjour en Allemagne.
+                            En effet, le Goethe-Zertifikat A1: Start Deutsch 1 est un examen d’allemand pour adultes. Il atteste
+                            des connaissances linguistiques simples correspondant au premier niveau (A1) des six que comporte
+                            l’échelle des compétences du Cadre européen commun de référence pour les langues (CECRL).
+                        </div>
+
+                    </div>
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3> MANUELS REQUIS </h3>
+                        </div>
+                        Pour votre formation, vous avez droit aux meilleurs manuels d'apprentissage; principalement les manuels des collections MENSCHEN et Aspekte.<br>
+                        Nos cours sont conçus d’après le Cadre Européen Commun de Référence pour les Langues (CECR).<br>
+                        <div class="category-desktop-contain">
+
+                            La qualité de nos formation garantit votre succès aux examens de langue Allemande organisés par le Goetthe Institut à Yaoundé: Goethe-zertifikat A1, A2, B1.
+                        </div>
+                        <div class="category-desktop-contain">
+                            <img class="manuels-img" src="{{ asset('data/img/menschen-a1.jpg') }}">
+                            <img class="manuels-img" src="{{ asset('data/img/menschen-a2.1.jpg') }}">
+                            <img class="manuels-img" src="{{ asset('data/img/ASPEKTE1.jpg') }}">
+                            <img class="manuels-img" src="{{ asset('data/img/ASPEKTE2.jpg') }}">
+                            <img class="manuels-img" src="{{ asset('data/img/Aspekte-neu.jpg') }}">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3><a href="{{ path('main_contactEtHoraires') }}">HORAIRES DE COURS</a></h3>
+                        </div>
+
+                        Choisissez vos heures de cours en fonction de votre disponibilité. <br>
+
+                        <div class="">
+                            <div class=" horaire ">
+                                <div class="news-title"><h4>Matinées</h4></div>
+
+                                <div class="news-title"><p>08H00 - 10h30</p></div>
+                            </div>
+
+                            <div class=" horaire ">
+                                <div class="news-title"><h4>Après-midi</h4></div>
+
+                                <div class="news-title"><p>14H00 - 16h30</p></div>
+                            </div>
+
+                            <div class="horaire">
+                                <div class="news-title"><h4>Cours du Soirs</h4></div>
+
+                                <div class="news-title"><p>18H30 - 21h00</p></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3> DUREE DE LA FORMATION </h3>
+                        </div>
+                        <ul>
+                            <li>Goethe Zertifikat A1 (Start Deutsch 1): Menschen A1, 2 mois + sessions pratiques</li>
+                            <li>Goethe Zertifikat A2 : Menschen A2, 2 mois + sessions pratiques</li>
+                        </ul>
+
+
+
+                        <div class="category-title">
+                            <h3><a href="{{ path('main_CoursParticulier') }}">Cours aux particuliers</a></h3>
+                        </div>
+                        Cours basés sur des contenus particuliers, destinés à des groupes-cibles spéciaux ou pour l’exercice d’aptitudes uniques: <br><br>
+                        N’hésitez pas à nous contacter si vous souhaitez suivre une formation à la carte dans un de nos domaines de compétence.
+                    </div>
+                </div>
+
+
+
+                <!--
         <div class="row section admission">
             <h2 class="bloc-title">  {% trans from 'allemand' %} coursDispo {% endtrans %} </h2>
             <div class="inner padding">
@@ -139,121 +300,32 @@
             </div>
 
         </div>
+        -->
 
 
-        <div class="section programmes-main-div">
-            <h2 class="bloc-title"> {% trans from 'allemand' %} niv {% endtrans %} </h2>
-
-            <div class="inner-prog padding">
-                <div class="flex">
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> A1 </div>
-                        </div>
-                        <h4>{% trans from 'about' %}about.year1{% endtrans %}</h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.discover1 {% endtrans %}</h3>
-                        {% trans from 'anglais' %} discover {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> A2 </div>
-                        </div>
-                        <h4> {% trans from 'about' %}about.year2{% endtrans %}  </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.learn1 {% endtrans %}  </h3>
-                        {% trans from 'anglais' %} learn {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> B1 </div>
-                        </div>
-                        <h4> {% trans from 'about' %}about.year3{% endtrans %} </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.improve1 {% endtrans %}</h3>
-                        {% trans from 'anglais' %} improve {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> B2 </div>
-                        </div>
-                        <h4>  {% trans from 'about' %}about.year4{% endtrans %} </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.master1 {% endtrans %}</h3>
-                        {% trans from 'anglais' %} master {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> C1 </div>
-                        </div>
-                        <h4>  {% trans from 'about' %}about.year5{% endtrans %} </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.expert1 {% endtrans %}</h3>
-                        {% trans from 'anglais' %} expert1 {% endtrans %}
-                    </div>
-
-                    <div class="programme">
-                        <div class="diamant">
-                            <div class="diamant-shape">
-
-                            </div>
-                            <div class="diamant-content"> C2 </div>
-                        </div>
-                        <h4>  {% trans from 'about' %}about.year6{% endtrans %} </h4>
-                        <h3 class="titre-prog">{% trans from 'about' %} about.expert1 {% endtrans %}</h3>
-                        {% trans from 'anglais' %} expert2 {% endtrans %}
-                    </div>
 
 
-                </div>
+                <div class="separator"></div>
+
+
+
+
             </div>
+        </div>
+
+
+
+        <div class="section programmes-main-div ">
+            {% block ACTUALITE %}
+                {% include 'MainBundle:Inc:actualites.html.twig' %}
+            {% endblock %}
 
         </div>
 
 
-        <div class="separator"></div>
 
 
-        <div class="section programmes-main-div">
-            <h2 class="bloc-title">{% trans from 'about' %} about.news {% endtrans %}</h2>
 
-            <div class="inner padding">
-                <div class="flex">
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="news-title"><h4>{% trans from 'ctihome' %} english {% endtrans %}</h4></div>
-
-                        <p style="text-align: left">{% trans from 'ctihome' %} englishNews {% endtrans %}</p>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="news-title"><h4>{% trans from 'ctihome' %} german {% endtrans %}</h4></div>
-                        <p style="text-align: left">{% trans from 'ctihome' %} allemandNews {% endtrans %}</p>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="news-title"><h4>{% trans from 'ctihome' %} computing {% endtrans %}</h4></div>
-                        <p style="text-align: left">{% trans from 'ctihome' %} infoNews {% endtrans %}</p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
 
 
 
