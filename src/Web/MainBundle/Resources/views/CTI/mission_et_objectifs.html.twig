@@ -1,0 +1,231 @@
+{% extends 'MainBundle::cti-layout.html.twig' %}
+
+{% block meta %}
+    <meta charset="utf-8">
+    <meta name = "description" content = "{% trans from 'cours-intensifs' %} descriptionINT {% endtrans %}" >
+    <meta name = "keywords" content = "{% trans from 'cours-intensifs' %} keywordINT {% endtrans %}" >
+    <meta name="author" content="semanticatechnologies.com - Douala Bonamoussadi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+{% block title %}
+    {% trans from 'cours-intensifs' %} title {% endtrans %}
+{% endblock  %}
+
+{% block mycss %}
+    {{ parent() }}
+
+    <style>
+        .students-img {
+            border: 3px solid red;
+            background-color: #0000cc;
+            display:block;
+            width: 45%;
+            height: 100%;
+        }
+
+        .parallax {
+            /* The image used
+            background-image: url("img_parallax.jpg");*/
+            border: 2px solid red;
+            /* Set a specific height */
+            min-height: 500px;
+            width: 50%;
+            display:block;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: left;
+            background-repeat: no-repeat;
+            /*background-size: cover;*/
+            background-size: 50%  auto;
+        }
+        /*
+                .manuels-img {
+                    width: 18%;
+                }
+                .manuels-img {
+                    width: 18%;
+                }
+                .horaire {
+                    display: inline-block;
+                    padding: 1%;
+                    margin: 1%;
+                    background: white;
+                }
+                .baniere{
+                    width: 100%;
+                    max-height: 400px;
+                }
+                .baniere-img{
+                    width: 40%;
+                }
+                .baniere-msg {
+                    width: 55%;
+                    float: right;
+                    color: white;
+                    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+                    font-size: 150%;
+                    padding: 3%;
+                }
+
+                .sous-menu {
+                    background-color: #f16e00;
+                    color: white;
+                    font-size: 200%;
+                    text-align: center;
+                }
+
+                table.table01 {
+                    width: 90%;
+                    color: #f16e00;
+                    background-color: white;
+
+                }
+
+
+                table.table01 td,th {
+                    padding: 2%;
+                    margin: 5px!important;
+                    border: 5px solid transparent!important;
+                }
+
+                .table02 {
+                    width: 100%;
+                    background-color: #f16e00;
+                    color: white;
+                    border-collapse: separate;
+                }
+
+                .table03 {
+                    width: 100%;
+                    background-color: #0000cc;
+                    color: white;
+                    border-collapse: separate;
+                }
+
+                .abc {
+                    border: 5px solid transparent;
+                }
+        */
+
+
+    </style>
+    {# mettre le css si la page t'oublige #}
+{% endblock %}
+{% block header %}
+    {% include 'MainBundle:CTI:first-nav.html.twig' %}
+    {% include 'MainBundle:CTI:mobile-nav.html.twig' %}
+    {% include 'MainBundle:Default:cti-navbar.html.twig' %}
+{% endblock %}
+
+{% block  mainLg %}
+
+    <div id="main_sousRubriqAngl">
+
+        <div class="sous-menu">
+            {% trans from 'cours-intensifs' %} MISSION ET OBJECTIFS {% endtrans %}
+        </div>
+
+
+        <div class="flex-contain">
+
+            <div class="left-nav">
+
+                {% block left_nav %}
+                    {% include 'MainBundle:Inc:left_nav.html.twig' %}
+                {% endblock %}
+
+            </div>
+
+            <div class="main-contain-middle">
+
+                <div class="baniereb">
+
+                    <div class="img-et-msg-baniere">
+                        <img class="baniere-img " src="{{ asset('data/img/students2.jpg') }}" alt="">
+                        <div class="messages-baniere">
+                            <div class="vertical">
+                                <div class="">
+                                    <h2>{% trans from 'cours-intensifs' %} coursINTENSIF {% endtrans %}</h2>
+
+                                </div>
+
+                                <div class="baniere-msg-2">
+                                    {% trans from 'cours-intensifs' %} objectifs {% endtrans %}
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="lineb">
+                        {% trans from 'cours-intensifs' %} service {% endtrans %}
+                    </div>
+                </div>
+
+                <div class="cat-container">
+                    <div class="category-desktop-contain">
+                        <div class="datecours ">
+                            {% trans from 'mission' %} presentation {% endtrans %}
+                        </div>
+                        {% trans from 'mission' %} presentationCTI {% endtrans %}
+                    </div>
+
+                    <div class="category-desktop-contain">
+                        <div class="datecours">
+                            {% trans from 'cours-intensifs' %} presentationCTI {% endtrans %}
+                        </div>
+                        <ul>
+                                <li> {% trans from 'cours-intensifs' %} atout1 {% endtrans %} </li>
+                                <li> {% trans from 'cours-intensifs' %} atout2 {% endtrans %} </li>
+                                <li> {% trans from 'cours-intensifs' %} atout3 {% endtrans %} </li>
+                                <li> {% trans from 'cours-intensifs' %} atout4 {% endtrans %} </li>
+                                <li> {% trans from 'cours-intensifs' %} atout5 {% endtrans %} </li>
+                            </ul>
+                            {% trans from 'cours-intensifs' %} messagFIN {% endtrans %}
+                    </div>
+
+                    <div class="category-desktop-contain">
+                        <div class="datecours">
+                            {% trans from 'cours-intensifs' %} presentationCTI {% endtrans %}
+                        </div>
+                        <ul>
+                                <li> {% trans from 'cours-intensifs' %} atout1 {% endtrans %} </li>
+                                <li> {% trans from 'cours-intensifs' %} atout2 {% endtrans %} </li>
+                                <li> {% trans from 'cours-intensifs' %} atout3 {% endtrans %} </li>
+                                <li> {% trans from 'cours-intensifs' %} atout4 {% endtrans %} </li>
+                                <li> {% trans from 'cours-intensifs' %} atout5 {% endtrans %} </li>
+                            </ul>
+                            {% trans from 'cours-intensifs' %} messagFIN {% endtrans %}
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="separator"></div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+        <div class="section programmes-main-div ">
+            {% block ACTUALITE %}
+                {% include 'MainBundle:Inc:actualites.html.twig' %}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {% include 'MainBundle:Default:cti-footer.html.twig' %}
+{% endblock %}
+{% block myjs %}
+    {# mettre des liens vers des pages externe js si c'est  necessaire #}
+{% endblock %}
