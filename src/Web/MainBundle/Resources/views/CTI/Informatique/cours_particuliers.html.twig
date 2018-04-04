@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% endblock %}
 {% block title %}
-    {% trans from 'cti' %} informatique.title {% endtrans %}
+    {% trans from 'cours-particuliers-info' %} title {% endtrans %}
 {% endblock  %}
 
 {% block mycss %}
@@ -39,6 +39,74 @@
             /*background-size: cover;*/
             background-size: 50%  auto;
         }
+
+        .manuels-img {
+            width: 18%;
+        }
+        .manuels-img {
+            width: 18%;
+        }
+        .horaire {
+            display: inline-block;
+            padding: 1%;
+            margin: 1%;
+            background: white;
+        }
+        .baniere{
+            width: 100%;
+            max-height: 400px;
+        }
+        .baniere-img{
+            width: 40%;
+        }
+        .baniere-msg {
+            width: 55%;
+            float: right;
+            color: white;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+            font-size: 150%;
+            padding: 3%;
+        }
+
+        .sous-menu {
+            background-color: #f16e00;
+            color: white;
+            font-size: 200%;
+            text-align: center;
+        }
+
+        table.table01 {
+            width: 90%;
+            color: #f16e00;
+            background-color: white;
+
+        }
+
+
+        table.table01 td,th {
+            padding: 2%;
+            margin: 5px!important;
+            border: 5px solid transparent!important;
+        }
+
+        .table02 {
+            width: 100%;
+            background-color: #f16e00;
+            color: white;
+            border-collapse: separate;
+        }
+
+        .table03 {
+            width: 100%;
+            background-color: #0000cc;
+            color: white;
+            border-collapse: separate;
+        }
+
+        .abc {
+            border: 5px solid transparent;
+        }
+
     </style>
     {# mettre le css si la page t'oublige #}
 {% endblock %}
@@ -52,62 +120,204 @@
 
 {% block  mainLg %}
 
-    <div id="main_home">
+    <div id="main_sousRubriqAngl">
 
-
-
-
-        <div class="message_and_image">
-            <div class="message_on_image">
-                {% trans from 'informatique' %} text1 {% endtrans %}
-            </div>
-
-            <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-                <img  id="top_img" src="{{ asset('data/img/about4.jpg') }}" alt="">
-                {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
-            </div>
+        <div class="sous-menu">
+            {% trans from 'cours-particuliers-info' %} coursPartiINFO {% endtrans %}
         </div>
 
-        <div class="row line">
-            <div>  {% trans from 'informatique' %} text2 {% endtrans %} </div>
+        <div class="flex-contain">
 
-        </div>
+            <div class="left-nav">
+
+                {% block left_nav %}
+                    {% include 'MainBundle:Inc:left_nav.html.twig' %}
+                {% endblock %}
+
+            </div>
+
+            <div class="main-contain-middle">
+
+                <div class="baniereb">
+
+                    <div class="img-et-msg-baniere">
+                        <img class="baniere-img box-baniereb" src="{{ asset('data/img/computerstudents.jpg') }}" alt="">
+                        <div class="messages-baniere">
+                            <div class="vertical">
+                                <div class="baniere-msgb">
+                                    <h2>{% trans from 'cours-particuliers-info' %} coursPARinfo {% endtrans %}</h2>
+
+                                </div>
+
+                                <div class="baniere-msg-2">
+                                    {% trans from 'cours-particuliers-info' %} object4 {% endtrans %}
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="lineb">
+                        {% trans from 'cours-particuliers-info' %} servicePARTICULIERS {% endtrans %}
+                    </div>
+                </div>
+
+                <div class="cat-containerb">
+                    <div class="">
+                        <div class="category-title">
+                            <h3>{% trans from 'ctihome' %} prochaineRentree {% endtrans %}:
+                                {% trans from 'ctihome' %} debutDesCours {% endtrans %}
+                            </h3>
+                        </div>
+                        <div class="datecours">
+                            <div class="annonce-inscription">
+                                {% trans from 'ctihome' %} placesDISPO {% endtrans %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
+
+                <div class="cat-container">
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3> {% trans from 'cours-particuliers-info' %} Disciplin {% endtrans %} </h3>
+                        </div>
+                        {% trans from 'cours-particuliers-info' %} text01 {% endtrans %}
+                        <div class="datecours">
+                            <ol>
+                                <li>{% trans from 'cours-particuliers-info' %} disciplin01 {% endtrans %}</li>
+                                <li>{% trans from 'cours-particuliers-info' %} disciplin02 {% endtrans %}</li>
+                                <li>{% trans from 'cours-particuliers-info' %} disciplin03 {% endtrans %}</li>
+                                <li>{% trans from 'cours-particuliers-info' %} disciplin04 {% endtrans %}</li>
+                                <li>{% trans from 'cours-particuliers-info' %} disciplin05 {% endtrans %}</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3> {% trans from 'cours-particuliers-info' %} Materiel {% endtrans %} </h3>
+                        </div>
+                        <div class="datecours">
+                            {% trans from 'cours-particuliers-info' %} text02 {% endtrans %}
+                        </div>
+                    </div>
+
+
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3>{% trans from 'cours-particuliers-info' %} apprTraining {% endtrans %} </h3>
+                        </div>
+                        <div class="datecours">
+                        {% trans from 'cours-particuliers-info' %} text03 {% endtrans %}
+                        </div>
+                    </div>
+
+
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3>{% trans from 'cours-particuliers-info' %} progMESUR {% endtrans %} </h3>
+                        </div>
+                        <ol>
+                            <li>{% trans from 'cours-particuliers-info' %} atout01 {% endtrans %}</li>
+                            <li>{% trans from 'cours-particuliers-info' %} atout02 {% endtrans %}</li>
+                            <li>{% trans from 'cours-particuliers-info' %} atout03 {% endtrans %}</li>
+                            <li>{% trans from 'cours-particuliers-info' %} atout04 {% endtrans %}</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!--
+                                <div class="cat-container">
+                                    <div class="">
+                                        <div class="datecours annonce-inscription">
+                                            <br><br>
+                                            Date des examens internationaux en anglais (2017-2018)
+                                        </div>
+                                        <table class="table03">
+                                            <tr>
+                                                <td class="abc"> 27 janv  </td>
+                                                <td class="abc"> 20 fev  </td>
+                                                <td class="abc"> 31 mar  </td>
+                                                <td class="abc"> 28 avr  </td>
+                                                <td class="abc"> 26 mai  </td>
+                                                <td class="abc"> 30 juin  </td>
+                                                <td class="abc"> 17 juil  </td>
+                                                <td class="abc"> 25 aoû  </td>
+                                                <td class="abc"> 29 sep  </td>
+                                                <td class="abc"> 27 oct  </td>
+                                                <td class="abc"> 24 nov  </td>
+                                                <td class="abc"> 29 dec  </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+                -->
+
+
+
+                <!--
         <div class="row section admission">
-            <h2 class="bloc-title">  {% trans from 'informatique' %} coursDispo {% endtrans %} </h2>
+            <h2 class="bloc-title">  {% trans from 'allemand' %} coursDispo {% endtrans %} </h2>
             <div class="inner padding">
                 <div class="flex">
                     <div class="hexagon degrade admission-hexagon">
                         <div class="triangle-top"></div>
-                        <div class="titre">  {% trans from 'informatique' %} secrBuro {% endtrans %} </div>
-
+                        <div class="titre">Goethe-Zertifikat A1</div>
+                        <h3>
+                            <i class="icon-fleche-droite grand"></i>
+                            <span class="adm-niv">GZA1</span>
+                            <i class="icon-fleche-gauche grand"></i></h3>
                         <div class="content">
-                            {% trans from 'informatique' %} detail-1 {% endtrans %}
+                            {% trans from 'allemand' %} gza1 {% endtrans %}
                         </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
+                        <a class="myButton" href="javascript:;"> {% trans from 'allemand' %} bac4 {% endtrans %} </a>
                         <div class="triangle-bottom"></div>
                     </div>
 
                     <div class="hexagon degrade admission-hexagon">
                         <div class="triangle-top"></div>
-                        <div class="titre">  {% trans from 'informatique' %} Infograph {% endtrans %} </div>
-
+                        <div class="titre">Goethe-Zertifikat A2</div>
+                        <h3>
+                            <i class="icon-fleche-droite grand"></i>
+                            <span class="adm-niv">GZA2</span>
+                            <i class="icon-fleche-gauche grand"></i></h3>
                         <div class="content">
-                            {% trans from 'informatique' %} detail-2 {% endtrans %}
+                            {% trans from 'allemand' %} gza2 {% endtrans %}
                         </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
+                        <a class="myButton" href="javascript:;"> {% trans from 'allemand' %} bac4 {% endtrans %} </a>
                         <div class="triangle-bottom"></div>
                     </div>
 
                     <div class="hexagon degrade admission-hexagon">
                         <div class="triangle-top"></div>
-                        <div class="titre">  {% trans from 'informatique' %} devAppli {% endtrans %} </div>
-
+                        <div class="titre">Goethe-Zertifikat B1</div>
+                        <h3>
+                            <i class="icon-fleche-droite grand"></i>
+                            <span class="adm-niv">GZB1</span>
+                            <i class="icon-fleche-gauche grand"></i></h3>
                         <div class="content">
-                            {% trans from 'informatique' %} detail-3 {% endtrans %}
+                            {% trans from 'allemand' %} gzb1 {% endtrans %}
                         </div>
-                        <a class="myButton" href="javascript:;"> {% trans from 'informatique' %} bac4 {% endtrans %} </a>
+                        <a class="myButton" href="javascript:;"> {% trans from 'allemand' %} bac4 {% endtrans %} </a>
+                        <div class="triangle-bottom"></div>
+                    </div>
+
+                    <div class="hexagon degrade admission-hexagon">
+                        <div class="triangle-top"></div>
+                        <div class="titre">Goethe-Zertifikat B2</div>
+                        <h3>
+                            <i class="icon-fleche-droite grand"></i>
+                            <span class="adm-niv">GZB2</span>
+                            <i class="icon-fleche-gauche grand"></i></h3>
+                        <div class="content">
+                            {% trans from 'allemand' %} gzb2 {% endtrans %}
+                        </div>
+                        <a class="myButton" href="javascript:;"> {% trans from 'allemand' %} bac4 {% endtrans %} </a>
                         <div class="triangle-bottom"></div>
                     </div>
 
@@ -115,82 +325,33 @@
                 </div>
             </div>
 
-        </div>
-
-        <!-- Paralax area -->
-
-        <!---
-        <div class="message_and_image">
-
-
-            <div class="message_on_image">
-                {% trans from 'cti' %} informatique.text1 {% endtrans %}
-            </div>
-
-            <div id="about_top" style="background-image:url('{{ asset('data/img/about4.jpg') }}')">
-                <img  id="top_img" src="{{ asset('data/img/about4.jpg') }}" alt="">
-                {# il  est possible de travailler directement  ici. si  vous voulez occuper toute la page dans la width #}
-            </div>
         </div>
         -->
 
-        <div class="row line">
-            <div> {% trans from 'about' %} about.title1 {% endtrans %} : {% trans from 'about' %} about.block14 {% endtrans %} </div>
+
+
+
+                <div class="separator"></div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+        <div class="section programmes-main-div ">
+            {% block ACTUALITE %}
+                {% include 'MainBundle:Inc:actualites.html.twig' %}
+            {% endblock %}
 
         </div>
 
 
-        <div class="section admission parallax-container ">
-            <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('data/img/computerstudents2.jpg') }}" data-position="left top">
-
-
-            </div>
-
-            <div class="edito supinfo-slogan">
-                <div class="triangle-left"></div>
-                <div class="contenu">
-                    <div class="supinfo-slogan-titre">CTI: {% trans from 'informatique' %} slogan1 {% endtrans %}</div>
-                    <p class="home-slogan">{% trans from 'informatique' %} slogan2 {% endtrans %}</p>
-                    <p><a href="">{% trans from 'informatique' %} slogan3 {% endtrans %}</a></p>
-
-                </div>
-
-            </div>
-        </div>
-        <div class="separator"></div>
 
 
 
-
-
-        <div class="separator"></div>
-
-
-        <div class="section programmes-main-div">
-            <h2 class="bloc-title">{% trans from 'about' %} about.news {% endtrans %}</h2>
-
-            <div class="inner padding">
-                <div class="flex">
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="news-title"><h4>{% trans from 'ctihome' %} english {% endtrans %}</h4></div>
-
-                        <p style="text-align: left">{% trans from 'ctihome' %} englishNews {% endtrans %}</p>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="news-title"><h4>{% trans from 'ctihome' %} german {% endtrans %}</h4></div>
-                        <p style="text-align: left">{% trans from 'ctihome' %} allemandNews {% endtrans %}</p>
-                    </div>
-
-                    <div class="hexagon degrade admission-hexagon">
-                        <div class="news-title"><h4>{% trans from 'ctihome' %} computing {% endtrans %}</h4></div>
-                        <p style="text-align: left">{% trans from 'ctihome' %} infoNews {% endtrans %}</p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
 
 
 
