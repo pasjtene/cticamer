@@ -1,35 +1,18 @@
 {% extends 'MainBundle::cti-layout.html.twig' %}
-
-
-
 {% block meta %}
-
     <meta charset="utf-8">
-
     <meta name = "description" content = "{% trans from 'ctihome' %} descriptionCTI {% endtrans %}" >
-
     <meta name = "keywords" content = "{% trans from 'ctihome' %} keywordCTI {% endtrans %}" >
-
     <meta name="author" content="semanticatechnologies.com - Douala Bonamoussadi">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 {% endblock %}
 
 {% block title %}
-
     {% trans from 'cti' %} title {% endtrans %}
-
 {% endblock  %}
 
-
-
 {% block mycss %}
-
     {{ parent() }}
-
-
-
     <style>
 
         .students-img {
@@ -45,8 +28,6 @@
             height: 100%;
 
         }
-
-
 
         .parallax {
 
@@ -104,28 +85,12 @@
 
     <div id="main_home">
 
-
-
-
-
         <div class="flex-contain">
-
-
-
             <div class="left-nav">
-
-
-
                 {% block left_nav %}
-
                     {% include 'MainBundle:Inc:left_nav.html.twig' %}
-
                 {% endblock %}
-
             </div>
-
-
-
             <div class="main-contain-middle">
 
 
@@ -360,7 +325,7 @@
 
                         <div class="category-title">
 
-                            <h3><a href="{{ path('main_allemand') }}">COURS D'ALLEMAND POUR ETUDE OU SEJOUR EN ALLEMAGNE</a></h3>
+                            <h3><a href="{{ path('main_allemand') }}">{% trans from 'ctihome' %} courALL {% endtrans %}</a></h3>
 
                         </div>
 
@@ -371,67 +336,35 @@
                             {% trans from 'ctihome' %} debutDesCours {% endtrans %}
 
                         </div>
-
-
-
-                        <div class="annonce-inscription">
-
-                            Les Inscriptions sont en cour. Il y a encore quelques places disponibles.
-
+                        <div class="datecours">
+                            <div class="annonce-inscription">
+                                {% trans from 'ctihome' %} placesDISPO {% endtrans %}
+                            </div>
                         </div>
 
 
 
                         <div class="category-desktop-contain">
-
-                            Le Churchill Training Institute offres des cours de langue allemande aux jeunes souhaitant étudier en Allemagne.
-
-                            Nous préparons les candidats aux examens de langue allemande Nécessaires pour obtenir un visa étudiant
-
-                            ( Goethe-Zertifikat A1: Start Deutsch1, Goethe-Zertifikat B1, Goethe-Zertifikat B2, Test-DaF) offerts par l’Institut-Goethe à Yaoundé.<br/>
-
-                            <a href="{{ path('main_allemand') }}">plus d'informations sont disponible sur la page speciale allemand</a>
-
+                            {% trans from 'ctihome' %} message01 {% endtrans %}
+                            <a href="{{ path('main_allemand') }}">{% trans from 'ctihome' %} lienVersPageAll {% endtrans %}</a>
                         </div>
-
-
-
                     </div>
 
                     <div class="categorie">
 
                         <div class="category-title">
 
-                            <h3><a href="{{ path('main_anglais') }}">COURS D’ANGLAIS POUR TOUS</a></h3>
+                            <h3><a href="{{ path('main_anglais') }}">{% trans from 'ctihome' %} courANGL {% endtrans %}</a></h3>
 
                         </div>
 
-                        Tous nos cours permettent de préparer les candidats aux examens internationaux : <strong>TOEFL, IELTS, TOEIC</strong>.<br><br>
-
-
-
-                        Nos cours sont conçus d’après le Cadre Européen Commun de Référence pour les Langues (CECR).<br>
+                        {% trans from 'ctihome' %} message02 {% endtrans %}
+                        <p>{% trans from 'ctihome' %} message03 {% endtrans %}</p>
 
                         <div class="category-desktop-contain">
-
-                            Après un test de niveau qui dure 30 minutes, l’apprenant peut être admis à un des niveaux du programme : A1, A2, B1, B2, C1, C2.<br>
-
-                            Nous dispensons des cours d’Anglais général pour tous les niveaux.<br>
-
-                            Que vous soyez élève, étudiant, chercheur d’emplois ou même travailleurs les différents cours d’Anglais que nous dispensons au
-
-                            Churchill Training Institute permettrons d’améliorer ou de perfectionner vos connaissances en anglais,
-
-                            vous donnant ainsi un atout supplémentaire pour votre progrès professionnel ou académique.
-
-                            <br/><a href="{{ path('main_anglais') }}">plus d'informations sont disponible sur la page speciale du cours d'anglais</a>
-
-
-
+                            {% trans from 'ctihome' %} testNiv {% endtrans %}
+                            <br/><a href="{{ path('main_anglais') }}">{% trans from 'ctihome' %} courALL {% endtrans %}</a>
                         </div>
-
-
-
                     </div>
 
 
@@ -442,45 +375,36 @@
 
                         <div class="category-title">
 
-                            <h3><a href="{{ path('main_informatique') }}">COURS D'INFORMATIQUE</a></h3>
+                            <h3><a href="{{ path('main_informatique') }}">{% trans from 'ctihome' %} courINFO {% endtrans %}</a></h3>
 
                         </div>
 
+                        {% trans from 'ctihome' %} message04 {% endtrans %}<br>
 
+                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i>	<strong>{% trans from 'ctihome' %} discipline01 {% endtrans %}</strong> Microsoft Word, Excel,  Power point, Access. <br>
 
-                        CTI offre des formations de haute qualité dans plusieurs domaines de l’informatique. <br>
+                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i> <strong>{% trans from 'ctihome' %} discipline02 {% endtrans %}</strong> Adobe Photoshop, illustrator, InDesign. Microsoft Publisher <br>
 
-                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i>	<strong>Secrétariat bureautique:</strong> Microsoft Word, Excel,  Power point, Access. <br>
+                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i>	<strong>{% trans from 'ctihome' %} discipline03 {% endtrans %}</strong> <br>
 
-                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i> <strong>Infographie, Design Artistique et Média:</strong> Adobe Photoshop, illustrator, InDesign. Microsoft Publisher <br>
+                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i>	<strong>{% trans from 'ctihome' %} discipline04 {% endtrans %}</strong> <br>
 
-                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i>	<strong>Formation à l’utilisation de l’Internet</strong> <br>
-
-                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i>	<strong>Sécurité informatique</strong> <br>
-
-                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i>	<strong>Développement d’Applications Web:</strong> HTML5, CSS3, Flex Box, JavaScript, PHP, Jquery, MysQL, Symfony, Responsive Web Design
-
-
+                        <i class="fa fa-check" aria-hidden="true" style="font-size:16px;color:#f16e00"></i>	<strong>{% trans from 'ctihome' %} discipline05 {% endtrans %}</strong> HTML5, CSS3, Flex Box, JavaScript, PHP, Jquery, MysQL, Symfony, Responsive Web Design
 
                     </div>
 
                     <div class="categorie">
 
                         <div class="category-title">
-
-                            <h3><a href="{{  path('main_CoursParticulier') }}">Cours aux particuliers</a></h3>
-
+                            <h3><a href="{{  path('main_CoursParticulier') }}">{% trans from 'ctihome' %} courPARTI {% endtrans %}</a></h3>
                         </div>
-
-                        Cours basés sur des contenus particuliers, destinés à des groupes-cibles spéciaux ou pour l’exercice d’aptitudes uniques: <br><br>
-
-                        N’hésitez pas à nous contacter si vous souhaitez suivre une formation à la carte dans un de nos domaines de compétence.
+                        {% trans from 'ctihome' %} message05 {% endtrans %}
 
                     </div>
 
                 </div>
 
-                <h3>INFORMATIONS</h3>
+                <h3>{% trans from 'ctihome' %} INFORMATIONS {% endtrans %}</h3>
 
                 <div class="info-container">
 
@@ -488,9 +412,7 @@
 
                     <div class="information">
 
-                        <div class="info-title"><h3>DATES ET TARIFS</h3></div>
-
-                        Tous les cours de Douala
+                        <div class="info-title"><h3>{% trans from 'ctihome' %} datesEtTarifs {% endtrans %}</h3></div>
 
                         <div class="datecours">
 
@@ -504,11 +426,8 @@
 
                     <div class="information contact">
 
-                        <div class="info-title"><h3>CONTACT ET INSCRIPTION</h3></div>
-
-
-
-                        Nous sommes Situé à Bonamoussadi, à l’entrée du centre des impôts de douala 5ème<br>
+                        <div class="info-title"><h3>{% trans from 'ctihome' %} contactEtInscription {% endtrans %}</h3></div>
+                        {% trans from 'ctihome' %} address {% endtrans %}<br>
 
                         Tel / WhatsApp: 673 91 94 90; 695 50 48 82 <br>
 
@@ -516,21 +435,19 @@
 
 
 
-                        <div class="titre">Horaires d'ouverture:</div>
+                        <div class="titre">{% trans from 'ctihome' %} horaires {% endtrans %}:</div>
 
-                        <div class="sous-titre"> Cours:</div>
+                        <div class="sous-titre"> {% trans from 'ctihome' %} cours {% endtrans %}:</div>
 
+                        {% trans from 'ctihome' %} lun-a-ven {% endtrans %}: 8h - 21h. <br>
 
+                        {% trans from 'ctihome' %} Sam {% endtrans %}: 9h -16h <br>
 
-                        Du Lundi au Vendredi: 8h - 21h. <br>
+                        <div class="sous-titre">{% trans from 'ctihome' %} renseignement {% endtrans %}:</div>
 
-                        Samedi: 9h -16h <br>
+                        {% trans from 'ctihome' %} lun-a-ven {% endtrans %}: 8h - 18h30. <br>
 
-                        <div class="sous-titre">Renseignements et Inscriptions:</div>
-
-                        Du Lundi au Vendredi: 8h - 18h30. <br>
-
-                        Samedi: 9h -12h
+                        {% trans from 'ctihome' %} Sam {% endtrans %}: 9h -12h
 
 
 
@@ -538,11 +455,9 @@
 
                     <div class="information">
 
-                        <div class="info-title"><h3>NOTRE CONCEPT D'APPRENTISSAGE</h3></div>
+                        <div class="info-title"><h3>{% trans from 'ctihome' %} conceptDApprentissage {% endtrans %}</h3></div>
 
-
-
-                        Des progrès rapides dans votre apprentissage sont garantis par des enseignants hautement qualifiés, des méthodes d’enseignement modernes, un accompagnement et un soutien soutenu ainsi qu’un système de niveaux de cours reconnu mondialement.
+                        {% trans from 'ctihome' %} message06 {% endtrans %}
 
                     </div>
 
