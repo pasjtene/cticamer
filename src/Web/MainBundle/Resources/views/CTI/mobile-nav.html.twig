@@ -24,7 +24,7 @@
 
         <li class="list-item">
             <div class="list-content">
-                <div class="ftitle"><h2>LANGUE ANGLAIS</h2></div>
+                <div class="ftitle"><h2>{% trans from 'ctinav' %} EN {% endtrans %} </h2></div>
                 <p class="fcontent">
                     <span><a href="{{  path('main_CoursIntensifs') }}"> {% trans from 'ctinav' %} CI {% endtrans %} </a></span><br>
                     <span><a href="{{  path('main_FormationContinue') }}"> {% trans from 'ctinav' %} FC {% endtrans %} </a></span><br>
@@ -39,7 +39,7 @@
 
         <li class="list-item">
             <div class="list-content">
-                <div class="ftitle"><h2>LANGUE ALLEMANDE</h2></div>
+                <div class="ftitle"><h2>{% trans from 'ctinav' %} DE {% endtrans %}</h2></div>
                 <p class="fcontent">
                     <span><a href="{{  path('main_etudierEnAllemagne') }}"> {% trans from 'ctinav' %} etudeAll {% endtrans %} </a></span><br>
                     <span><a href="{{  path('main_regroupementFamilial') }}"> {% trans from 'ctinav' %} regrFamill {% endtrans %} </a></span><br>
@@ -55,7 +55,7 @@
 
         <li class="list-item">
             <div class="list-content">
-                <div class="ftitle"><h2>INFORMATIQUE</h2></div>
+                <div class="ftitle"><h2>{% trans from 'ctinav' %} IT {% endtrans %}</h2></div>
                 <p class="fcontent">
 
                     <span><a href="{{  path('main_LogicielsBureautique') }}"> {% trans from 'ctinav' %} logiBur {% endtrans %} </a></span><br>
@@ -70,8 +70,13 @@
             </div>
         </li>
 
+
+
         <li class="list-item-crsVacc">
-            <div class="ftitle"><h2><a href="{{  path('main_CoursDeVacances') }}"> {% trans from 'ctinav' %} CV {% endtrans %} </a></h2></div>
+            <div class="ftitle"><h2><a href="{{  path('main_CoursDeVacances') }}"> {% trans from 'ctinav' %} CV_T {% endtrans %} </a></h2></div>
+        </li>
+        <li class="list-item-crsVacc">
+            <div class="ftitle"><h2><a href="{{ path('main_contactEtHoraires') }}"> {% trans from 'ctinav' %} contact {% endtrans %} </a></h2></div>
         </li>
 
         <li class="list-item">
@@ -85,28 +90,7 @@
             </div>
         </li>
 
-        <li class="list-item">
-            <div class="list-content">
-                <div class="ftitle"><h2>CONNEXION</h2></div>
-                <p class="fcontent">
-                    {% if login is defined %}
 
-                        <a href="{{ path('main_register') }}" class="btn btn-primary my-2 my-sm-0">
-                            {% trans from 'register' %} nav.register {% endtrans %}
-                        </a>
-
-                    {% else %}
-                        <!--
-                <span id="nav_member_question">{% trans from 'login' %} nav.member_question {% endtrans %}</span>
-                -->
-                        <a href="{{ path('main_login') }}" class="btn btn-primary my-2 my-sm-0">
-                            {% trans from 'login' %} nav.login {% endtrans %}
-                        </a>
-                    {% endif %}
-                </p>
-
-            </div>
-        </li>
 
     </ul>
 
