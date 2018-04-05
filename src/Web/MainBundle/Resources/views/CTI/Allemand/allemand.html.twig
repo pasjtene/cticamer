@@ -164,18 +164,17 @@
 
                     <div>
                         {% trans from 'allemand' %} text1 {% endtrans %} <br>
-                        Plusieurs formats disponibles:
+                        {% trans from 'allemand' %} text001 {% endtrans %}:
                         <ul>
-                            <li><a href="{{ path('main_etudierEnAllemagne') }}">Cours Pour Etudes en Allemagne</a></li>
-                            <li><a href="{{ path('main_regroupementFamilial') }}">Pour Regroupement familial</a></li>
-                            <li><a href="{{ path('main_CoursParticuliersdAll') }}">Cours aux Particuliers</a></li>
-                            <li><a href="{{ path('main_CoursSpecialise') }}">Cours Spécialisés</a> </li>
+                            <li><a href="{{ path('main_etudierEnAllemagne') }}">{% trans from 'ctinav' %} etudeAll {% endtrans %}</a></li>
+                            <li><a href="{{ path('main_regroupementFamilial') }}">{% trans from 'ctinav' %} regrFamill {% endtrans %}</a></li>
+                            <li><a href="{{ path('main_CoursParticuliersdAll') }}">{% trans from 'ctinav' %} coursParti {% endtrans %}</a></li>
                         </ul>
                     </div>
 
                     <div>  {% trans from 'allemand' %} Block1 {% endtrans %} </div>
                     <div class="utiles">
-                        <a class="liens-utiles" href="{{ path('main_NiveauxDeLangue') }}">>>Consulter les différents niveaux de langue</a>
+                        <a class="liens-utiles" href="{{ path('main_NiveauxDeLangue') }}">>>{% trans from 'anglais' %} diffNIVEAUX {% endtrans %}</a>
                     </div>
 
                 </div>
