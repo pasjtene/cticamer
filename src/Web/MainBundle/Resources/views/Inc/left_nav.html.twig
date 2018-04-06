@@ -8,12 +8,11 @@
                 {% trans from 'left-nav' %} TexteANGL {% endtrans %}
             </div>
             <div class="left-nav-links">
-                <a href="{{  path('main_CoursIntensifs') }}">{% trans from 'left-nav' %} prADULT {% endtrans %}</a>
-
-                <a href="">{% trans from 'left-nav' %} prJEUNES {% endtrans %}</a>
-
-                <a href="">{% trans from 'left-nav' %} PrepaEXAMS {% endtrans %}</a>
-                <a href="">{% trans from 'left-nav' %} coursPARTICULIER {% endtrans %}</a>
+                <a href="{{  path('main_CoursIntensifs') }}"> {% trans from 'ctinav' %} CI {% endtrans %} </a>
+                <a href="{{  path('main_FormationContinue') }}"> {% trans from 'ctinav' %} FC {% endtrans %} </a>
+                <a href="{{  path('main_PourEntreprises') }}"> {% trans from 'ctinav' %} PE {% endtrans %} </a>
+                <a href="{{  path('main_CoursDeVacances') }}"> {% trans from 'ctinav' %} CV {% endtrans %} </a>
+                <a href="{{  path('main_CoursParticulier') }}"> {% trans from 'ctinav' %} CP {% endtrans %} </a>
 
             </div>
         </div>
@@ -23,7 +22,9 @@
                 {% trans from 'left-nav' %} TexteALL {% endtrans %}
             </div>
             <div class="left-nav-links">
-                <a href="{{ path('main_allemand') }}">{% trans from 'left-nav' %} Plus {% endtrans %}</a>
+                <a href="{{  path('main_etudierEnAllemagne') }}"> {% trans from 'ctinav' %} etudeAll {% endtrans %} </a>
+                <a href="{{  path('main_regroupementFamilial') }}"> {% trans from 'ctinav' %} regrFamill {% endtrans %} </a>
+                <a href="{{  path('main_CoursParticuliersdAll') }}"> {% trans from 'ctinav' %} coursParti {% endtrans %} </a>
 
             </div>
         </div>
@@ -34,12 +35,12 @@
 
             </div>
             <div class="left-nav-links">
-                <a href="{{ path('main_allemand') }}">{% trans from 'left-nav' %} Secretariat {% endtrans %}</a>
-
-                <a href="">{% trans from 'left-nav' %} Design {% endtrans %}</a>
-
-                <a href="">{% trans from 'left-nav' %} DevWEB {% endtrans %}</a>
-                <a href="">{% trans from 'left-nav' %} SecuriteINFO {% endtrans %}</a>
+                <a href="{{  path('main_LogicielsBureautique') }}"> {% trans from 'ctinav' %} logiBur {% endtrans %} </a>
+                <a href="{{  path('main_Design') }}"> {% trans from 'ctinav' %} art {% endtrans %} </a>
+                <a href="{{  path('main_Internet') }}"> {% trans from 'ctinav' %} internet {% endtrans %} </a>
+                <a href="{{  path('main_AppliWeb') }}"> {% trans from 'ctinav' %} appWeb {% endtrans %}  </a>
+                <a href="{{  path('main_SecuriteInfo') }}"> {% trans from 'ctinav' %} secuInfo {% endtrans %} </a>
+                <a href="{{  path('main_CoursParticuliersdInfo') }}"> {% trans from 'ctinav' %} coursPartiInfo {% endtrans %} </a>
 
             </div>
         </div>
