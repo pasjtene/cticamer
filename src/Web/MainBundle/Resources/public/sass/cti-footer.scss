@@ -200,6 +200,13 @@ and (max-device-width : 667px)
 
   {
 
+  #toTopBtn {
+
+    right: 5px;
+    bottom: 1px;
+
+  }
+
     .list-item {
       /*width: 33.33%;*/
       width: 100%;
@@ -250,6 +257,13 @@ and (max-device-width : 568px)
   /*and (orientation : portrait) */
 
 {
+  #toTopBtn {
+
+    right: 5px;
+    bottom: 1px;
+
+  }
+
   .list-item {
     /*width: 33.33%;*/
     width: 100%;
