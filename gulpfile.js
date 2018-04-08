@@ -25,6 +25,12 @@ var supInfoPaths = [
     './web/bundles/main/js/supinfo/*.js'
 ];
 
+var ctiPaths = [
+    './web/bundles/main/js/cti/*.js'
+];
+
+
+
 var jsParamsPaths = [
     './web/bundles/app/js/Inc/*.js'
 ];
@@ -131,6 +137,18 @@ var supInfoTask = function()
         .pipe(livereload());
 
     console.log('Uglify Sup Info JS  files successfull !');
+};
+
+var ctiTask = function()
+{
+    gulp.src(ctiPaths)
+        .pipe(uglify('cti.min.js', {
+            outSourceMap: true
+        }))
+        .pipe(gulp.dest('web/data/js'))
+        .pipe(livereload());
+
+    console.log('Uglify CTI JS  files successfull !');
 };
 
 var paramsTask = function()
@@ -267,6 +285,11 @@ gulp.task('supinfo', function()
     supInfoTask();
 });
 
+gulp.task('cti', function()
+{
+    ctiTask();
+});
+
 
 
 // Without this function exec() will not show any output
@@ -284,11 +307,13 @@ var logStdOutAndErr = function (err, stdout, stderr)
         uglifyTask();
         appTask();
         paramsTask();
+        ctiTask();
 
     } else if (currentTask === 'jsdev')
     {
         concatJsTask();
         concatJsAppTask();
+        ctiTask();
         //paramsTask();
     }
     else if(currentTask === 'img')
@@ -312,6 +337,7 @@ var logStdOutAndErr = function (err, stdout, stderr)
         paramsTask();
         imageTask();
         audioTask();
+        ctiTask();
     }
     else if(currentTask === 'allprod')
     {
@@ -322,11 +348,18 @@ var logStdOutAndErr = function (err, stdout, stderr)
         imageTask();
         audioTask();
         supInfoTask();
+        ctiTask();
+
     }
 
     else if(currentTask === 'supinfo')
     {
         supInfoTask();
+    }
+
+    else if(currentTask === 'cti')
+    {
+       ctiTask();
     }
 
 };

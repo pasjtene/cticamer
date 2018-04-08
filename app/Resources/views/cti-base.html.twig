@@ -15,7 +15,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=yes" />
     <meta name = "author" content = "info@cticamer.com (assistance de churchill Training Institute - CTI en ligne)" />
-    <meta name="copyright" content="@ cticamer.com (tous  droits reservés)" />
+    <meta name="copyright" content="@ cticamer.com (tous  droits reservï¿½s)" />
 
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -141,7 +141,7 @@
 
     <script>
 
-        // Quelques informations sur l'utilisateur connecté
+        // Quelques informations sur l'utilisateur connectï¿½
         {% if app.user!=null %}
         var currentUser = {
             id : '{{ app.user.id }}',
@@ -174,7 +174,7 @@
     <!-- Funglobe js -->
 
     <script src="{{ asset('data/js/supinfo.min.js') }}"></script>
-
+    <script src="{{ asset('data/js/cti.min.js') }}"></script>
 
 
     <!-- solution  pour le modale (bootbox) -->
@@ -206,29 +206,29 @@
 
             // Voyons si l'utilisateur est OK pour recevoir des notifications
             else if (Notification.permission === "granted") {
-                // Si c'est ok, créons une notification
+                // Si c'est ok, crï¿½ons une notification
                 var notification = new Notification(message);
             }
 
             // Sinon, nous avons besoin de la permission de l'utilisateur
-            // Note : Chrome n'implémente pas la propriété statique permission
-            // Donc, nous devons vérifier s'il n'y a pas 'denied' à la place de 'default'
+            // Note : Chrome n'implï¿½mente pas la propriï¿½tï¿½ statique permission
+            // Donc, nous devons vï¿½rifier s'il n'y a pas 'denied' ï¿½ la place de 'default'
             else if (Notification.permission !== 'denied') {
                 Notification.requestPermission(function (permission) {
 
-                    // Quelque soit la réponse de l'utilisateur, nous nous assurons de stocker cette information
+                    // Quelque soit la rï¿½ponse de l'utilisateur, nous nous assurons de stocker cette information
                     if(!('permission' in Notification)) {
                         Notification.permission = permission;
                     }
 
-                    // Si l'utilisateur est OK, on crée une notification
+                    // Si l'utilisateur est OK, on crï¿½e une notification
                     if (permission === "granted") {
                         var notification = new Notification(message);
                     }
                 });
             }
-            // Comme ça, si l'utlisateur a refusé toute notification, et que vous respectez ce choix,
-            // il n'y a pas besoin de l'ennuyer à nouveau.
+            // Comme ï¿½a, si l'utlisateur a refusï¿½ toute notification, et que vous respectez ce choix,
+            // il n'y a pas besoin de l'ennuyer ï¿½ nouveau.
         }
     </script>
 

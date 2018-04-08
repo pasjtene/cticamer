@@ -1,6 +1,29 @@
 
 #cti-footer {
 
+  /* button to push the page up */
+
+    #toTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 3px;
+        right: 30px;
+        z-index: 98;
+
+    }
+
+    #toTopBtn img {
+        width: 80%;
+    }
+
+    #myBtn:hover {
+        background-color: #555;
+        /* Add a dark-grey background on hover */
+    }
+
+  /* END button */
+
+
 ul, li {
   margin: 0;
   padding: 0;
