@@ -138,6 +138,18 @@
 
 }
 
+//RESPONSIVITE DU SITE
+//CSS POUR TABLETE ET MObile
+
+//pour ipad et autre tabletes
+@media only screen and (max-device-width : 1024px) {
+  #cti-nav {
+    .logo {
+      margin-right: 10px;
+    }
+  }
+}
+
 
 /*iPhone 6 in portrait*/
 @media only screen
