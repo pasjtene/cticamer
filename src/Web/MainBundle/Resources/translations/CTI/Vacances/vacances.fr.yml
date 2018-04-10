@@ -5,15 +5,46 @@ keywordPartVACC: cours, vacances, anglais, informatique, apprendre, bilinguisme,
 
 
 title: CTI, Cours de vacances en Anglais et Informatique pour enfants et jeunes, a Douala Bonamoussadi au Churchill Training Institute   # Titre de la page
-coursVaccANGL: Cours de Vacances en Anglais et en Informatique                   # Sujet de la page
+coursVaccANGL: Spécial Cours de Vacances                   # Sujet de la page
 
 
 #Messages de la banière
 
-coursVACANCES: DES COURS POUR ENFANTS ET LYCEENS PENDANT LES VACANCES
+coursVACANCES: COURS DE VACANCES EN ANGLAIS ET INFORMATIQUE
 object3: Relevez le niveau d'Anglais de votre enfant pendant les Vacances et donnez lui plus d'atouts pour réussir.
 serviceVACANCES: Pour ces vacances 2018, nous proposons des cours orientés selon les besoins des étudiants, élèves et écoliers.
 debutCoursVacances: 4 juin 2018
+
+
+
+
+
+prQlaForm: "POURQUOI SE FORMER EN ANGLAIS ?"
+butFormation: "Se former en Anglais c'est: "
+but_01: choisir d'être en mésure de comprendre le monde et de se faire comprendre,
+but_02: C'est se donner les moyens de comprendre le web, la technologie, les sciences,
+but_03: C'est choisir d'être capable d'exploiter les documents les plus riches au monde,
+but_04: "C'est décider de réussir."
+
+prQInfo: "POURQUOI DES COURS D'INFORMATIQUE ?"
+butINFO: "Notre environnement tend vers la digitalisation de tous les métiers. De plus en plus, des logiciels sont adopter
+         pour nous faciliter la vie. Il est donc primordial d'avoir au moins une culture de base en Informatique."
+but-info_01: "Mieux encore, se former en Informatique donne une garantie d'embauche car le besoin est grandissant."
+
+deroulement: "DEROULEMENT DE LA FORMATION"
+ANGL: "Cours d'Anglais"
+DETAIL_01: "Notre programme de cours Spécial Vacances contient des modules visant à améliorer le niveau d'Anglais
+           (Reading, Speaking, Listening) des élèves et étudiants. Des Supports de Cours adaptés, ainsi qu'une
+           médiatèque bien fournie vous attendent."
+
+INFO: "Cours d'Informatique"
+DETAIL_02: "Programme de cours visant à initier les apprenants à l'outil informatique, développer leurs connaissances
+           dans l'utilisation des logiciels de base."
+
+cout: COUTS DES FORMATIONS
+
+coutREDUIT: "Anglais + Informatique  "
+
 
 
 #Block VAGUES DE COURS

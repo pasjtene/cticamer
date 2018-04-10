@@ -24,9 +24,15 @@
 
   .baniere-msg-2 {
     margin-top: 20px;
-    font-family: BCSans,Arial,"Helvetica Neue",Helvetica,sans-serif;
-    font-weight: 300;
+    font-family: Roboto,BCSans,Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: 100;
     font-size: larger;
+  }
+
+
+  .baniere-msgb{
+    font-weight: bolder;
+    font-weight: 900;
   }
 
 
@@ -50,6 +56,16 @@
     padding-top: 2em;
   }
 
+  .nousContacter {
+    background-color: #f16e00;
+    color: #FFFFFF;
+    font-size: 125%;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 3px 3px grey;
+    float: right;
+    padding: 0.1em;
+  }
 
   .manuels-img {
     width: 18%;
@@ -289,7 +305,6 @@
     font-weight: bold;
     border-left: 3px solid #f16e00;
   }
-
 
   .categorie {
     border-top: 2px solid white;
@@ -1278,6 +1293,13 @@
       padding-left: 10px;
       margin-bottom: 20px;
 
+    }
+
+
+    .nousContacter {
+      float: none;
+      width: 50%;
+      margin: auto;
     }
 
     .img-class {
