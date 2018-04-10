@@ -41,6 +41,12 @@ INFO: "Cours d'Informatique"
 DETAIL_02: "Programme de cours visant à initier les apprenants à l'outil informatique, développer leurs connaissances
            dans l'utilisation des logiciels de base."
 
+Program: PROGRAMMES DES COURS
+ANGLAIS: Anglais
+DETAIL_03: --
+INFORMATIQ: Informatique
+DETAIL_04: --
+
 cout: COUTS DES FORMATIONS
 
 coutREDUIT: "Anglais + Informatique  "
