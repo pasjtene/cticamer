@@ -171,13 +171,90 @@
                             <h3>{% trans from 'ctihome' %} prochaineRentree {% endtrans %}:
                                 {% trans from 'vacances' %} debutCoursVacances {% endtrans %}
                             </h3>
+
                         </div>
+                        <a href="{{ path('main_contactEtHoraires') }}" >
+                            <div class="nousContacter">
+                                Nous Contacter
+                            </div>
+                        </a>
+
                         <div class="datecours">
                             <div class="annonce-inscription">
                                 {% trans from 'ctihome' %} placesDISPO {% endtrans %}
                             </div>
                         </div>
+
                     </div>
+                </div>
+
+
+
+                <div class="cat-container">
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3> {% trans from 'vacances' %} prQlaForm {% endtrans %} </h3>
+                        </div>
+
+                        <div class="category-desktop-contain">
+                            {% trans from 'vacances' %} butFormation {% endtrans %}
+                            <ul>
+                                <li> {% trans from 'vacances' %} but_01 {% endtrans %} </li>
+                                <li> {% trans from 'vacances' %} but_03 {% endtrans %} </li>
+                                <li> {% trans from 'vacances' %} but_04 {% endtrans %} </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="categorie">
+                        <div class="category-title">
+                            <h3> {% trans from 'vacances' %} prQInfo {% endtrans %} </h3>
+                        </div>
+
+                        <div class="category-desktop-contain">
+                            {% trans from 'vacances' %} butINFO {% endtrans %}
+                        </div>
+                        <div class="category-desktop-contain">
+                            {% trans from 'vacances' %} but-info_01 {% endtrans %}
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="category-title">
+                    <h3> {% trans from 'vacances' %} deroulement {% endtrans %} </h3>
+                </div>
+                <div class="cat-container">
+                    <div class="categorie">
+                        <span class="vagues"> {% trans from 'vacances' %} ANGL {% endtrans %} </span>
+                        <div class="category-desktop-contain">
+                            {% trans from 'vacances' %} DETAIL_01 {% endtrans %}
+                        </div>
+                    </div>
+                    <div class="categorie">
+                        <span class="vagues"> {% trans from 'vacances' %} INFO {% endtrans %} </span>
+                        <div class="category-desktop-contain">
+                            {% trans from 'vacances' %} DETAIL_02 {% endtrans %}
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="category-title">
+                    <h3> {% trans from 'vacances' %} cout {% endtrans %} </h3>
+                </div>
+                <div class="cat-container">
+                    <div class="categorie">
+                        <span class="vagues"> {% trans from 'vacances' %} ANGL {% endtrans %} : 30.000 Fcfa</span>
+                    </div>
+                    <div class="categorie">
+                        <span class="vagues"> {% trans from 'vacances' %} INFO {% endtrans %} : 30.000 Fcfa</span>
+                    </div>
+                </div>
+                <div class="vagues">
+                    <span> {% trans from 'vacances' %} coutREDUIT {% endtrans %} =  50.000 Fcfa </span> au lieu de 60.000 Fcfa
                 </div>
 
 
@@ -196,23 +273,6 @@
                                 <li> {% trans from 'vacances' %} vague03 {% endtrans %} <span class="vagues"> {% trans from 'vacances' %} periode03 {% endtrans %} </span> </li>
                             </ul>
                             {% trans from 'vacances' %} texteFin {% endtrans %}
-                        </div>
-
-                    </div>
-                    <div class="categorie">
-                        <div class="category-title">
-                            <h3> {% trans from 'cours-intensifs' %} manuels {% endtrans %} </h3>
-                        </div>
-                        {% trans from 'cours-intensifs' %} messagMANUELS {% endtrans %}
-                        <div class="category-desktop-contain">
-
-                        </div>
-                        <div class="category-desktop-contain">
-                            <img class="manuels-angl-img" src="{{ asset('data/img/englishUnlimited2.jpg') }}">
-                            <img class="manuels-angl-img" src="{{ asset('data/img/english-unlimited-elementary-a-combo-with-dvd-roms-2.png') }}">
-                            <img class="manuels-angl-img" src="{{ asset('data/img/Official-toelf-Test-Prep.jpg') }}">
-                            <img class="manuels-angl-img" src="{{ asset('data/img/IELTS-Cambridge-Books.jpg') }}">
-                            <img class="manuels-angl-img" src="{{ asset('data/img/englishUnlimited1.png') }}">
                         </div>
 
                     </div>
@@ -245,15 +305,8 @@
                             </div>
 
                         </div>
-
-
                     </div>
-                    <div class="categorie">
-                        <div class="category-title">
-                            <h3><a href="{{ path('main_CoursParticulier') }}">{% trans from 'formation-continu' %} crsParti {% endtrans %}</a></h3>
-                        </div>
-                        {% trans from 'formation-continu' %} presentationCoursParti {% endtrans %}
-                    </div>
+
                 </div>
 
                 <div class="separator"></div>
