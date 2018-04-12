@@ -1,0 +1,73 @@
+{% extends 'MainBundle::cti-layout.html.twig' %}
+
+{% block meta %}
+    <meta charset="utf-8">
+    <meta name = "description" content = "{% trans from 'ctifooter' %} descriptions_contacts {% endtrans %}" >
+    <meta name = "keywords" content = "{% trans from 'ctifooter' %} keyword_contacts {% endtrans %}" >
+    <meta name="author" content="cticamer.com - Douala Bonamoussadi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+{% block title %}
+    {% trans from 'bureautique' %} title {% endtrans %}
+{% endblock  %}
+
+{% block mycss %}
+    {{ parent() }}
+
+    {# mettre le css si la page t'oublige #}
+{% endblock %}
+{% block header %}
+    {% include 'MainBundle:CTI:first-nav.html.twig' %}
+    {% include 'MainBundle:CTI:mobile-nav.html.twig' %}
+    {% include 'MainBundle:Default:cti-navbar.html.twig' %}
+{% endblock %}
+
+{% block  mainLg %}
+
+<div id="main_nousContacter">
+    <div class="flexContainer">
+        <h1 class="titre01"> Contactez-nous </h1>
+        <div class="box-container">
+            <div class="title"> Ecrivez-nous !! </div>
+            <div>
+                Veuillez remplir le formulaire en renseignant tous les champs.
+                Notre équipe se charge de vous répondre dans un délai maximum de 3 jours ouvrables.
+            </div>
+            <form action="">
+                <div class="input-box">
+                    <span > Email :</span><br>
+                    <input type="email" class="input-elt">
+                </div>
+                <div class="input-box">
+                    <span> Nom :</span><br>
+                    <input type="text" class="input-elt">
+                </div>
+                <div class="input-box">
+                    <span> Téléphone :</span><br>
+                    <input type="text" class="input-elt" placeholder="+xxx xxxxxxxxx">
+                </div>
+                <div class="input-box">
+                    <span> Votre message :</span><br>
+                    <textarea name="message" id="msg" rows="3" class="input-elt" placeholder="Votre message ici (150 mots maximum)">  </textarea>
+                </div>
+                <div class="input-details">
+                    Le Churchill Training Institute n'utilisera ces informations qu'en vue de répondre à votre requête.
+                    Nous restons fidèle à notre politique de confidentialité des données.
+                </div>
+                <input type="submit" value="Envoyer" class="input-submit">
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block footer %}
+    {% include 'MainBundle:Default:cti-footer.html.twig' %}
+{% endblock %}
+{% block myjs %}
+    {# mettre des liens vers des pages externe js si c'est  necessaire #}
+{% endblock %}

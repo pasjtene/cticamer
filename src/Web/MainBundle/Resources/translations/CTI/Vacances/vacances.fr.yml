@@ -21,10 +21,10 @@ debutCoursVacances: 4 juin 2018
 
 prQlaForm: "POURQUOI SE FORMER EN ANGLAIS ?"
 butFormation: "Se former en Anglais c'est: "
-but_01: choisir d'être en mésure de comprendre le monde et de se faire comprendre,
-but_02: C'est se donner les moyens de comprendre le web, la technologie, les sciences,
-but_03: C'est choisir d'être capable d'exploiter les documents les plus riches au monde,
-but_04: "C'est décider de réussir."
+but_01: Choisir d'être en mésure de comprendre le monde et de se faire comprendre,
+but_02: Se donner les moyens de comprendre le web, la technologie, les sciences,
+but_03: Choisir d'être capable d'exploiter les documents les plus riches au monde,
+but_04: " Décider de réussir."
 
 prQInfo: "POURQUOI DES COURS D'INFORMATIQUE ?"
 butINFO: "Notre environnement tend vers la digitalisation de tous les métiers. De plus en plus, des logiciels sont adopter
@@ -46,6 +46,11 @@ ANGLAIS: Anglais
 DETAIL_03: --
 INFORMATIQ: Informatique
 DETAIL_04: --
+info_01: Traitement de texte avec Microsoft Word
+info_02: Initiation à EXCEL
+info_03: Présentations avec PowerPoint
+info_04: "Initiation à l'Informatique"
+info_05: Internet
 
 cout: COUTS DES FORMATIONS
 

@@ -1,0 +1,101 @@
+#main_nousContacter {
+  padding: inherit;
+  margin: 4px;
+
+  .titre01 {
+    font-size: 300%;
+    font-family: Calibri;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    padding: 0.7em;
+    color: #6a148e;
+  }
+
+  .title {
+    font-size: 150%;
+    font-weight: 200;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #6a148e;
+  }
+
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .box-container {  
+    margin: auto;
+    border: 2px solid #221199;
+    padding: 2% ;
+    width: 60%;
+    max-width: 100%;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+  }
+
+  .input-box {
+    padding-top: 1.5em;
+    color: #6a148e;
+  }
+
+  .input-elt {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #aa5500;
+  }
+
+  .input-details {
+    padding: 1.5em;
+  }
+
+  .input-submit {
+    width: 50%;
+    padding: 4px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+    float: right;
+  }
+
+}
+
+//RESPONSIVITE DU SITE
+//CSS POUR TABLETE ET MObile
+
+//pour ipad et autre tabletes
+@media only screen and (max-device-width : 1024px)
+
+{
+  #main_nousContacter {
+    .box-container {
+      width: 90%;
+      max-width: 100%;
+    }
+
+
+  }
+}
+
+//Pour telephone mobile jusqu'a iphone 10
+@media only screen and (max-device-width : 812px)
+
+{
+  #main_nousContacter {
+    .box-container {
+      width: 100%;
+    }
+
+
+  }
+}
