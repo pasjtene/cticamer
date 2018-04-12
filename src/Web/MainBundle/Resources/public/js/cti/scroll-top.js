@@ -1,4 +1,4 @@
-//code jquerry pour pusser la page vers le haut en cliquant sur la fleche montante
+//code jquerry pour pousser la page vers le haut en cliquant sur la fleche montante
 $(document).ready(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 40) {

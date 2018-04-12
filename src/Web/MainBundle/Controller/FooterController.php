@@ -121,6 +121,16 @@ class FooterController extends Controller implements TokenAuthenticatedControlle
         return $this->render('MainBundle:CTI:mission_et_objectifs.html.twig', $array);
     }
 
+    /**
+     * @Route("/nous_contacter", name="main_nousContacter"))
+     */
+    public function nousContacterAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:nous-contacter.html.twig', $array);
+    }
+
+
 
 
 
