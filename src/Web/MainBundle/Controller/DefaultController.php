@@ -57,6 +57,14 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
         return $this->render('MainBundle:CTI:niveaux_de_langue.html.twig', $array);
     }
 
+    /**
+     * @Route("/nous_contacter", name="main_nousContacter"))
+     */
+    public function nousContacterAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:nous-contacter.html.twig', $array);
+    }
 
 
 
