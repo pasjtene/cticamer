@@ -36,7 +36,7 @@
             <form action="">
                 <div class="input-box">
                     <span > Email :</span><br>
-                    <input type="email" class="input-elt" id="usMail" onblur="EmailVerification(this)">
+                    <input type="email" class="input-elt" id="usMail" size="35">
                 </div>
                 <div class="input-box">
                     <span> Nom :</span><br>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="input-box">
                     <span> Téléphone :</span><br>
-                    <input type="text" class="input-elt" placeholder="+xxx xxxxxxxxx" id="usPhone">
+                    <input type="text" class="input-elt" placeholder="+237 xxxxxxxxx" id="usPhone">
                 </div>
                 <div class="input-box">
                     <span> Votre message :</span><br>
@@ -81,5 +81,6 @@
     {% include 'MainBundle:Default:cti-footer.html.twig' %}
 {% endblock %}
 {% block myjs %}
+
     {# mettre des liens vers des pages externe js si c'est  necessaire #}
 {% endblock %}
