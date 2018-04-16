@@ -36,19 +36,19 @@
             <form action="">
                 <div class="input-box">
                     <span > Email :</span><br>
-                    <input type="email" class="input-elt">
+                    <input type="email" class="input-elt" id="usMail" onblur="EmailVerification(this)">
                 </div>
                 <div class="input-box">
                     <span> Nom :</span><br>
-                    <input type="text" class="input-elt">
+                    <input type="text" class="input-elt" id="usName">
                 </div>
                 <div class="input-box">
                     <span> Téléphone :</span><br>
-                    <input type="text" class="input-elt" placeholder="+xxx xxxxxxxxx">
+                    <input type="text" class="input-elt" placeholder="+xxx xxxxxxxxx" id="usPhone">
                 </div>
                 <div class="input-box">
                     <span> Votre message :</span><br>
-                    <textarea name="message" id="msg" rows="3" class="input-elt" placeholder="Votre message ici (150 mots maximum)">  </textarea>
+                    <textarea name="message" id="usMsg" rows="3" class="input-elt" placeholder="Votre message ici (150 mots maximum)">  </textarea>
                 </div>
                 <div class="input-details">
                     Le Churchill Training Institute n'utilisera ces informations qu'en vue de répondre à votre requête.
