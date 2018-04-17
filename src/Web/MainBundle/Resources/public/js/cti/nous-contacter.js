@@ -14,65 +14,131 @@ function surligner (champ, erreur) {
     }
 }
 
-function EmailVerification(formField) {
-    var x = document.getElementById(formField.id),
-        re = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9\._-]{2,}\.[a-z]{2,4}$/;
-    if (!re.test(x.value)) {
+function EmailVerification(formField, err) {
+    var x = document.getElementById(formField.id);
+    var valeur = x.value;
+    var errMsg = document.getElementById(err);
+    var re = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9\._-]{2,}\.[a-z]{2,4}$/;
+    if (valeur.length == 0) {
+        surligner(x, false);
+        errMsg.innerHTML = "This field is required.";
+        return false;
+    }
+    else if (!re.test(valeur)) {
+        errMsg.innerHTML = "This email address is not valid.";
         surligner(x, true);
         return false;
     }
     else {
         surligner(x, false);
+        errMsg.innerHTML ="";
         return true;
     }
+
 }
 
-document.getElementById("usMail").addEventListener("blur", function(){EmailVerification(this);});
+document.getElementById("usMail").addEventListener("blur", function(){EmailVerification(this, "errEmail");});
 
-function NameVerification(formField) {
-    var x = document.getElementById(formField.id),
-        re = /^[ a-zA-Z'-]{2,25}$/;
-    if (!re.test(x.value)) {
+function NameVerification(formField, err) {
+    var x = document.getElementById(formField.id);
+    var errMsg = document.getElementById(err);
+    var valeur = x.value;
+    var re = /^[ a-zA-Z'-]+$/;
+    if (valeur.length == 0) {
+        surligner(x, false);
+        errMsg.innerHTML = "This field is required.";
+        return false;
+    }
+    else if (valeur.length < 2) {
+        errMsg.innerHTML = "This field require at least two digits.";
+        surligner(x, true);
+        return false;
+    }
+    else if (valeur.length > 25) {
+        errMsg.innerHTML = "This field cannot take more than 25 digits.";
+        surligner(x, true);
+        return false;
+    }
+    else if (!re.test(valeur)) {
+        errMsg.innerHTML = "Please verify your name.";
         surligner(x, true);
         return false;
     }
     else {
         surligner(x, false);
+        errMsg.innerHTML = "";
         return true;
     }
+
+
 }
 
-document.getElementById("usName").addEventListener("blur", function(){NameVerification(this);});
+document.getElementById("usName").addEventListener("blur", function(){NameVerification(this, "errName");});
 
-function PhoneVerification(formField) {
-    var x = document.getElementById(formField.id),
-        re = /^\+[1-9]{2,3}[2-9]( ?[0-9]{2,3}){2,5}$/;
-    if (!re.test(x.value)) {
+function PhoneVerification(formField, err) {
+    var x = document.getElementById(formField.id);
+    var valeur = x.value;
+    var errMsg = document.getElementById(err);
+    var re = /^(\+[1-9][0-9]{1,2})? ?[1-9][0-9]{8,15}$/;
+    if (valeur.length == 0) {
+        surligner(x, false);
+        errMsg.innerHTML = "This field is required.";
+        return false;
+    }
+    else if (!re.test(valeur)) {
         surligner(x, true);
+        errMsg.innerHTML = "Please verify your telephone number and do not put space between digits";
         return false;
     }
     else {
         surligner(x, false);
+        errMsg.innerHTML = "";
         return true;
     }
 }
 
-document.getElementById("usPhone").addEventListener("blur", function(){PhoneVerification(this);});
+document.getElementById("usPhone").addEventListener("blur", function(){PhoneVerification(this, "errPhone");});
 
-function MsgVerification(formField) {
-    var x = document.getElementById(formField.id).value;
-    if ( x.length  < 2 ) {
-        surligner(x, true);
+function MsgVerification(formField, err) {
+    var x = document.getElementById(formField.id);
+    var valeur = x.value;
+    var errMsg = document.getElementById(err);
+    var longueur = valeur.length;
+    if (longueur == 0) {
+        surligner(x, false);
+        errMsg.innerHTML = "This field is required.";
         return false;
     }
-    else if ( x.length > 500) {
+    else if ( longueur < 2 ) {
         surligner(x, true);
+        errMsg.innerHTML = "Your message is too shot.";
+        return false;
+    }
+    else if ( longueur > 500 ) {
+        surligner(x, true);
+        errMsg.innerHTML = "Your message is too long.";
         return false;
     }
     else  {
         surligner(x, false);
+        errMsg.innerHTML = "";
         return true;
     }
 }
 
-document.getElementById("usMsg").addEventListener("blur", function(){MsgVerification(this);});
+document.getElementById("usMsg").addEventListener("blur", function(){MsgVerification(this, "errMessage");});
+
+document.getElementsByTagName("form").addEventListener("submit", function(){
+    var emailOK = EmailVerification(this.EMAIL, "errEmail");
+    var nameOK = NameVerification(this.NAME, "errName");
+    var phoneOK = PhoneVerification(this.PHONE, "errPhone");
+    var msgOK = MsgVerification(this.message, "errMsg");
+    if (emailOK && nameOK && phoneOK && msgOK) {
+        return true;
+    }
+    else {
+        return false;
+        alert("Veuillez remplir correctement tous les champs.");
+    }
+
+});

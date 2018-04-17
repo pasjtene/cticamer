@@ -35,20 +35,24 @@
             </div>
             <form action="">
                 <div class="input-box">
-                    <span > Email :</span><br>
-                    <input type="email" class="input-elt" id="usMail" size="35">
+                    <span > Email : * :</span><br>
+                    <input type="email" class="input-elt" id="usMail" size="35" name="EMAIL" required>
+                    <p id="errEmail" class="error"></p>
                 </div>
                 <div class="input-box">
-                    <span> Nom :</span><br>
-                    <input type="text" class="input-elt" id="usName">
+                    <span> Nom : *</span><br>
+                    <input type="text" class="input-elt" id="usName" name="NOM" required>
+                    <p id="errName" class="error"></p>
                 </div>
                 <div class="input-box">
-                    <span> Téléphone :</span><br>
-                    <input type="text" class="input-elt" placeholder="+237 xxxxxxxxx" id="usPhone">
+                    <span> Téléphone : *</span><br>
+                    <input type="text" class="input-elt" placeholder="+237 xxxxxxxxx" id="usPhone" name="PHONE" required>
+                    <p id="errPhone" class="error"></p>
                 </div>
                 <div class="input-box">
-                    <span> Votre message :</span><br>
-                    <textarea name="message" id="usMsg" rows="3" class="input-elt" placeholder="Votre message ici (150 mots maximum)">  </textarea>
+                    <span> Votre message : *</span><br>
+                    <textarea name="message" id="usMsg" rows="3" class="input-elt" placeholder="Votre message ici (150 mots maximum)" required>  </textarea>
+                    <p id="errMessage" class="error"></p>
                 </div>
                 <div class="input-details">
                     Le Churchill Training Institute n'utilisera ces informations qu'en vue de répondre à votre requête.
