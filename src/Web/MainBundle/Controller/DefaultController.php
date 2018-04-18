@@ -66,6 +66,15 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
         return $this->render('MainBundle:CTI:nous-contacter.html.twig', $array);
     }
 
+    /**
+     * @Route("/opportunites", name="main_Opportunities"))
+     */
+    public function OpportunitiesAction()
+    {
+        $array = [];
+        return $this->render('MainBundle:CTI:opportunites.html.twig', $array);
+    }
+
 
 
 
