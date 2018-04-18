@@ -2,13 +2,13 @@
 
 {% block meta %}
     <meta charset="utf-8">
-    <meta name = "description" content = "{% trans from 'ctifooter' %} descriptions_contacts {% endtrans %}" >
-    <meta name = "keywords" content = "{% trans from 'ctifooter' %} keyword_contacts {% endtrans %}" >
+    <meta name = "description" content = "{% trans from 'nous-contacter' %} descriptionNousContacter {% endtrans %}" >
+    <meta name = "keywords" content = "{% trans from 'nous-contacter' %} keywordNousContacter {% endtrans %}" >
     <meta name="author" content="cticamer.com - Douala Bonamoussadi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% endblock %}
 {% block title %}
-    {% trans from 'bureautique' %} title {% endtrans %}
+    {% trans from 'nous-contacter' %} title {% endtrans %}
 {% endblock  %}
 
 {% block mycss %}
@@ -26,37 +26,35 @@
 
 <div id="main_nousContacter">
     <div class="flexContainer">
-        <h1 class="titre01"> Contactez-nous </h1>
+        <h1 class="titre01"> {% trans from 'nous-contacter' %} ContacterNous {% endtrans %} </h1>
         <div class="box-container">
-            <div class="title"> Ecrivez-nous !! </div>
+            <div class="title"> {% trans from 'nous-contacter' %} EcriverNous {% endtrans %} </div>
             <div>
-                Veuillez remplir le formulaire en renseignant tous les champs.
-                Notre équipe se charge de vous répondre dans un délai maximum de 3 jours ouvrables.
+                {% trans from 'nous-contacter' %} instruction01 {% endtrans %}
             </div>
             <form action="">
                 <div class="input-box">
                     <span > Email : * :</span><br>
-                    <input type="email" class="input-elt" id="usMail" size="35" name="EMAIL" required>
+                    <input type="text" class="input-elt" id="usMail" size="35" name="EMAIL" >
                     <p id="errEmail" class="error"></p>
                 </div>
                 <div class="input-box">
-                    <span> Nom : *</span><br>
-                    <input type="text" class="input-elt" id="usName" name="NOM" required>
+                    <span> {% trans from 'nous-contacter' %} nom {% endtrans %}</span><br>
+                    <input type="text" class="input-elt" id="usName" name="NOM" >
                     <p id="errName" class="error"></p>
                 </div>
                 <div class="input-box">
-                    <span> Téléphone : *</span><br>
-                    <input type="text" class="input-elt" placeholder="+237 xxxxxxxxx" id="usPhone" name="PHONE" required>
+                    <span> {% trans from 'nous-contacter' %} phone {% endtrans %}</span><br>
+                    <input type="text" class="input-elt" placeholder="+237 xxxxxxxxx" id="usPhone" name="PHONE" >
                     <p id="errPhone" class="error"></p>
                 </div>
                 <div class="input-box">
-                    <span> Votre message : *</span><br>
-                    <textarea name="message" id="usMsg" rows="3" class="input-elt" placeholder="Votre message ici (150 mots maximum)" required>  </textarea>
+                    <span> {% trans from 'nous-contacter' %} msg {% endtrans %}</span><br>
+                    <textarea name="messag" id="usMsg" rows="3" class="input-elt" placeholder="Votre message ici (150 mots maximum)" >  </textarea>
                     <p id="errMessage" class="error"></p>
                 </div>
                 <div class="input-details">
-                    Le Churchill Training Institute n'utilisera ces informations qu'en vue de répondre à votre requête.
-                    Nous restons fidèle à notre politique de confidentialité des données.
+                    {% trans from 'nous-contacter' %} confidentialite {% endtrans %}
                 </div>
                 <input type="submit" value="Envoyer" class="input-submit">
 
@@ -65,13 +63,13 @@
         </div>
 
 
-        <h1 class="titre02"> Mieux encore, Nous voir en personne! </h1>
+        <h1 class="titre02"> {% trans from 'nous-contacter' %} nousVoir {% endtrans %} </h1>
         <div class="situation">
             <p>
-                Nous sommes situés à Bonamoussadi, Douala, en face de l'entrée de la direction générale des impôts.
+                {% trans from 'nous-contacter' %} localisation {% endtrans %}
             </p>
             <a href="{{ path('main_contactEtHoraires') }}#C1" >
-                Consulter nos horaires d'ouverture.
+                {% trans from 'nous-contacter' %} horaires {% endtrans %}
             </a>
         </div>
 

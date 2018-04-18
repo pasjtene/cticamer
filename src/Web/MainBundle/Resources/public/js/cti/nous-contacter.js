@@ -14,11 +14,13 @@ function surligner (champ, erreur) {
     }
 }
 
+/* re = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9\._-]{2,}\.[a-z]{2,4}$/;  */
+
 function EmailVerification(formField, err) {
     var x = document.getElementById(formField.id);
     var valeur = x.value;
     var errMsg = document.getElementById(err);
-    var re = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9\._-]{2,}\.[a-z]{2,4}$/;
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (valeur.length == 0) {
         surligner(x, false);
         errMsg.innerHTML = "This field is required.";
@@ -128,11 +130,12 @@ function MsgVerification(formField, err) {
 
 document.getElementById("usMsg").addEventListener("blur", function(){MsgVerification(this, "errMessage");});
 
-document.getElementsByTagName("form").addEventListener("submit", function(){
+
+function FormValidation(form){
     var emailOK = EmailVerification(this.EMAIL, "errEmail");
-    var nameOK = NameVerification(this.NAME, "errName");
+    var nameOK = NameVerification(this.NOM, "errName");
     var phoneOK = PhoneVerification(this.PHONE, "errPhone");
-    var msgOK = MsgVerification(this.message, "errMsg");
+    var msgOK = MsgVerification(this.messag, "errMsg");
     if (emailOK && nameOK && phoneOK && msgOK) {
         return true;
     }
@@ -141,4 +144,6 @@ document.getElementsByTagName("form").addEventListener("submit", function(){
         alert("Veuillez remplir correctement tous les champs.");
     }
 
-});
+}
+
+document.getElementsByTagName("form")[0].addEventListener("submit", function() {return FormValidation(this);});
