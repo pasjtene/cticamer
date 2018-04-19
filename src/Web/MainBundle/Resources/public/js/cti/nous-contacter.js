@@ -39,7 +39,10 @@ function EmailVerification(formField, err) {
 
 }
 
-document.getElementById("usMail").addEventListener("blur", function(){EmailVerification(this, "errEmail");});
+var usMail = document.getElementById("usMail");
+if (usMail) {
+usMail.addEventListener("blur", function(){EmailVerification(this, "errEmail");});
+}
 
 function NameVerification(formField, err) {
     var x = document.getElementById(formField.id);
@@ -75,7 +78,10 @@ function NameVerification(formField, err) {
 
 }
 
-document.getElementById("usName").addEventListener("blur", function(){NameVerification(this, "errName");});
+var usName = document.getElementById("usName");
+if (usName) {
+usName.addEventListener("blur", function(){NameVerification(this, "errName");});
+}
 
 function PhoneVerification(formField, err) {
     var x = document.getElementById(formField.id);
@@ -99,7 +105,10 @@ function PhoneVerification(formField, err) {
     }
 }
 
-document.getElementById("usPhone").addEventListener("blur", function(){PhoneVerification(this, "errPhone");});
+var usPhone = document.getElementById("usPhone");
+if (usPhone) {
+usPhone.addEventListener("blur", function(){PhoneVerification(this, "errPhone");});
+}
 
 function MsgVerification(formField, err) {
     var x = document.getElementById(formField.id);
@@ -128,22 +137,31 @@ function MsgVerification(formField, err) {
     }
 }
 
-document.getElementById("usMsg").addEventListener("blur", function(){MsgVerification(this, "errMessage");});
+var usMsg = document.getElementById("usMsg");
+if (usMsg) {
+usMsg.addEventListener("blur", function(){MsgVerification(this, "errMessage");});
+}
 
 
 function FormValidation(form){
-    var emailOK = EmailVerification(this.EMAIL, "errEmail");
-    var nameOK = NameVerification(this.NOM, "errName");
-    var phoneOK = PhoneVerification(this.PHONE, "errPhone");
-    var msgOK = MsgVerification(this.messag, "errMsg");
+    var emailOK = EmailVerification(form.EMAIL, "errEmail");
+    var nameOK = NameVerification(form.NOM, "errName");
+    var phoneOK = PhoneVerification(form.PHONE, "errPhone");
+    var msgOK = MsgVerification(form.messag, "errMessage");
     if (emailOK && nameOK && phoneOK && msgOK) {
         return true;
     }
     else {
-        return false;
         alert("Veuillez remplir correctement tous les champs.");
+        return false;
     }
 
 }
+var f = document.getElementsByTagName("form")[0];
+if (f) {
+f.addEventListener("submit", function(event) {
+    event.preventDefault();
+    return FormValidation(this);
+});
+}
 
-document.getElementsByTagName("form")[0].addEventListener("submit", function() {return FormValidation(this);});
