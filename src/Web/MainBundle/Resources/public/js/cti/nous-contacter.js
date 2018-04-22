@@ -157,6 +157,9 @@ function FormValidation(form){
     }
 
 }
+
+
+/*
 var f = document.getElementsByTagName("form")[0];
 if (f) {
 f.addEventListener("submit", function(event) {
@@ -164,4 +167,40 @@ f.addEventListener("submit", function(event) {
     return FormValidation(this);
 });
 }
+*/
 
+
+function messageSubmitter (form){
+    var msg = new Object();
+    msg.email = form.EMAIL.value;
+    msg.name = form.NOM.value;
+    msg.phone = form.PHONE.value;
+    msg.message = form.messag.value;
+
+    console.log("The data: ",msg);
+
+    $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        url: '/cti/messages',
+        data: JSON.stringify(msg),
+        dataType: "json",
+        success:function(response){
+            console.log("The response is: ", response);
+        }
+    });
+}
+
+var f = document.getElementsByTagName("form")[0];
+if(f){
+    f.addEventListener("submit", function(event) {
+        event.preventDefault();
+        var formValid = FormValidation(this);
+        if(formValid) {
+            messageSubmitter (this);
+        } else {
+            console.log("The form is not valid...");
+        }
+
+    });
+}

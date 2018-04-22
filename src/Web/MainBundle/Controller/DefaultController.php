@@ -75,17 +75,6 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
         return $this->render('MainBundle:CTI:opportunites.html.twig', $array);
     }
 
-
-
-
-
-
-
-
-
-
-
-
     /**
      * @Route("/informatique", name="main_informatique-a"))
      */
@@ -94,6 +83,39 @@ class DefaultController extends Controller implements TokenAuthenticatedControll
         $array = [];
         return $this->render('MainBundle:CTI:informatique.html.twig', $array);
     }
+
+    /**
+     * @Route("/messages")
+     */
+    public function msgAction(Request $request)
+
+    {
+
+        $m = $request->getContent();
+
+        $m2 = $this->json($m);
+        $m3 = json_decode($m, true);
+
+        return $this->json($m);
+        //return $this->json(["Email"=>$m3->email]);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
