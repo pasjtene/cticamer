@@ -82,20 +82,18 @@
 {
   #main_contact {
     .flex-container {
+      display: flex;
       flex-direction: column;
-      width: 98%;
-      margin: 1%;
-      padding: 1%;
+      margin: 0;
+      text-align: center;
     }
 
     .carte {
-      width: 100%;
-      padding: auto;
+      width: 98%;
     }
 
     .contacts {
-      padding: auto;
-      width: 100%;
+      width: 98%;
     }
 
   }
