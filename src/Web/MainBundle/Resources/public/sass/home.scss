@@ -1066,12 +1066,11 @@
 
 
 
-/*iPhone 6 in portrait*/
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px)
-  /*and (orientation : portrait) */
+//RESPONSIVITE DU SITE
+//CSS POUR TABLETE ET MObile
 
+//pour ipad et autre tabletes
+@media only screen and (max-device-width : 1024px)
 
 {
   #main_home {
@@ -1132,12 +1131,8 @@ and (max-device-width : 667px)
     }
 
 
-    .left-nav {
-      display:none;
-    }
-
     .main-contain-middle {
-      width: 100%;
+      width: 73%;
       background-color: white;
       padding: 2px;
     }
@@ -1150,18 +1145,19 @@ and (max-device-width : 667px)
 
     }
 
+    .left-nav {
+      margin-right: 1%;
+      padding: 3px;
+      width: 25%;
+    }
+
     .categorie {
       border: 2px solid white;
       display: inline-block;
-      width: 100%;
       padding-left: 20px;
       padding-bottom: 10px;
       background-color: #c3c3c3;
-      border: 1px solid green;
-    }
 
-    .info-container {
-      flex-direction: column;
     }
 
     .information {
@@ -1198,13 +1194,8 @@ and (max-device-width : 667px)
 }
 
 
-/*iPhone 5 & 5S in portrait*/
-
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px)
-  /*and (orientation : portrait) */
-
+//Pour telephone mobile jusqu'a iphone 10
+@media only screen and (max-device-width : 812px)
 
 {
   #main_home {
@@ -1229,7 +1220,7 @@ and (max-device-width : 568px)
     #slider-images{
       cursor:default;position:relative;top:0px;left:0px;
       width:100%;
-      height:210px;
+      /*height:210px;*/
       overflow:hidden;
 
     }
